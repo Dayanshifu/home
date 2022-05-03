@@ -4,7 +4,7 @@ the sourse code in this repository was been opened, you can download files and u
 
 but,you must follow the lisence MPL2.0, and save the author's name, it's important for me!
 
-demo site: https://hao.littleyan.tk/(please turn TRANSLATOR on to get BETTER experience
+demo site: https://hao.littleyan.tk/ (please turn TRANSLATOR on to get BETTER experience)
 
 # hao-little颜 网址导航 zh-cn
 
