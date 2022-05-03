@@ -1,6 +1,6 @@
 # hao-littleyan URL Navigation en
 
-the sourse code in this repository was been opened, you can download files and use it
+the sourse code in this repository was been opened, you can download files and use it for everything!
 
 but,you must follow the lisence MPL2.0, and save the author's name, it's important for me!
 
