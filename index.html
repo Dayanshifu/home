@@ -1,0 +1,435 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>haolittle颜网址导航_一个首页，整个世界</title>
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/favicon.ico"/>
+  <link rel="stylesheet" type="text/css" href="css/all.css" />
+</head>
+<body onload="show()">
+  <div class="container">
+    <div class="pcon">
+      <center>
+        <div id="he-plugin-standard"></div>
+        <script type="text/javascript" src="js/weather.js"></script>
+        <script src="https://widget.qweather.net/standard/static/js/he-standard-common.js?v=52.0"></script>
+      </center>
+    </div>
+    <div class="mbon"><h1 style="color:#20a53a">电脑食用体验更佳！</h1></div>
+    <script type="text/javascript" src="js/time.js"></script> 
+    <b style="color:#20a53a;font-size: large;margin-bottom: 0px;"><div id="nowDiv"></div></b>
+    <p class="pcon" style="color:#20a53a"><a href="haolittle颜网址导航_一个首页，整个世界.url" download="haolittle颜网址导航_一个首页，整个世界.url">快捷入口</a>  |  <a href="https://www.littleyan.tk">站长主页</a></p>
+    <p class="mbon" style="color:#20a53a"><a href="https://www.littleyan.tk">站长主页</a></p>
+    <hr style='background-color:#20a53a; height:1px; border:none;'/>
+    <h1>hao-little颜 网址导航</h1>
+    <div class="sc">
+      <div class="clear-s"></div>
+      <div class="chose">
+        <div>
+          <center>
+            <a id='googleb'onclick="googleon()"><img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/google.png" width=24px height=24px/></a>
+            <a id='bingb' onclick="bingon()"class="active"><img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/bing.ico" width=24px height=24px/></a>
+            <a id='baidub' onclick="baiduon()"><img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/baidu.ico" width=24px height=24px/></a>
+            <a id='sogoub'onclick="sogouon()"><img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/sogou.ico" width=24px height=24px/></a>
+            <a id='360b' onclick="_360on()"><img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/360.png" width=24px height=24px/></a>
+            <a id='fsoub' onclick="fsouon()"><img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/fsou.ico" width=24px height=24px/></a>
+            <a id='githubb'onclick="githubon()"><img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/gh.png" width=24px height=24px/></a>
+            <a id='gtransb' onclick="gtranson()"><img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/gtrans.ico" width=24px height=24px/></a>
+            <a id='bilibilib' onclick="bilibilion()"><img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/bilibili.ico" width=24px height=24px/></a>
+            <a id='zhihub'onclick="zhihuon()"><img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/zhihu.ico" width=24px height=24px/></a>
+            <a id='gscholarb' onclick="gscholaron()"><img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/gscholar.png" width=24px height=24px/></a>
+          </center>
+        </div>
+      </div>
+      <div class="clear-s"></div>
+      <div id="google">
+        <form action="https://www.google.com/search" method="get" target="_blank" autocomplete="off">
+          <input class="user-input" size="38" type="text" autofocus='autofocus'  placeholder="Google" name="q" onfocus="javascript:this.value=''"/>
+          <input type="submit" value="搜索" class="user-btn"/> 
+        </form>
+      </div>
+      <div id="bing">
+        <form action="https://cn.bing.com/search" method="get" target="_blank" autocomplete="off"> 
+          <input class="user-input" size="38" type="text" autofocus='autofocus' placeholder="微软Bing" name="q" onfocus="javascript:this.value=''"/>
+          <input type="submit" value="搜索" class="user-btn">   
+        </form> 
+      </div>
+      <div id="baidu">
+        <form action="https://www.baidu.com/s" target="_blank" method="get" autocomplete="off">
+          <input class="user-input" size="38" type="text" autofocus='autofocus' placeholder="百度一下" name="word" onfocus="javascript:this.value=''"/>
+          <input type="submit" value="搜索" class="user-btn">
+        </form>
+      </div>
+      <div id="sogou">
+        <form action="https://www.sogou.com/web" target="_blank" method="get" autocomplete="off">
+          <input class="user-input" size="38" type="text" autofocus='autofocus' placeholder="搜狗搜索" name="query" onfocus="javascript:this.value=''"/>
+          <input type="submit" value="搜索" class="user-btn">
+        </form>
+      </div>
+      <div id="360">
+        <form action="https://www.so.com/s" target="_blank" method="get" autocomplete="off">
+          <input class="user-input" size="38" type="text" autofocus='autofocus' placeholder="360搜索" name="q" onfocus="javascript:this.value=''"/>
+          <input type="submit" value="搜索" class="user-btn">
+        </form>
+      </div>
+      <div id="fsou">
+        <form action="https://fsofso.com/search" target="_blank" method="get" autocomplete="off">
+          <input class="user-input" size="38" type="text" autofocus='autofocus' placeholder="F搜" name="q" onfocus="javascript:this.value=''"/>
+          <input type="submit" value="搜索" class="user-btn">
+        </form>
+      </div>
+      <div id="github">
+        <form action="https://github.com/search" target="_blank" method="get" autocomplete="off">
+          <input class="user-input" size="38" type="text" autofocus='autofocus' placeholder="Github" name="text" onfocus="javascript:this.value=''"/>
+          <input type="submit" value="搜索" class="user-btn">
+        </form>
+      </div>
+      <div id="gtrans">
+        <form action="https://translate.google.cn/" target="_blank" method="get" autocomplete="off">
+          <input class="user-input" size="38" type="text" autofocus='autofocus' placeholder="Google Translate" name="text" onfocus="javascript:this.value=''"/>
+          <input type="submit" value="搜索" class="user-btn">
+        </form>
+      </div>
+      <div id="bilibili">
+        <form action="https://search.bilibili.com/all" target="_blank" method="get" autocomplete="off">
+          <input class="user-input" size="38" type="text" autofocus='autofocus' placeholder="bilibili" name="keyword" onfocus="javascript:this.value=''"/>
+          <input type="submit" value="搜索" class="user-btn">
+        </form>
+      </div>
+      <div id="zhihu">
+        <form action="https://www.zhihu.com/search" target="_blank" method="get" autocomplete="off">
+          <input class="user-input" size="38" type="text" autofocus='autofocus' placeholder="知乎" name="q" onfocus="javascript:this.value=''"/>
+          <input type="submit" value="搜索" class="user-btn">
+        </form>
+      </div>
+      <div id="gscholar">
+        <form action="https://scholar.google.com/scholar" target="_blank" method="get" autocomplete="off">
+          <input class="user-input" size="38" type="text" autofocus='autofocus' placeholder="Google Scholar" name="q" onfocus="javascript:this.value=''"/>
+          <input type="submit" value="搜索" class="user-btn">
+        </form>
+      </div>
+      <div class="clear-s"></div>
+      <script type="text/javascript" src="js/search.js"></script>
+    </div>
+
+    <div class="nav">
+    <h3>摸鱼 <i></i></h3>
+      <a href="https://www.bilibili.com" target="_blank">bilibili</a>
+      <a href="https://www.iqiyi.com" target="_blank">爱奇艺</a>
+      <a href="https://www.youku.com" target="_blank">优酷</a>
+      <a href="https://v.qq.com" target="_blank">腾讯视频</a>
+      <a href="https://y.qq.com" target="_blank">QQ音乐</a>
+      <a href="https://music.163.com" target="_blank">网易云音乐</a>
+      <a href="https://www.acfun.cn" target="_blank">ACFUN</a>
+      <a href="https://tv.cctv.com" target="_blank">CCTV</a>
+      <a href="https://store.steampowered.com/" target="_blank">steam</a>
+      <a href="https://www.douyin.com" target="_blank">抖音</a>
+      <a href="http://youtu.be" target="_blank">youtube</a>
+      <a href="http://www.4399.com" target="_blank">4399小游戏</a>
+      <a href="https://ys.mihoyo.com" target="_blank">原神</a>
+    <div class="clear"></div>
+    </div>
+
+    <div class="nav">
+    <h3>程序员与科技<i></i></h3>
+      <a href="https://www.github.com" target="_blank">Github</a>
+      <a href="https://developer.mozilla.org/" target="_blank">MDN</a>
+      <a href="https://www.w3school.com.cn/" target="_blank">W3school</a>
+      <a href="https://www.runoob.com/" target="_blank">菜鸟</a>
+      <a href="https://www.gitee.com" target="_blank">gitee</a>
+      <a href="https://gitlab.com/" target="_blank">GitLab</a>
+      <a href="https://sourceforge.net/" target="_blank">SourceForge</a>
+      <a href="https://www.csdn.net" target="_blank">CSDN</a>
+      <a href="https://juejin.cn/" target="_blank">掘金</a>
+      <a href="https://git-scm.com/" target="_blank">git</a>
+      <a href="https://cn.vuejs.org/" target="_blank">Vue.js</a>
+      <a href="https://nuxtjs.org/" target="_blank">nuxt.js</a>
+      <a href="https://zh-hans.reactjs.org/" target="_blank">react.js</a>
+      <a href="https://www.electronjs.org/" target="_blank">vue.js</a>
+      <a href="https://jquery.com/" target="_blank">jQuery.js</a>
+      <a href="https://angularjs.org/" target="_blank">Angular.js</a>
+      <a href="https://www.typescriptlang.org/zh/" target="_blank">TypeScript</a>
+      <a href="https://www.docker.com/" target="_blank">Docker</a>
+      <a href="https://www.openzui.com/" target="_blank">zui</a>
+      <a href="https://www.bootcss.com/" target="_blank">Bootstrap</a>
+      <a href="https://codepen.io/" target="_blank">CodePen</a>
+      <a href="https://element.eleme.cn/#/zh-CN" target="_blank">element</a>
+      <a href="https://www.iviewui.com/" target="_blank">iview</a>
+      <a href="https://www.deepl.com/translator" target="_blank">deepl翻译</a>
+      <a href="https://www.antdv.com/components/overview" target="_blank">Ant-dv</a>
+      <a href="https://git-scm.com/" target="_blank">git</a>
+      <a href="https://vitejs.dev/" target="_blank">vite.js</a>
+      <a href="https://css.bqrdh.com/" target="_blank">CSS设计</a> 
+      <a href="https://nodejs.org/zh-cn/" target="_blank">Node.js</a>
+      <a href="https://leetcode-cn.com/" target="_blank">力扣</a>
+      <a href="http://www.36kr.com/" target="_blank">36氪</a>
+      <a href="https://typescript.bootcss.com/" target="_blank">typescript</a>
+      <a href="https://www.qiniu.com/" target="_blank">七牛云</a>
+      <a href="https://www.cloudflare.com/" target="_blank">Cloudflare</a>
+      <a href="https://www.dnspod.cn/" target="_blank">DNSPOD</a>
+      <a href="https://cloud.tencent.com/" target="_blank">腾讯云</a>
+      <a href="https://aliyun.com/" target="_blank">阿里云</a>
+      <a href="https://www.huaweicloud.com/" target="_blank">华为云</a>
+      <a href="https://uniapp.dcloud.io/" target="_blank">uniapp</a>
+      <a href="https://segmentfault.com/" target="_blank">思否</a>
+      <a href="https://www.oschina.net/" target="_blank">开源中国</a>
+      <a href="https://www.python.org/" target="_blank">Python</a>
+      <a href="https://www.php.net/" target="_blank">php</a>
+      <a href="https://www.oracle.com/cn/java/" target="_blank">Java</a>
+      <a href="https://cdnjs.com/" target="_blank">cdnjs</a>
+      <a href="https://www.w3cschool.cn/" target="_blank">编程狮</a>
+      <a href="https://www.jetbrains.com/" target="_blank">JetBrains</a>
+      <a href="https://golang.google.cn/" target="_blank">Golang</a>
+      <a href="https://developer.android.google.cn/" target="_blank">Android</a>
+      <a href="https://www.pcbeta.com/" target="_blank">远景论坛</a> 
+      <a href="https://www.coolapk.com/" target="_blank">酷安</a> 
+      <a href="https://www.feng.com/" target="_blank">威锋</a> 
+      <div class="clear"></div>
+    </div>
+
+    <div class="nav">
+    <h3>社交<i></i></h3>
+      <a href="https://www.douban.com" target="_blank">豆瓣</a>
+      <a href="https://www.zhihu.com" target="_blank">知乎</a>
+      <a href="https://www.jianshu.com" target="_blank">简书</a>
+      <a href="https://wx.qq.com/" target="_blank">微信</a>
+      <a href="https://qzone.qq.com/" target="_blank">QQ空间</a>
+      <a href="https://www.weibo.com" target="_blank">新浪微博</a>
+      <a href="https://www.v2ex.com/" target="_blank">v2ex</a>
+      <a href="https://www.instagram.com/" target="_blank">ins</a>
+      <a href="https://www.twitter.com/" target="_blank">twitter</a>
+      <a href="https://www.yuque.com/" target="_blank">语雀</a>
+      <a href="https://www.vk.com/" target="_blank">VK</a>
+      <a href="https://web.whatsapp.com/" target="_blank">WhatsApp</a>
+      <a href="https://web.telegram.org/" target="_blank">Telegram</a>
+      <a href="https://www.facebook.com" target="_blank">Facebook</a>
+      <a href="https://web.icq.com/" target="_blank">ICQ-NEW</a>
+      <div class="clear"></div>
+    </div>
+
+    <div class="nav">
+    <h3>工具<i></i></h3>
+      <a href="https://ip138.com" target="_blank">ip138</a>
+      <a href="https://milkdown.dev/" target="_blank">在线md编辑器</a>
+      <a href="https://convertio.co" target="_blank">Convertio</a>
+      <a href="https://remove.bg/" target="_blank">去背景</a>
+      <a href="https://www.photopea.com/" target="_blank">在线PS</a>
+      <a href="https://editor.method.ac/" target="_blank">SVG Editor</a>
+      <a href="https://app.diagrams.net/" target="_blank">在线流程图</a>
+      <a href="https://translate.google.cn/" target="_blank">Google翻译</a>
+      <a href="https://math.microsoft.com/zh" target="_blank">数学</a>
+      <a href="https://cowtransfer.com/" target="_blank">奶牛快传</a>
+      <a href="https://5iux.cn/base64/" target="_blank">base64</a>
+      <a href="https://ping.pe" target="_blank">ping.pe</a>
+      <a href="https://www.ilovepdf.com/zh-cn" target="_blank">I love PDF</a>
+      <a href="https://www.iloveimg.com/zh-cn" target="_blank">I love IMG</a>  
+      <a href="https://tool.chinaz.com/" target="_blank">站长工具</a> 
+      <a href="http://passer-by.com/relationship/" target="_blank">家族计算器</a> 
+      <a href="https://zzkia.noddl.me//" target="_blank">诺基亚图片</a> 
+      <a href="https://bing.ioliu.cn/" target="_blank">每日必应</a> 
+      <a href="https://ghproxy.com/" target="_blank">Github加速</a>
+      <a href="https://hoppscotch.io/cn" target="_blank">接口调试</a>
+      <a href="https://regexr.com/" target="_blank">Regexr</a>
+      <a href="https://json.pizza/" target="_blank">在线JSON</a>
+      <a href="https://excalidraw.com/" target="_blank">在线白板</a>
+      <a href="https://crontab.guru/" target="_blank">计时器</a>
+      <div class="clear"></div>
+    </div>
+
+    <div class="nav">
+    <h3>设计<i></i></h3>
+      <a href="https://huaban.com/" target="_blank">花瓣</a>
+      <a href="https://www.bigbigwork.com/" target="_blank">大作</a>
+      <a href="https://dribbble.com/" target="_blank">Dribble</a>
+      <a href="https://www.uisdc.com/" target="_blank">优设</a>
+      <a href="http://www.qijishow.com/Brand/Brand23/index.htm" target="_blank">绘画艺术</a>
+      <a href="https://www.mepai.me/" target="_blank">米拍摄影</a>
+      <a href="https://1x.com/" target="_blank">1X</a>
+      <a href="https://www.skypixel.com/" target="_blank">天空之城</a>
+      <a href="https://giphy.com/" target="_blank">GIPHY</a>
+      <a href="https://color.adobe.com/zh/create/color-wheel/" target="_blank">Adobe Color</a>
+      <a href="https://www.zcool.com.cn/" target="_blank">站酷</a>
+      <a href="https://www.btbat.com/" target="_blank">R站</a>
+      <a href="https://thenounproject.com/" target="_blank">Noun Project</a>
+      <a href="https://www.artstation.com/" target="_blank">ArtStation</a>
+      <a href="https://www.nipic.com/index.html" target="_blank">昵图网</a>
+      <a href="https://www.kuque.com/" target="_blank">酷雀</a>
+      <a href="https://color.adobe.com/zh/explore/newest/" target="_blank">Adobe Color CC</a>
+      <a href="https://uidesigndaily.com" target="_blank">每日UI</a>
+      <a href="http://tool.c7sky.com/webcolor/" target="_blank">网页配色</a>
+      <a href="https://jianwai.youdao.com" target="_blank">网易见外</a>   
+      <a href="https://www.figma.com/" target="_blank">Figma</a>
+      <a href="https://js.design" target="_blank">即时设计</a>
+      <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+      <a href="https://tinypng.com/" target="_blank">TinyPNG</a>
+      <a href="https://www.91sotu.com/" target="_blank">搜图导航</a>
+      <a href="https://webgradients.com/" target="_blank">itemo</a>
+      <a href="https://www.iconfont.cn/" target="_blank">iconfont</a>
+      <a href="https://materialuicolors.co/" target="_blank">Material UI Colors</a>
+      <a href="http://zhongguose.com/" target="_blank">中国色</a>
+      <a href="https://hao.sheboo.com/" target="_blank">设宝导航</a>
+      <a href="https://www.pexels.com/zh-cn/" target="_blank">Pexels</a>
+      <a href="https://pixabay.com/" target="_blank">Pixabay</a>
+      <a href="https://colorhub.me/" target="_blank">Color Hub</a>
+      <a href="https://www.gaoding.com/" target="_blank">稿定设计</a>
+      <a href="https://www.baoxiaohe.com/" target="_blank">包小盒</a>
+      <a href="https://www.ui.cn/" target="_blank">UICN</a>
+      <a href="https://www.zhisheji.com/" target="_blank">致设计</a>
+      <a href="https://freepik.com" target="_blank">FreePik</a>
+      <a href="https://90sheji.com/" target="_blank">90设计</a>
+      <a href="https://uicool123.com/" target="_blank">UI酷</a>
+      <a href="https://www.58pic.com/" target="_blank">千图网</a>
+      <a href="https://699pic.com/" target="_blank">摄图网</a>
+      <a href="https://ibaotu.com/" target="_blank">包图网</a>
+      <a href="https://www.fotor.com/cn/" target="_blank">Fotor</a>
+      <a href="https://www.fengniao.com/" target="_blank">蜂鸟网</a>
+      <div class="clear"></div>
+    </div>
+
+    <div class="nav">
+    <h3>新闻和资讯<i></i></h3>
+      <a href="https://news.qq.com/" target="_blank">腾讯网</a>
+      <a href="https://news.163.com/" target="_blank">网易网</a>
+      <a href="https://www.sina.com.cn/" target="_blank">新浪网</a>
+      <a href="https://www.msn.cn/zh-cn/" target="_blank">MSN</a>
+      <a href="https://www.cctv.com/" target="_blank">央视网</a>
+      <div class="clear"></div>
+    </div>
+
+    <div class="nav">
+    <h3>学术<i></i></h3>
+      <a href="https://scholar.google.com/" target="_blank">Google学术搜索</a>
+      <a href="https://www.cnki.net/" target="_blank">知网</a>
+      <a href="https://sci-hub.se/" target="_blank">scihub</a>
+      <a href="https://xueshu.baidu.com/" target="_blank">百度学术</a>
+      <a href="https://www.icourse163.org/" target="_blank">Mooc</a>
+      <a href="https://zh.wikipedia.org/" target="_blank">Wikipedia</a>   
+      <a href="https://ykt.eduyun.cn/" target="_blank">国家中小学网络教育云平台</a>  
+      <div class="clear"></div>
+    </div>
+
+    <div class="nav">
+    <h3>汁源<i></i></h3>
+      <a href="https://ghxi.com/" target="_blank">果核剥壳</a>
+      <a href="https://www.jiumodiary.com/" target="_blank">电子书</a>
+      <a href="https://nite07.com/" target="_blank">Nite07</a>
+      <a href="https://www.appinn.com/" target="_blank">小众软件</a>
+      <a href="https://foxirj.com/" target="_blank">佛系软件</a>
+      <a href="https://macwk.com/" target="_blank">Macwk</a> 
+      <a href="https://sspai.com/" target="_blank">少数派</a>
+      <a href="https://www.extfans.com/" target="_blank">扩展迷extfans</a>
+      <a href="https://msdn.itellyou.cn/" target="_blank">MSDN</a>
+      <a href="https://mirrors.tuna.tsinghua.edu.cn/" target="_blank">清华大学镜像站</a>
+      <a href="https://developer.aliyun.com/mirror/" target="_blank">阿里镜像站</a>
+      <a href="https://mirror.lzu.edu.cn/" target="_blank">兰州大学镜像站</a>
+      <a href="https://mirrors.cloud.tencent.com/" target="_blank">腾讯软件源</a>
+      <a href="https://mirrors.huaweicloud.com/home" target="_blank">华为镜像站</a>
+      <a href="https://mirrors.163.com/" target="_blank">网易镜像站</a>
+      <a href="https://www.52pojie.cn/" target="_blank">吾爱破解论坛</a>
+      <a href="https://www.dytt89.com/" target="_blank">电影下载</a>
+      <div class="clear"></div>
+    </div>
+
+    <div class="nav">
+    <h3>办公<i></i></h3>
+      <a href="https://docs.qq.com/desktop/" target="_blank">腾讯文档</a>
+      <a href="https://txc.qq.com/" target="_blank">兔小巢</a>
+      <a href="https://www.zhixi.com/" target="_blank">知犀思维导图</a>
+      <a href="https://drive.google.com/" target="_blank">谷歌云端硬盘</a>
+      <a href="https://onedrive.com/" target="_blank">onedrive</a>
+      <a href="https://teams.live.com/" target="_blank">Teams</a>
+      <a href="https://shimo.im/" target="_blank">石墨</a>
+      <a href="https://im.dingtalk.com/" target="_blank">钉钉</a>   
+      <a href="https://skype.gmw.cn/" target="_blank">skype</a>
+      <a href="https://trello.com" target="_blank">trello</a>
+      <a href="https://www.yozocloud.cn/index.html" target="_blank">永中文档</a>
+      <a href="https://www.kdocs.cn/" target="_blank">金山文档</a>   
+      <a href="https://www.officeplus.cn/" target="_blank">officeplus</a>  
+      <a href="https://www.pptsupermarket.com/" target="_blank">PPT超级市场</a>   
+    <div class="clear"></div>
+    </div>
+
+    <div class="nav">
+    <h3>邮箱<i></i></h3>
+      <a href="https://mail.qq.com/" target="_blank">QQ邮箱</a>
+      <a href="https://live.com" target="_blank">Outlook</a>
+      <a href="https://mail.google.com" target="_blank">Gmail</a>
+      <a href="https://email.163.com/" target="_blank">网易邮箱</a>
+      <a href="https://mail.sina.com.cn" target="_blank">新浪邮箱</a>
+      <a href="https://mail.aliyun.com/" target="_blank">阿里邮箱</a>
+      <div class="clear"></div>
+    </div>
+
+    <div class="nav">
+    <h3>Minecraft<i></i></h3>
+      <a href="https://minecraft.net" target="_blank">Minecraft</a>
+      <a href="https://mc.163.com" target="_blank">我的世界</a>
+      <a href="https://www.mcmod.cn/" target="_blank">MC百科</a>
+      <a href="https://www.mcbbs.net/" target="_blank">MCBBS</a>
+      <a href="https://minecraft.fandom.com/zh/" target="_blank">Minecraft Wiki</a>
+      <a href="https://wiki.biligame.com/mc/" target="_blank">MCWiki镜像站</a>
+    <div class="clear"></div>
+    </div>
+      
+    <div class="nav">
+    <h3>购物 <i></i></h3>
+      <a href="https://www.smzdm.com" target="_blank">什么值得买</a>
+      <a href="https://www.taobao.com" target="_blank">淘宝</a>
+      <a href="https://www.jd.com" target="_blank">京东</a>
+      <a href="https://www.tmall.com" target="_blank">天猫</a>
+      <a href="https://www.1688.com" target="_blank">1688</a>
+      <a href="https://www.z.cn" target="_blank">亚马逊</a>
+      <a href="https://www.vip.com" target="_blank">唯品会</a>
+      <a href="https://www.dangdang.com" target="_blank">当当</a>
+      <a href="https://www.suning.com" target="_blank">苏宁</a>
+    <div class="clear"></div>
+    </div>
+
+    <div class="nav">
+    <h3>生活 <i></i></h3>
+      <a href="https://www.ctrip.com" target="_blank">携程</a>
+      <a href="https://www.qunar.com" target="_blank">去哪儿</a>
+      <a href="https://58.com" target="_blank">58</a>
+      <a href="https://ele.me" target="_blank">饿了么</a>
+      <a href="https://meituan.com/" target="_blank">美团</a>
+      <a href="https://www.dianping.com" target="_blank">大众点评</a>
+      <a href="https://www.12306.cn/" target="_blank">12306</a>
+    <div class="clear"></div>
+    </div>
+
+    <div class="nav">
+    <h3>关注站长<i></i></h3>
+      <a href="https://www.littleyan.tk">个人主页</a>
+      <a href="https://blog.littleyan.tk">Blog</a>
+      <a href="https://tools.littleyan.tk">小工具</a>
+      <a href='https://pan.littleyan.tk'>颜小盘</a>
+      <a href="https://pay.littleyan.tk">打赏</a>
+      <a href="https://space.bilibili.com/593963058" target="_blank">bilibili主页</a>
+      <a href="https://github.com/Dayanshifu" target="_blank">github主页</a>
+      <a href="https://gitee.com/Dayanshifu" target="_blank">gitee主页</a>
+      <a href="https://github.com/Dayanshifu/imagebed" target="_blank">图床</a>
+      <a href="mailto:dayanshifu@outlook.com">提交网站</a>
+
+    <div class="clear"></div>
+    </div>
+    
+    <div class="nav">
+      <h3>友链</h3>
+        <a href="https://glacier.tk/" target="_blank">冰川工作室</a>
+        <a href="http://www.yizhipikaqiu.top" target="_blank">一只皮卡丘.</a>
+        <a href="https://www.cpteam.tk" target="_blank">CPT工作室</a>
+        <a href="http://blog.slightning.tk" target="_blank">SLIGHTNINGのBlog</a>
+        <div class="clear"></div>
+    </div>
+    
+    <div class="ad">
+      <h3>恰饭广告还请支持</h3>
+        <h4>广告位招租，详情加qq<a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=3617406701">3617406701</a></h4>
+    </div>
+
+    <p style="color:#20a53a"><a href="https://www.qweather.com/">天气来源：和风天气</a>  |  <a href="https://www.littleyan.tk">Copyright(c) 是little颜鸭 </a></p>
+  </div>
+  
+</body>
+</html>
