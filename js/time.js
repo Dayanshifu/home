@@ -1,12 +1,16 @@
-function show(){ 
-    var date = new Date(); //日期对象 
-    var now = ""; 
-    now = date.getFullYear()+"年"; //读英文就行了 
-    now = now + (date.getMonth()+1)+"月"; //取月的时候取的是当前月-1如果想取当前月+1就可以了 
-    now = now + date.getDate()+"日"; 
-    now = now + date.getHours()+"时"; 
-    now = now + date.getMinutes()+"分"; 
-    now = now + date.getSeconds()+"秒"; 
-    document.getElementById("nowDiv").innerHTML = now; //div的html是now这个字符串 
-    setTimeout("show()",1000); //设置过1000毫秒就是1秒，调用show方法 
-    } 
+var days=new  Array ("日", "一", "二", "三", "四", "五", "六");
+function show() {
+  var currentDT = new Date();
+  var y,m,date,day,hs,ms,ss,theDateStr;
+  y = currentDT.getFullYear(); //四位整数表示的年份
+  m = currentDT.getMonth(); //月
+  date = currentDT.getDate(); //日
+  day = currentDT.getDay(); //星期
+  hs = currentDT.getHours(); //时
+  ms = currentDT.getMinutes(); //分
+  ss = currentDT.getSeconds(); //秒
+  theDateStr = y+"年"+  m +"月"+date+"日 星期"+days[day]+" "+hs+":"+ms+":"+ss;
+  document.getElementById("nowDiv"). innerHTML =theDateStr;
+  // setTimeout 在执行时,是在载入后延迟指定时间后,去执行一次表达式,仅执行一次
+  window.setTimeout(show, 1000);
+}

@@ -1,7 +1,7 @@
 
 .nav {
     border:solid 1px #00ff0059; 
-    margin-bottom:20px; 
+    margin-bottom:15px; 
     border-radius: 20px; 
     background-color: #d3ffde;
 }
@@ -50,7 +50,7 @@
 }
 .sc {
     border:solid 1px #00ff0059; 
-    margin-bottom:20px; 
+    margin-bottom:15px; 
     border-radius: 20px; 
     background-color: #d3ffde; 
     text-align: center;
@@ -59,7 +59,7 @@
     max-width: 1200px;
     margin: 0px auto 0px;
     background-color: #d3ffe7;
-    padding: 1% 5%;
+    padding: 0% 5%;
     border-radius: 25px;
     opacity:0.85
 }
@@ -138,4 +138,13 @@ body{
 @media only screen and (min-width: 600px) {
     .pcon{display: block;}
     .mbon{display: none;}
+}
+#timer {
+    color:#20a53a;
+    font-size: 25px;
+    margin: 0px auto 5px;
+    font-weight: bold;
+}
+div.container h1{
+    margin: 0px auto 10px;
 }
