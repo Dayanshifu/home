@@ -9,6 +9,7 @@ var  gtrans = document.getElementById('gtrans')
 var  bilibili = document.getElementById('bilibili')
 var  zhihu = document.getElementById('zhihu')
 var  gscholar = document.getElementById('gscholar')
+var  mdn = document.getElementById('mdn')
 //搜索的div
 var  googleb = document.getElementById('googleb')
 var  bingb = document.getElementById('bingb')
@@ -21,6 +22,7 @@ var  gtransb = document.getElementById('gtransb')
 var  bilibilib = document.getElementById('bilibilib')
 var  zhihub = document.getElementById('zhihub')
 var  gscholarb = document.getElementById('gscholarb')
+var  mdnb = document.getElementById('mdnb')
 function googleon(){
     localStorage.setItem("sc", "google")
     google.style.display="block";
@@ -34,6 +36,7 @@ function googleon(){
     bilibili.style.display="none";
     zhihu.style.display="none";
     gscholar.style.display="none";
+    mdn.style.display="none";
     googleb.setAttribute("class", "active"); 
     bingb.removeAttribute("class"); 
     baidub.removeAttribute("class"); 
@@ -45,6 +48,7 @@ function googleon(){
     bilibilib.removeAttribute("class"); 
     zhihub.removeAttribute("class"); 
     gscholarb.removeAttribute("class"); 
+    mdnb.removeAttribute("class"); 
 }
 function bingon(){
     localStorage.setItem("sc", "bing")
@@ -59,6 +63,7 @@ function bingon(){
     bilibili.style.display="none";
     zhihu.style.display="none";
     gscholar.style.display="none";
+    mdn.style.display="none";
     bingb.setAttribute("class", "active"); 
     googleb.removeAttribute("class"); 
     baidub.removeAttribute("class"); 
@@ -70,6 +75,7 @@ function bingon(){
     bilibilib.removeAttribute("class"); 
     zhihub.removeAttribute("class"); 
     gscholarb.removeAttribute("class"); 
+    mdnb.removeAttribute("class"); 
 }
 function baiduon(){
     localStorage.setItem("sc", "baidu")
@@ -84,6 +90,7 @@ function baiduon(){
     bilibili.style.display="none";
     zhihu.style.display="none";
     gscholar.style.display="none";
+    mdn.style.display="none";
     baidub.setAttribute("class", "active"); 
     bingb.removeAttribute("class"); 
     googleb.removeAttribute("class"); 
@@ -95,6 +102,7 @@ function baiduon(){
     bilibilib.removeAttribute("class"); 
     zhihub.removeAttribute("class"); 
     gscholarb.removeAttribute("class"); 
+    mdnb.removeAttribute("class"); 
 }
 function sogouon(){
     localStorage.setItem("sc", "sogou")
@@ -109,6 +117,7 @@ function sogouon(){
     bilibili.style.display="none";
     zhihu.style.display="none";
     gscholar.style.display="none";
+    mdn.style.display="none";
     sogoub.setAttribute("class", "active"); 
     bingb.removeAttribute("class"); 
     baidub.removeAttribute("class"); 
@@ -120,6 +129,7 @@ function sogouon(){
     bilibilib.removeAttribute("class"); 
     zhihub.removeAttribute("class"); 
     gscholarb.removeAttribute("class"); 
+    mdnb.removeAttribute("class"); 
 }
 function _360on(){
     localStorage.setItem("sc", "360")
@@ -134,6 +144,7 @@ function _360on(){
     bilibili.style.display="none";
     zhihu.style.display="none";
     gscholar.style.display="none";
+    mdn.style.display="none";
     _360b.setAttribute("class", "active"); 
     bingb.removeAttribute("class"); 
     baidub.removeAttribute("class"); 
@@ -145,6 +156,7 @@ function _360on(){
     bilibilib.removeAttribute("class"); 
     zhihub.removeAttribute("class"); 
     gscholarb.removeAttribute("class"); 
+    mdnb.removeAttribute("class"); 
 }
 function fsouon(){
     localStorage.setItem("sc", "fsou")
@@ -159,6 +171,7 @@ function fsouon(){
     bilibili.style.display="none";
     zhihu.style.display="none";
     gscholar.style.display="none";
+    mdn.style.display="none";
     fsoub.setAttribute("class", "active"); 
     bingb.removeAttribute("class"); 
     baidub.removeAttribute("class"); 
@@ -170,6 +183,7 @@ function fsouon(){
     bilibilib.removeAttribute("class"); 
     zhihub.removeAttribute("class"); 
     gscholarb.removeAttribute("class"); 
+    mdnb.removeAttribute("class"); 
 }
 function githubon(){
     localStorage.setItem("sc", "github")
@@ -184,6 +198,7 @@ function githubon(){
     bilibili.style.display="none";
     zhihu.style.display="none";
     gscholar.style.display="none";
+    mdn.style.display="none";
     githubb.setAttribute("class", "active"); 
     bingb.removeAttribute("class"); 
     baidub.removeAttribute("class"); 
@@ -195,6 +210,7 @@ function githubon(){
     bilibilib.removeAttribute("class"); 
     zhihub.removeAttribute("class"); 
     gscholarb.removeAttribute("class"); 
+    mdnb.removeAttribute("class"); 
 }
 function gtranson(){
     localStorage.setItem("sc", "gtrans")
@@ -209,6 +225,7 @@ function gtranson(){
     bilibili.style.display="none";
     zhihu.style.display="none";
     gscholar.style.display="none";
+    mdn.style.display="none";
     gtransb.setAttribute("class", "active"); 
     bingb.removeAttribute("class"); 
     baidub.removeAttribute("class"); 
@@ -220,6 +237,7 @@ function gtranson(){
     bilibilib.removeAttribute("class"); 
     zhihub.removeAttribute("class"); 
     gscholarb.removeAttribute("class"); 
+    mdnb.removeAttribute("class"); 
 }
 function bilibilion(){
     localStorage.setItem("sc", "bilibili")
@@ -234,6 +252,7 @@ function bilibilion(){
     google.style.display="none";
     zhihu.style.display="none";
     gscholar.style.display="none";
+    mdn.style.display="none";
     bilibilib.setAttribute("class", "active"); 
     bingb.removeAttribute("class"); 
     baidub.removeAttribute("class"); 
@@ -245,6 +264,7 @@ function bilibilion(){
     googleb.removeAttribute("class"); 
     zhihub.removeAttribute("class"); 
     gscholarb.removeAttribute("class"); 
+    mdnb.removeAttribute("class"); 
 }
 function zhihuon(){
     localStorage.setItem("sc", "zhihu")
@@ -259,6 +279,7 @@ function zhihuon(){
     bilibili.style.display="none";
     google.style.display="none";
     gscholar.style.display="none";
+    mdn.style.display="none";
     zhihub.setAttribute("class", "active"); 
     bingb.removeAttribute("class"); 
     baidub.removeAttribute("class"); 
@@ -270,6 +291,7 @@ function zhihuon(){
     bilibilib.removeAttribute("class"); 
     googleb.removeAttribute("class"); 
     gscholarb.removeAttribute("class"); 
+    mdnb.removeAttribute("class"); 
 }
 function gscholaron(){
     localStorage.setItem("sc", "gscholar")
@@ -284,6 +306,7 @@ function gscholaron(){
     bilibili.style.display="none";
     zhihu.style.display="none";
     google.style.display="none";
+    mdn.style.display="none";
     gscholarb.setAttribute("class", "active"); 
     bingb.removeAttribute("class"); 
     baidub.removeAttribute("class"); 
@@ -294,7 +317,35 @@ function gscholaron(){
     gtransb.removeAttribute("class"); 
     bilibilib.removeAttribute("class"); 
     zhihub.removeAttribute("class"); 
-    bgoogleb.removeAttribute("class"); 
+    googleb.removeAttribute("class"); 
+    mdnb.removeAttribute("class"); 
+}
+function mdnon(){
+    localStorage.setItem("sc", "mdn")
+    mdn.style.display="block";
+    bing.style.display="none";
+    baidu.style.display="none";
+    sogou.style.display="none";
+    _360.style.display="none";
+    fsou.style.display="none";
+    github.style.display="none";
+    gtrans.style.display="none";
+    bilibili.style.display="none";
+    zhihu.style.display="none";
+    gscholar.style.display="none";
+    google.style.display="none";
+    mdnb.setAttribute("class", "active"); 
+    bingb.removeAttribute("class"); 
+    baidub.removeAttribute("class"); 
+    sogoub.removeAttribute("class"); 
+    _360b.removeAttribute("class"); 
+    fsoub.removeAttribute("class"); 
+    githubb.removeAttribute("class"); 
+    gtransb.removeAttribute("class"); 
+    bilibilib.removeAttribute("class"); 
+    zhihub.removeAttribute("class"); 
+    gscholarb.removeAttribute("class"); 
+    googleb.removeAttribute("class"); 
 }
 if( localStorage.getItem("sc") == null ){
     localStorage.setItem("sc", "bing")
@@ -331,4 +382,7 @@ if(localStorage.getItem("sc") == 'bilibili'){
 }
 if(localStorage.getItem("sc") == 'gscholar'){
     gscholaron()
+}
+if(localStorage.getItem("sc") == 'mdn'){
+    mdnon()
 }
