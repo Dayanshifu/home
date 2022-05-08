@@ -6,10 +6,12 @@
   <title>haolittle颜网址导航_上网从这里开始！</title>
   <link rel="icon" href="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/favicon.ico"/>
   <link rel="stylesheet" type="text/css" href="css/all.css" />
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script>
 </head>
 <body onload="show()">
   <div class="container">
     <div class="clear"></div>
+    <!--仅电脑展示天气插件-->
     <div class="pcon">
       <center>
         <div id="he-plugin-standard"></div>
@@ -18,109 +20,45 @@
       </center>
     </div>
     <div class="mbon"><h1 style="color:#20a53a">电脑食用体验更佳！</h1></div>
+    <!--展示时间-->
     <div id="timer">
       <script type="text/javascript" src="js/time.js"></script> 
       <div id="nowDiv"></div>
     </div>
       <hr style='background-color:#20a53a; height:1px; border:none;'/>
       <h1>hao-little颜网址导航 上网从这里开始!</h1>
+    <!--搜索开始-->
     <div class="sc">
       <div class="clear-s"></div>
       <div class="chose">
         <div>
           <center>
-            <a id='googleb'onclick="googleon()"><img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/google.png" width=24px height=24px/></a>
-            <a id='bingb' onclick="bingon()"class="active"><img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/bing.ico" width=24px height=24px/></a>
-            <a id='baidub' onclick="baiduon()"><img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/baidu.ico" width=24px height=24px/></a>
-            <a id='sogoub'onclick="sogouon()"><img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/sogou.ico" width=24px height=24px/></a>
-            <a id='360b' onclick="_360on()"><img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/360.png" width=24px height=24px/></a>
-            <a id='fsoub' onclick="fsouon()"><img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/fsou.ico" width=24px height=24px/></a>
-            <a id='githubb'onclick="githubon()"><img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/gh.png" width=24px height=24px/></a>
-            <a id='gtransb' onclick="gtranson()"><img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/gtrans.ico" width=24px height=24px/></a>
-            <a id='bilibilib' onclick="bilibilion()"><img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/bilibili.ico" width=24px height=24px/></a>
-            <a id='zhihub'onclick="zhihuon()"><img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/zhihu.ico" width=24px height=24px/></a>
-            <a id='gscholarb' onclick="gscholaron()"><img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/gscholar.png" width=24px height=24px/></a>
-            <a id='mdnb' onclick="mdnon()"><img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/mdn.png" width=24px height=24px/></a>
+            <a id='google'onclick="googleon()"><img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/google.png" width=24px height=24px/></a>
+            <a id='bing' onclick="bingon()"class="active"><img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/bing.ico" width=24px height=24px/></a>
+            <a id='baidu' onclick="baiduon()"><img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/baidu.ico" width=24px height=24px/></a>
+            <a id='sogou'onclick="sogouon()"><img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/sogou.ico" width=24px height=24px/></a>
+            <a id='360' onclick="_360on()"><img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/360.png" width=24px height=24px/></a>
+            <a id='fsou' onclick="fsouon()"><img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/fsou.ico" width=24px height=24px/></a>
+            <a id='github'onclick="githubon()"><img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/gh.png" width=24px height=24px/></a>
+            <a id='gtrans' onclick="gtranson()"><img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/gtrans.ico" width=24px height=24px/></a>
+            <a id='bilibili' onclick="bilibilion()"><img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/bilibili.ico" width=24px height=24px/></a>
+            <a id='zhihu'onclick="zhihuon()"><img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/zhihu.ico" width=24px height=24px/></a>
+            <a id='gscholar' onclick="gscholaron()"><img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/gscholar.png" width=24px height=24px/></a>
+            <a id='mdn' onclick="mdnon()"><img src="https://cdn.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/mdn.png" width=24px height=24px/></a>
           </center>
         </div>
       </div>
       <div class="clear-s"></div>
-      <div id="google">
-        <form action="https://www.google.com/search" method="get" target="_blank" autocomplete="off">
-          <input class="user-input" size="38" type="text" autofocus='autofocus'  placeholder="Google" name="q" onfocus="javascript:this.value=''"/>
-          <input type="submit" value="搜索" class="user-btn"/> 
-        </form>
-      </div>
-      <div id="bing">
-        <form action="https://cn.bing.com/search" method="get" target="_blank" autocomplete="off"> 
-          <input class="user-input" size="38" type="text" autofocus='autofocus' placeholder="微软Bing" name="q" onfocus="javascript:this.value=''"/>
-          <input type="submit" value="搜索" class="user-btn">   
-        </form> 
-      </div>
-      <div id="baidu">
-        <form action="https://www.baidu.com/s" target="_blank" method="get" autocomplete="off">
-          <input class="user-input" size="38" type="text" autofocus='autofocus' placeholder="百度一下，你就知道(bushi)" name="word" onfocus="javascript:this.value=''"/>
-          <input type="submit" value="搜索" class="user-btn">
-        </form>
-      </div>
-      <div id="sogou">
-        <form action="https://www.sogou.com/web" target="_blank" method="get" autocomplete="off">
-          <input class="user-input" size="38" type="text" autofocus='autofocus' placeholder="上网从搜狗开始" name="query" onfocus="javascript:this.value=''"/>
-          <input type="submit" value="搜索" class="user-btn">
-        </form>
-      </div>
-      <div id="360">
-        <form action="https://www.so.com/s" target="_blank" method="get" autocomplete="off">
-          <input class="user-input" size="38" type="text" autofocus='autofocus' placeholder="360搜索,so靠谱" name="q" onfocus="javascript:this.value=''"/>
-          <input type="submit" value="搜索" class="user-btn">
-        </form>
-      </div>
-      <div id="fsou">
-        <form action="https://fsofso.com/search" target="_blank" method="get" autocomplete="off">
-          <input class="user-input" size="38" type="text" autofocus='autofocus' placeholder="F搜" name="q" onfocus="javascript:this.value=''"/>
-          <input type="submit" value="搜索" class="user-btn">
-        </form>
-      </div>
-      <div id="github">
-        <form action="https://github.com/search" target="_blank" method="get" autocomplete="off">
-          <input class="user-input" size="38" type="text" autofocus='autofocus' placeholder="Github" name="q" onfocus="javascript:this.value=''"/>
-          <input type="submit" value="搜索" class="user-btn">
-        </form>
-      </div>
-      <div id="gtrans">
-        <form action="https://translate.google.cn/" target="_blank" method="get" autocomplete="off">
-          <input class="user-input" size="38" type="text" autofocus='autofocus' placeholder="Google Translate" name="text" onfocus="javascript:this.value=''"/>
-          <input type="submit" value="搜索" class="user-btn">
-        </form>
-      </div>
-      <div id="bilibili">
-        <form action="https://search.bilibili.com/all" target="_blank" method="get" autocomplete="off">
-          <input class="user-input" size="38" type="text" autofocus='autofocus' placeholder="(゜-゜)つロ 干杯~" name="keyword" onfocus="javascript:this.value=''"/>
-          <input type="submit" value="搜索" class="user-btn">
-        </form>
-      </div>
-      <div id="zhihu">
-        <form action="https://www.zhihu.com/search" target="_blank" method="get" autocomplete="off">
-          <input class="user-input" size="38" type="text" autofocus='autofocus' placeholder="有问题，上知乎" name="q" onfocus="javascript:this.value=''"/>
-          <input type="submit" value="搜索" class="user-btn">
-        </form>
-      </div>
-      <div id="gscholar">
-        <form action="https://scholar.google.com/scholar" target="_blank" method="get" autocomplete="off">
-          <input class="user-input" size="38" type="text" autofocus='autofocus' placeholder="Google Scholar" name="q" onfocus="javascript:this.value=''"/>
-          <input type="submit" value="搜索" class="user-btn">
-        </form>
-      </div>
-      <div id="mdn">
-        <form action="https://developer.mozilla.org/zh-CN/search" target="_blank" method="get" autocomplete="off">
-          <input class="user-input" size="38" type="text" autofocus='autofocus' placeholder="MDN docs" name="q" onfocus="javascript:this.value=''"/>
-          <input type="submit" value="搜索" class="user-btn">
-        </form>
-      </div>
-      <div class="clear-s"></div>
-      <script type="text/javascript" src="js/search.js"></script>
+      <form id="sc" action="https://www.google.com/search" method="get" target="_blank" autocomplete="off">
+        <input id="sc-text" class="user-input" size="38" type="text" autofocus='autofocus'  placeholder="Google" name="q"/>
+        <input type="submit" value="搜索" class="user-btn"/> 
+      </form>
+      <script src="js/search.js"></script>
+      <ul id="word" style="display: none;"></ul>
+      <script src="js/sou.js"></script>
     </div>
-
+    <!--搜索结束-->
+    <!--网站收录-->
     <div class="nav">
     <h3>摸鱼 <i></i></h3>
       <a href="https://www.bilibili.com" target="_blank">bilibili</a>
@@ -426,7 +364,7 @@
         <a href="https://glacier.tk/" target="_blank">冰川工作室</a>
         <a href="http://www.yizhipikaqiu.top" target="_blank">一只皮卡丘.</a>
         <a href="https://www.computer-programs-team.tk" target="_blank">CPT工作室</a>
-        <a href="http://blog.slightning.tk" target="_blank">SLIGHTNINGのBlog</a>
+        <a href="https://slightning.tk" target="_blank">SLIGHTNING</a>
         <div class="clear"></div>
     </div>
     

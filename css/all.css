@@ -148,3 +148,27 @@ body{
 div.container h1{
     margin: 0px auto 10px;
 }
+#word{ 
+    position: absolute; 
+    list-style: none; 
+    left:25%;
+    right:25%;
+    margin;:auto;
+    background: #d3ffde; 
+    border-radius: 5px;
+    padding: 15px 10px; 
+    box-shadow: 0 0 10px #aaa; 
+}
+#word li{ 
+    height:35px; 
+    padding: 0 5px; 
+    text-indent: 30px; 
+    background: url(../img/sou.svg) no-repeat 5px; 
+    background-size: 20px;  
+    line-height: 35px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    border-radius: 5px;}
+#word li:hover{ 
+    background-color: #00ff0059;
+}

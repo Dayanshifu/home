@@ -1,351 +1,232 @@
-var  google = document.getElementById('google')
-var  bing = document.getElementById('bing')
-var  baidu = document.getElementById('baidu')
-var  sogou = document.getElementById('sogou')
-var  _360 = document.getElementById('360')
-var  fsou = document.getElementById('fsou')
-var  github = document.getElementById('github')
-var  gtrans = document.getElementById('gtrans')
-var  bilibili = document.getElementById('bilibili')
-var  zhihu = document.getElementById('zhihu')
-var  gscholar = document.getElementById('gscholar')
-var  mdn = document.getElementById('mdn')
-//搜索的div
-var  googleb = document.getElementById('googleb')
-var  bingb = document.getElementById('bingb')
-var  baidub = document.getElementById('baidub')
-var  sogoub = document.getElementById('sogoub')
-var  _360b = document.getElementById('360b')
-var  fsoub = document.getElementById('fsoub')
-var  githubb = document.getElementById('githubb')
-var  gtransb = document.getElementById('gtransb')
-var  bilibilib = document.getElementById('bilibilib')
-var  zhihub = document.getElementById('zhihub')
-var  gscholarb = document.getElementById('gscholarb')
-var  mdnb = document.getElementById('mdnb')
+var sc = document.getElementById('sc')
+var sc_text = document.getElementById('sc-text')
+var google = document.getElementById('google')
+var bing = document.getElementById('bing')
+var baidu = document.getElementById('baidu')
+var sogou = document.getElementById('sogou')
+var _360 = document.getElementById('360')
+var fsou = document.getElementById('fsou')
+var github = document.getElementById('github')
+var gtrans = document.getElementById('gtrans')
+var bilibili = document.getElementById('bilibili')
+var zhihu = document.getElementById('zhihu')
+var gscholar = document.getElementById('gscholar')
+var mdn = document.getElementById('mdn')
 function googleon(){
     localStorage.setItem("sc", "google")
-    google.style.display="block";
-    bing.style.display="none";
-    baidu.style.display="none";
-    sogou.style.display="none";
-    _360.style.display="none";
-    fsou.style.display="none";
-    github.style.display="none";
-    gtrans.style.display="none";
-    bilibili.style.display="none";
-    zhihu.style.display="none";
-    gscholar.style.display="none";
-    mdn.style.display="none";
-    googleb.setAttribute("class", "active"); 
-    bingb.removeAttribute("class"); 
-    baidub.removeAttribute("class"); 
-    sogoub.removeAttribute("class"); 
-    _360b.removeAttribute("class"); 
-    fsoub.removeAttribute("class"); 
-    githubb.removeAttribute("class"); 
-    gtransb.removeAttribute("class"); 
-    bilibilib.removeAttribute("class"); 
-    zhihub.removeAttribute("class"); 
-    gscholarb.removeAttribute("class"); 
-    mdnb.removeAttribute("class"); 
+    sc.setAttribute("action", "https://www.google.com/search")
+     sc_text.setAttribute("placeholder", "Google")
+     sc_text.setAttribute("name", "q")
+    google.setAttribute("class", "active"); 
+    bing.removeAttribute("class"); 
+    baidu.removeAttribute("class"); 
+    sogou.removeAttribute("class"); 
+    _360.removeAttribute("class"); 
+    fsou.removeAttribute("class"); 
+    github.removeAttribute("class"); 
+    gtrans.removeAttribute("class"); 
+    bilibili.removeAttribute("class"); 
+    zhihu.removeAttribute("class"); 
+    gscholar.removeAttribute("class"); 
+    mdn.removeAttribute("class"); 
 }
 function bingon(){
-    localStorage.setItem("sc", "bing")
-    bing.style.display="block";
-    google.style.display="none";
-    baidu.style.display="none";
-    sogou.style.display="none";
-    _360.style.display="none";
-    fsou.style.display="none";
-    github.style.display="none";
-    gtrans.style.display="none";
-    bilibili.style.display="none";
-    zhihu.style.display="none";
-    gscholar.style.display="none";
-    mdn.style.display="none";
-    bingb.setAttribute("class", "active"); 
-    googleb.removeAttribute("class"); 
-    baidub.removeAttribute("class"); 
-    sogoub.removeAttribute("class"); 
-    _360b.removeAttribute("class"); 
-    fsoub.removeAttribute("class"); 
-    githubb.removeAttribute("class"); 
-    gtransb.removeAttribute("class"); 
-    bilibilib.removeAttribute("class"); 
-    zhihub.removeAttribute("class"); 
-    gscholarb.removeAttribute("class"); 
-    mdnb.removeAttribute("class"); 
+    localStorage.setItem("sc", "bing") 
+    sc.setAttribute("action", "https://cn.bing.com/search")
+     sc_text.setAttribute("placeholder", "MIcrosoft Bing")
+     sc_text.setAttribute("name", "q")
+    bing.setAttribute("class", "active"); 
+    google.removeAttribute("class"); 
+    baidu.removeAttribute("class"); 
+    sogou.removeAttribute("class"); 
+    _360.removeAttribute("class"); 
+    fsou.removeAttribute("class"); 
+    github.removeAttribute("class"); 
+    gtrans.removeAttribute("class"); 
+    bilibili.removeAttribute("class"); 
+    zhihu.removeAttribute("class"); 
+    gscholar.removeAttribute("class"); 
+    mdn.removeAttribute("class"); 
 }
 function baiduon(){
-    localStorage.setItem("sc", "baidu")
-    baidu.style.display="block";
-    bing.style.display="none";
-    google.style.display="none";
-    sogou.style.display="none";
-    _360.style.display="none";
-    fsou.style.display="none";
-    github.style.display="none";
-    gtrans.style.display="none";
-    bilibili.style.display="none";
-    zhihu.style.display="none";
-    gscholar.style.display="none";
-    mdn.style.display="none";
-    baidub.setAttribute("class", "active"); 
-    bingb.removeAttribute("class"); 
-    googleb.removeAttribute("class"); 
-    sogoub.removeAttribute("class"); 
-    _360b.removeAttribute("class"); 
-    fsoub.removeAttribute("class"); 
-    githubb.removeAttribute("class"); 
-    gtransb.removeAttribute("class"); 
-    bilibilib.removeAttribute("class"); 
-    zhihub.removeAttribute("class"); 
-    gscholarb.removeAttribute("class"); 
-    mdnb.removeAttribute("class"); 
+    localStorage.setItem("sc", "baidu") 
+    sc.setAttribute("action", "https://www.baidu.com/s")
+     sc_text.setAttribute("placeholder", "百度一下，你就知道(bushi")
+     sc_text.setAttribute("name", "word")
+    baidu.setAttribute("class", "active"); 
+    bing.removeAttribute("class"); 
+    google.removeAttribute("class"); 
+    sogou.removeAttribute("class"); 
+    _360.removeAttribute("class"); 
+    fsou.removeAttribute("class"); 
+    github.removeAttribute("class"); 
+    gtrans.removeAttribute("class"); 
+    bilibili.removeAttribute("class"); 
+    zhihu.removeAttribute("class"); 
+    gscholar.removeAttribute("class"); 
+    mdn.removeAttribute("class"); 
 }
 function sogouon(){
-    localStorage.setItem("sc", "sogou")
-    sogou.style.display="block";
-    bing.style.display="none";
-    baidu.style.display="none";
-    google.style.display="none";
-    _360.style.display="none";
-    fsou.style.display="none";
-    github.style.display="none";
-    gtrans.style.display="none";
-    bilibili.style.display="none";
-    zhihu.style.display="none";
-    gscholar.style.display="none";
-    mdn.style.display="none";
-    sogoub.setAttribute("class", "active"); 
-    bingb.removeAttribute("class"); 
-    baidub.removeAttribute("class"); 
-    googleb.removeAttribute("class"); 
-    _360b.removeAttribute("class"); 
-    fsoub.removeAttribute("class"); 
-    githubb.removeAttribute("class"); 
-    gtransb.removeAttribute("class"); 
-    bilibilib.removeAttribute("class"); 
-    zhihub.removeAttribute("class"); 
-    gscholarb.removeAttribute("class"); 
-    mdnb.removeAttribute("class"); 
+    localStorage.setItem("sc", "sogou") 
+    sc.setAttribute("action", "https://www.sogou.com/web")
+     sc_text.setAttribute("placeholder", "上网从搜狗开始")
+     sc_text.setAttribute("name", "query")
+    sogou.setAttribute("class", "active"); 
+    bing.removeAttribute("class"); 
+    baidu.removeAttribute("class"); 
+    google.removeAttribute("class"); 
+    _360.removeAttribute("class"); 
+    fsou.removeAttribute("class"); 
+    github.removeAttribute("class"); 
+    gtrans.removeAttribute("class"); 
+    bilibili.removeAttribute("class"); 
+    zhihu.removeAttribute("class"); 
+    gscholar.removeAttribute("class"); 
+    mdn.removeAttribute("class"); 
 }
 function _360on(){
-    localStorage.setItem("sc", "360")
-    _360.style.display="block";
-    bing.style.display="none";
-    baidu.style.display="none";
-    sogou.style.display="none";
-    google.style.display="none";
-    fsou.style.display="none";
-    github.style.display="none";
-    gtrans.style.display="none";
-    bilibili.style.display="none";
-    zhihu.style.display="none";
-    gscholar.style.display="none";
-    mdn.style.display="none";
-    _360b.setAttribute("class", "active"); 
-    bingb.removeAttribute("class"); 
-    baidub.removeAttribute("class"); 
-    sogoub.removeAttribute("class"); 
-    googleb.removeAttribute("class"); 
-    fsoub.removeAttribute("class"); 
-    githubb.removeAttribute("class"); 
-    gtransb.removeAttribute("class"); 
-    bilibilib.removeAttribute("class"); 
-    zhihub.removeAttribute("class"); 
-    gscholarb.removeAttribute("class"); 
-    mdnb.removeAttribute("class"); 
+    localStorage.setItem("sc", "360") 
+    sc.setAttribute("action", "https://www.so.com/s")
+     sc_text.setAttribute("placeholder", "360搜索,so靠谱~")
+     sc_text.setAttribute("name", "q")
+    _360.setAttribute("class", "active"); 
+    bing.removeAttribute("class"); 
+    baidu.removeAttribute("class"); 
+    sogou.removeAttribute("class"); 
+    google.removeAttribute("class"); 
+    fsou.removeAttribute("class"); 
+    github.removeAttribute("class"); 
+    gtrans.removeAttribute("class"); 
+    bilibili.removeAttribute("class"); 
+    zhihu.removeAttribute("class"); 
+    gscholar.removeAttribute("class"); 
+    mdn.removeAttribute("class"); 
 }
 function fsouon(){
-    localStorage.setItem("sc", "fsou")
-    fsou.style.display="block";
-    bing.style.display="none";
-    baidu.style.display="none";
-    sogou.style.display="none";
-    _360.style.display="none";
-    google.style.display="none";
-    github.style.display="none";
-    gtrans.style.display="none";
-    bilibili.style.display="none";
-    zhihu.style.display="none";
-    gscholar.style.display="none";
-    mdn.style.display="none";
-    fsoub.setAttribute("class", "active"); 
-    bingb.removeAttribute("class"); 
-    baidub.removeAttribute("class"); 
-    sogoub.removeAttribute("class"); 
-    _360b.removeAttribute("class"); 
-    googleb.removeAttribute("class"); 
-    githubb.removeAttribute("class"); 
-    gtransb.removeAttribute("class"); 
-    bilibilib.removeAttribute("class"); 
-    zhihub.removeAttribute("class"); 
-    gscholarb.removeAttribute("class"); 
-    mdnb.removeAttribute("class"); 
+    localStorage.setItem("sc", "fsou") 
+    sc.setAttribute("action", "https://fsofso.com/search")
+     sc_text.setAttribute("placeholder", "F搜")
+     sc_text.setAttribute("name", "q")
+    fsou.setAttribute("class", "active"); 
+    bing.removeAttribute("class"); 
+    baidu.removeAttribute("class"); 
+    sogou.removeAttribute("class"); 
+    _360.removeAttribute("class"); 
+    google.removeAttribute("class"); 
+    github.removeAttribute("class"); 
+    gtrans.removeAttribute("class"); 
+    bilibili.removeAttribute("class"); 
+    zhihu.removeAttribute("class"); 
+    gscholar.removeAttribute("class"); 
+    mdn.removeAttribute("class"); 
 }
 function githubon(){
-    localStorage.setItem("sc", "github")
-    github.style.display="block";
-    bing.style.display="none";
-    baidu.style.display="none";
-    sogou.style.display="none";
-    _360.style.display="none";
-    fsou.style.display="none";
-    google.style.display="none";
-    gtrans.style.display="none";
-    bilibili.style.display="none";
-    zhihu.style.display="none";
-    gscholar.style.display="none";
-    mdn.style.display="none";
-    githubb.setAttribute("class", "active"); 
-    bingb.removeAttribute("class"); 
-    baidub.removeAttribute("class"); 
-    sogoub.removeAttribute("class"); 
-    _360b.removeAttribute("class"); 
-    fsoub.removeAttribute("class"); 
-    googleb.removeAttribute("class"); 
-    gtransb.removeAttribute("class"); 
-    bilibilib.removeAttribute("class"); 
-    zhihub.removeAttribute("class"); 
-    gscholarb.removeAttribute("class"); 
-    mdnb.removeAttribute("class"); 
+    localStorage.setItem("sc", "github") 
+    sc.setAttribute("action", "https://github.com/search")
+     sc_text.setAttribute("placeholder", "Github")
+     sc_text.setAttribute("name", "q")
+    github.setAttribute("class", "active"); 
+    bing.removeAttribute("class"); 
+    baidu.removeAttribute("class"); 
+    sogou.removeAttribute("class"); 
+    _360.removeAttribute("class"); 
+    fsou.removeAttribute("class"); 
+    google.removeAttribute("class"); 
+    gtrans.removeAttribute("class"); 
+    bilibili.removeAttribute("class"); 
+    zhihu.removeAttribute("class"); 
+    gscholar.removeAttribute("class"); 
+    mdn.removeAttribute("class"); 
 }
 function gtranson(){
-    localStorage.setItem("sc", "gtrans")
-    gtrans.style.display="block";
-    bing.style.display="none";
-    baidu.style.display="none";
-    sogou.style.display="none";
-    _360.style.display="none";
-    fsou.style.display="none";
-    github.style.display="none";
-    google.style.display="none";
-    bilibili.style.display="none";
-    zhihu.style.display="none";
-    gscholar.style.display="none";
-    mdn.style.display="none";
-    gtransb.setAttribute("class", "active"); 
-    bingb.removeAttribute("class"); 
-    baidub.removeAttribute("class"); 
-    sogoub.removeAttribute("class"); 
-    _360b.removeAttribute("class"); 
-    fsoub.removeAttribute("class"); 
-    githubb.removeAttribute("class"); 
-    googleb.removeAttribute("class"); 
-    bilibilib.removeAttribute("class"); 
-    zhihub.removeAttribute("class"); 
-    gscholarb.removeAttribute("class"); 
-    mdnb.removeAttribute("class"); 
+    localStorage.setItem("sc", "gtrans") 
+    sc.setAttribute("action", "https://translate.google.cn/")
+     sc_text.setAttribute("placeholder", "Google Translator")
+     sc_text.setAttribute("name", "text")
+    gtrans.setAttribute("class", "active"); 
+    bing.removeAttribute("class"); 
+    baidu.removeAttribute("class"); 
+    sogou.removeAttribute("class"); 
+    _360.removeAttribute("class"); 
+    fsou.removeAttribute("class"); 
+    github.removeAttribute("class"); 
+    google.removeAttribute("class"); 
+    bilibili.removeAttribute("class"); 
+    zhihu.removeAttribute("class"); 
+    gscholar.removeAttribute("class"); 
+    mdn.removeAttribute("class"); 
 }
 function bilibilion(){
-    localStorage.setItem("sc", "bilibili")
-    bilibili.style.display="block";
-    bing.style.display="none";
-    baidu.style.display="none";
-    sogou.style.display="none";
-    _360.style.display="none";
-    fsou.style.display="none";
-    github.style.display="none";
-    gtrans.style.display="none";
-    google.style.display="none";
-    zhihu.style.display="none";
-    gscholar.style.display="none";
-    mdn.style.display="none";
-    bilibilib.setAttribute("class", "active"); 
-    bingb.removeAttribute("class"); 
-    baidub.removeAttribute("class"); 
-    sogoub.removeAttribute("class"); 
-    _360b.removeAttribute("class"); 
-    fsoub.removeAttribute("class"); 
-    githubb.removeAttribute("class"); 
-    gtransb.removeAttribute("class"); 
-    googleb.removeAttribute("class"); 
-    zhihub.removeAttribute("class"); 
-    gscholarb.removeAttribute("class"); 
-    mdnb.removeAttribute("class"); 
+    localStorage.setItem("sc", "bilibili") 
+    sc.setAttribute("action", "https://search.bilibili.com/all")
+     sc_text.setAttribute("placeholder", "(゜-゜)つロ 干杯~")
+     sc_text.setAttribute("name", "keyword")
+    bilibili.setAttribute("class", "active"); 
+    bing.removeAttribute("class"); 
+    baidu.removeAttribute("class"); 
+    sogou.removeAttribute("class"); 
+    _360.removeAttribute("class"); 
+    fsou.removeAttribute("class"); 
+    github.removeAttribute("class"); 
+    gtrans.removeAttribute("class"); 
+    google.removeAttribute("class"); 
+    zhihu.removeAttribute("class"); 
+    gscholar.removeAttribute("class"); 
+    mdn.removeAttribute("class"); 
 }
 function zhihuon(){
-    localStorage.setItem("sc", "zhihu")
-    zhihu.style.display="block";
-    bing.style.display="none";
-    baidu.style.display="none";
-    sogou.style.display="none";
-    _360.style.display="none";
-    fsou.style.display="none";
-    github.style.display="none";
-    gtrans.style.display="none";
-    bilibili.style.display="none";
-    google.style.display="none";
-    gscholar.style.display="none";
-    mdn.style.display="none";
-    zhihub.setAttribute("class", "active"); 
-    bingb.removeAttribute("class"); 
-    baidub.removeAttribute("class"); 
-    sogoub.removeAttribute("class"); 
-    _360b.removeAttribute("class"); 
-    fsoub.removeAttribute("class"); 
-    githubb.removeAttribute("class"); 
-    gtransb.removeAttribute("class"); 
-    bilibilib.removeAttribute("class"); 
-    googleb.removeAttribute("class"); 
-    gscholarb.removeAttribute("class"); 
-    mdnb.removeAttribute("class"); 
+    localStorage.setItem("sc", "zhihu") 
+    sc.setAttribute("action", "https://www.zhihu.com/search")
+     sc_text.setAttribute("placeholder", "有问题，上知乎")
+     sc_text.setAttribute("name", "q")
+    zhihu.setAttribute("class", "active"); 
+    bing.removeAttribute("class"); 
+    baidu.removeAttribute("class"); 
+    sogou.removeAttribute("class"); 
+    _360.removeAttribute("class"); 
+    fsou.removeAttribute("class"); 
+    github.removeAttribute("class"); 
+    gtrans.removeAttribute("class"); 
+    bilibili.removeAttribute("class"); 
+    google.removeAttribute("class"); 
+    gscholar.removeAttribute("class"); 
+    mdn.removeAttribute("class"); 
 }
 function gscholaron(){
-    localStorage.setItem("sc", "gscholar")
-    gscholar.style.display="block";
-    bing.style.display="none";
-    baidu.style.display="none";
-    sogou.style.display="none";
-    _360.style.display="none";
-    fsou.style.display="none";
-    github.style.display="none";
-    gtrans.style.display="none";
-    bilibili.style.display="none";
-    zhihu.style.display="none";
-    google.style.display="none";
-    mdn.style.display="none";
-    gscholarb.setAttribute("class", "active"); 
-    bingb.removeAttribute("class"); 
-    baidub.removeAttribute("class"); 
-    sogoub.removeAttribute("class"); 
-    _360b.removeAttribute("class"); 
-    fsoub.removeAttribute("class"); 
-    githubb.removeAttribute("class"); 
-    gtransb.removeAttribute("class"); 
-    bilibilib.removeAttribute("class"); 
-    zhihub.removeAttribute("class"); 
-    googleb.removeAttribute("class"); 
-    mdnb.removeAttribute("class"); 
+    localStorage.setItem("sc", "gscholar") 
+    sc.setAttribute("action", "https://scholar.google.com/scholar")
+    sc_text.setAttribute("placeholder", "Google Scholar")
+    sc_text.setAttribute("name", "q")
+    gscholar.setAttribute("class", "active"); 
+    bing.removeAttribute("class"); 
+    baidu.removeAttribute("class"); 
+    sogou.removeAttribute("class"); 
+    _360.removeAttribute("class"); 
+    fsou.removeAttribute("class"); 
+    github.removeAttribute("class"); 
+    gtrans.removeAttribute("class"); 
+    bilibili.removeAttribute("class"); 
+    zhihu.removeAttribute("class"); 
+    google.removeAttribute("class"); 
+    mdn.removeAttribute("class"); 
 }
 function mdnon(){
-    localStorage.setItem("sc", "mdn")
-    mdn.style.display="block";
-    bing.style.display="none";
-    baidu.style.display="none";
-    sogou.style.display="none";
-    _360.style.display="none";
-    fsou.style.display="none";
-    github.style.display="none";
-    gtrans.style.display="none";
-    bilibili.style.display="none";
-    zhihu.style.display="none";
-    gscholar.style.display="none";
-    google.style.display="none";
-    mdnb.setAttribute("class", "active"); 
-    bingb.removeAttribute("class"); 
-    baidub.removeAttribute("class"); 
-    sogoub.removeAttribute("class"); 
-    _360b.removeAttribute("class"); 
-    fsoub.removeAttribute("class"); 
-    githubb.removeAttribute("class"); 
-    gtransb.removeAttribute("class"); 
-    bilibilib.removeAttribute("class"); 
-    zhihub.removeAttribute("class"); 
-    gscholarb.removeAttribute("class"); 
-    googleb.removeAttribute("class"); 
+    localStorage.setItem("sc", "mdn") 
+    sc.setAttribute("action", "https://developer.mozilla.org/zh-CN/search")
+     sc_text.setAttribute("placeholder", "MDN docs")
+     sc_text.setAttribute("name", "q")
+    mdn.setAttribute("class", "active"); 
+    bing.removeAttribute("class"); 
+    baidu.removeAttribute("class"); 
+    sogou.removeAttribute("class"); 
+    _360.removeAttribute("class"); 
+    fsou.removeAttribute("class"); 
+    github.removeAttribute("class"); 
+    gtrans.removeAttribute("class"); 
+    bilibili.removeAttribute("class"); 
+    zhihu.removeAttribute("class"); 
+    gscholar.removeAttribute("class"); 
+    google.removeAttribute("class"); 
 }
 if( localStorage.getItem("sc") == null ){
     localStorage.setItem("sc", "bing")
