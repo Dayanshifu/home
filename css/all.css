@@ -154,11 +154,11 @@ div.container h1{
     left:25%;
     right:25%;
     margin:auto;
-    background-color: #d3ffe7;
-    border-radius: 15px;
-    padding: 15px 10px; 
+    border:solid 2px #00ff0059; 
+    margin-bottom:15px; 
+    border-radius: 20px; 
+    background-color: #d3ffde;
     box-shadow: 0 0 10px #aaa; 
-    border:solid 1px #00ff0059; 
 }
 #word li{ 
     height:35px; 

@@ -3,7 +3,7 @@ function show() {
   var currentDT = new Date();
   var y,m,date,day,hs,ms,ss,theDateStr;
   y = currentDT.getFullYear(); //四位整数表示的年份
-  m = currentDT.getMonth(); //月
+  m = currentDT.getMonth()+1; //月
   date = currentDT.getDate(); //日
   day = currentDT.getDay(); //星期
   hs = currentDT.getHours(); //时
