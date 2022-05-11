@@ -124,6 +124,7 @@ body{
     -webkit-background-size: cover;
     -o-background-size: cover;
     text-align: center;
+    font-size: 100%;
 }
 .pcon{
     display:block;
