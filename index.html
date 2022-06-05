@@ -10,9 +10,9 @@
 </head>
 <body onload="show()">
   <div class="container">
-    <div class="clear"></div>
+    <div class="clear" id="天气和时间"></div>
     <!--仅电脑展示天气插件-->
-    <div class="pcon" id="weather">
+    <div class="pcon">
       <center>
         <div id="he-plugin-standard"></div>
         <script type="text/javascript" src="js/weather.js"></script>
@@ -26,9 +26,9 @@
       <div id="nowDiv"></div>
     </div>
       <hr style='background-color:#20a53a; height:1px; border:none;'/>
-      <h1>hao-little颜网址导航 上网从这里开始!</h1>
+      <h1 id="搜索">hao-little颜网址导航 上网从这里开始!</h1>
     <!--搜索开始-->
-    <div class="sc" id="search">
+    <div class="sc">
       <div class="clear-s"></div>
       <div class="chose">
         <div>
@@ -60,7 +60,7 @@
     </div>
     <!--搜索结束-->
     <!--网站收录-->
-    <div class="nav" id="fun">
+    <div class="nav" id="摸鱼">
     <h3>摸鱼 <i></i></h3>
       <a href="https://www.bilibili.com" target="_blank">bilibili</a>
       <a href="https://www.iqiyi.com" target="_blank">爱奇艺</a>
@@ -79,7 +79,7 @@
     <div class="clear"></div>
     </div>
 
-    <div class="nav" id="programs">
+    <div class="nav" id="程序员与科技">
     <h3>程序员与科技<i></i></h3>
       <a href="https://www.github.com" target="_blank">Github</a>
       <a href="https://developer.mozilla.org/" target="_blank">MDN</a>
@@ -137,7 +137,7 @@
       <div class="clear"></div>
     </div>
 
-    <div class="nav" id="contact">
+    <div class="nav" id="社交、云储存和邮箱">
     <h3>社交、云储存和邮箱<i></i></h3>
       <a href="https://outlook.com/" target="_blank">Hotmail</a>
       <a href="https://mail.google.com" target="_blank">Gmail</a>
@@ -175,7 +175,7 @@
       <div class="clear"></div>
     </div>
       
-    <div class="nav" id="life">
+    <div class="nav" id="购物与生活">
     <h3>购物与生活<i></i></h3>
       <a href="https://www.smzdm.com" target="_blank">什么值得买</a>
       <a href="https://www.taobao.com" target="_blank">淘宝</a>
@@ -196,7 +196,7 @@
     <div class="clear"></div>
     </div>
 
-    <div class="nav" id="tools">
+    <div class="nav" id="工具">
     <h3>工具<i></i></h3>
       <a href="https://ip138.com" target="_blank">ip138</a>
       <a href="https://milkdown.dev/" target="_blank">在线md编辑器</a>
@@ -211,6 +211,7 @@
       <a href="https://app.clipchamp.com/" target="_blank">Clipchamp</a>
       <a href="https://cowtransfer.com/" target="_blank">奶牛快传</a>
       <a href="https://amap.com/" target="_blank">高德地图</a>
+      <a href="https://filehelper.weixin.qq.com/" target="_blank">文件传输助手</a>
       <a href="https://5iux.cn/base64/" target="_blank">base64</a>
       <a href="https://ping.pe" target="_blank">ping.pe</a>
       <a href="https://www.ilovepdf.com/zh-cn" target="_blank">I love PDF</a>
@@ -231,7 +232,7 @@
       <div class="clear"></div>
     </div>
 
-    <div class="nav" id="design">
+    <div class="nav" id="设计">
     <h3>设计<i></i></h3>
       <a href="https://huaban.com/" target="_blank">花瓣</a>
       <a href="https://www.bigbigwork.com/" target="_blank">大作</a>
@@ -283,7 +284,7 @@
       <div class="clear"></div>
     </div>
 
-    <div class="nav" id="resource">
+    <div class="nav" id="汁源">
     <h3>汁源<i></i></h3>
       <a href="https://ghxi.com/" target="_blank">果核剥壳</a>
       <a href="https://www.jiumodiary.com/" target="_blank">电子书</a>
@@ -305,7 +306,7 @@
       <div class="clear"></div>
     </div>
 
-    <div class="nav" id="office">
+    <div class="nav" id="学术与办公">
     <h3>学术与办公<i></i></h3>
       <a href="https://scholar.google.com/" target="_blank">Google学术搜索</a>
       <a href="https://www.cnki.net/" target="_blank">知网</a>
@@ -329,7 +330,7 @@
       <div class="clear"></div>
     </div>
 
-    <div class="nav" id="news">
+    <div class="nav" id="新闻和资讯">
     <h3>新闻和资讯<i></i></h3>
       <a href="https://news.qq.com/" target="_blank">腾讯网</a>
       <a href="https://news.163.com/" target="_blank">网易网</a>
@@ -339,7 +340,7 @@
       <div class="clear"></div>
     </div>
 
-    <div class="nav" id="mc">
+    <div class="nav" id="Minecraft">
     <h3>Minecraft<i></i></h3>
       <a href="https://minecraft.net" target="_blank">Minecraft</a>
       <a href="https://mc.163.com" target="_blank">我的世界</a>
@@ -351,7 +352,7 @@
     <div class="clear"></div>
     </div>
 
-    <div class="nav" id="follow">
+    <div class="nav" id="关注站长">
     <h3>关注站长<i></i></h3>
       <a href="https://www.littleyan.tk">个人主页</a>
       <a href="https://blog.littleyan.tk">Blog</a>
@@ -366,7 +367,7 @@
     <div class="clear"></div>
     </div>
     
-    <div class="nav" id="friends">
+    <div class="nav" id="友链">
       <h3>友链</h3>
         <a href="https://glacier.tk/" target="_blank">冰川工作室</a>
         <a href="http://www.yizhipikaqiu.top" target="_blank">一只皮卡丘.</a>
@@ -375,7 +376,7 @@
         <div class="clear"></div>
     </div>
     
-    <div class="ad" id="ad">
+    <div class="ad" id="广告">
       <h3>恰饭广告还请支持</h3>
       <p>都TM给我下国家反诈中心！ <a href="https://www.coolapk.com/apk/com.hicorenational.antifraud">酷安</a> 
       <a href="https://a.app.qq.com/o/simple.jsp?pkgname=com.hicorenational.antifraud">应用宝</a> 
@@ -390,11 +391,34 @@
       <p>广告位招租，详情加qq<a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=3617406701">3617406701</a></p>
       <div class="clear"></div>
     </div>
-
+    <div id="closedmulu" class="pagination">
+      <div class="clear-s"></div>
+      <a style="font-size: large;" onclick="muluon()">导航</a>
+      <div class="clear-s"></div>
+    </div>
+    <div id="openedmulu" class="pagination">
+      <p><a  style="font-size: large;" onclick="muluoff()">收起</a></p>
+      <p><a href="#天气和时间">天气和时间</a><br />
+      <a href="#搜索">搜索</a><br />
+      <a href="#摸鱼">摸鱼</a><br />
+      <a href="#程序员与科技">程序员与科技</a><br />
+      <a href="#社交、云储存和邮箱">社交、云储存和邮箱</a><br />
+      <a href="#购物与生活">购物与生活</a><br />
+      <a href="#工具">工具</a><br />
+      <a href="#设计">设计</a><br />
+      <a href="#汁源">汁源</a><br />
+      <a href="#学术与办公">学术与办公</a><br />
+      <a href="#新闻和资讯">新闻和资讯</a><br />
+      <a href="#Minecraft">Minecraft</a><br />
+      <a href="#关注站长">关注站长</a><br />
+      <a href="#友链">友链</a><br />
+      <a href="#广告">广告</a></p>
+      <div class="clear-s"></div>
+    </div>
+    <script src="js/mulu.js"></script>
     <p style="color:#20a53a"><a href="https://github.com/Dayanshifu/hao-littleyan-URL-Navigation" target="_blank">本站源码开源</a>  |  
       <a href="https://www.littleyan.tk">Copyright(c) 是little颜鸭 </a></p>
     <div class="clear"></div>
   </div>
-  
 </body>
 </html>

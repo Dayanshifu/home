@@ -176,8 +176,31 @@ div.container h1{
     cursor: pointer; 
     font-size: 16px; 
     color:#20a53a;
-    border-radius: 5px;}
+    border-radius: 5px;
+}
 #word li:hover{ 
     color:rgb(20, 110, 29);
     background-color: #d3ffde;
+}
+
+.pagination{
+    border:solid 1px #00ff0059; 
+    padding:15px auto 15px; 
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px; 
+    background-color: #d3ffde;
+    opacity:0.7;
+    display:inline-block;
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
+    text-align: left;
+    top: 10px;
+    left:10px;
+    z-index: 90000;
+}
+#openedmulu p a{ 
+    padding:0px 0px 0px 0px;
+    color:#20a53a; 
 }
