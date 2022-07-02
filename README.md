@@ -28,6 +28,6 @@ this work is for my hobby
 
 这个作品也是为我的爱好所作
 
-![](https://fastly.jsdelivr.net/gh/Dayanshifu/imagebed@main/img/logo.jpg)
+![](https://img.littleyan.tk/img/logo.jpg)
 
 我的站点my site:https://www.littleyan.tk/
