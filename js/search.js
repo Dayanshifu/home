@@ -17,6 +17,7 @@ function googleon(){
     sc.setAttribute("action", "https://www.google.com/search")
      sc_text.setAttribute("placeholder", "Google")
      sc_text.setAttribute("name", "q")
+     sc_text.focus()
     google.setAttribute("class", "active"); 
     bing.removeAttribute("class"); 
     baidu.removeAttribute("class"); 
@@ -35,6 +36,7 @@ function bingon(){
     sc.setAttribute("action", "https://cn.bing.com/search")
      sc_text.setAttribute("placeholder", "MIcrosoft Bing")
      sc_text.setAttribute("name", "q")
+     sc_text.focus()
     bing.setAttribute("class", "active"); 
     google.removeAttribute("class"); 
     baidu.removeAttribute("class"); 
@@ -53,6 +55,7 @@ function baiduon(){
     sc.setAttribute("action", "https://www.baidu.com/s")
      sc_text.setAttribute("placeholder", "百度一下，你就知道(bushi")
      sc_text.setAttribute("name", "word")
+     sc_text.focus()
     baidu.setAttribute("class", "active"); 
     bing.removeAttribute("class"); 
     google.removeAttribute("class"); 
@@ -71,6 +74,7 @@ function sogouon(){
     sc.setAttribute("action", "https://www.sogou.com/web")
      sc_text.setAttribute("placeholder", "上网从搜狗开始")
      sc_text.setAttribute("name", "query")
+     sc_text.focus()
     sogou.setAttribute("class", "active"); 
     bing.removeAttribute("class"); 
     baidu.removeAttribute("class"); 
@@ -89,6 +93,7 @@ function _360on(){
     sc.setAttribute("action", "https://www.so.com/s")
      sc_text.setAttribute("placeholder", "360搜索,so靠谱~")
      sc_text.setAttribute("name", "q")
+     sc_text.focus()
     _360.setAttribute("class", "active"); 
     bing.removeAttribute("class"); 
     baidu.removeAttribute("class"); 
@@ -107,6 +112,7 @@ function fsouon(){
     sc.setAttribute("action", "https://fsofso.com/search")
      sc_text.setAttribute("placeholder", "F搜")
      sc_text.setAttribute("name", "q")
+     sc_text.focus()
     fsou.setAttribute("class", "active"); 
     bing.removeAttribute("class"); 
     baidu.removeAttribute("class"); 
@@ -125,6 +131,7 @@ function githubon(){
     sc.setAttribute("action", "https://github.com/search")
      sc_text.setAttribute("placeholder", "Github")
      sc_text.setAttribute("name", "q")
+     sc_text.focus()
     github.setAttribute("class", "active"); 
     bing.removeAttribute("class"); 
     baidu.removeAttribute("class"); 
@@ -143,6 +150,7 @@ function gtranson(){
     sc.setAttribute("action", "https://translate.google.cn/")
      sc_text.setAttribute("placeholder", "Google Translator")
      sc_text.setAttribute("name", "text")
+     sc_text.focus()
     gtrans.setAttribute("class", "active"); 
     bing.removeAttribute("class"); 
     baidu.removeAttribute("class"); 
@@ -161,6 +169,7 @@ function bilibilion(){
     sc.setAttribute("action", "https://search.bilibili.com/all")
      sc_text.setAttribute("placeholder", "(゜-゜)つロ 干杯~")
      sc_text.setAttribute("name", "keyword")
+     sc_text.focus()
     bilibili.setAttribute("class", "active"); 
     bing.removeAttribute("class"); 
     baidu.removeAttribute("class"); 
@@ -179,6 +188,7 @@ function zhihuon(){
     sc.setAttribute("action", "https://www.zhihu.com/search")
      sc_text.setAttribute("placeholder", "有问题，上知乎")
      sc_text.setAttribute("name", "q")
+     sc_text.focus()
     zhihu.setAttribute("class", "active"); 
     bing.removeAttribute("class"); 
     baidu.removeAttribute("class"); 
@@ -197,6 +207,7 @@ function gscholaron(){
     sc.setAttribute("action", "https://scholar.google.com/scholar")
     sc_text.setAttribute("placeholder", "Google Scholar")
     sc_text.setAttribute("name", "q")
+    sc_text.focus()
     gscholar.setAttribute("class", "active"); 
     bing.removeAttribute("class"); 
     baidu.removeAttribute("class"); 
@@ -215,6 +226,7 @@ function mdnon(){
     sc.setAttribute("action", "https://developer.mozilla.org/zh-CN/search")
      sc_text.setAttribute("placeholder", "MDN docs")
      sc_text.setAttribute("name", "q")
+     sc_text.focus()
     mdn.setAttribute("class", "active"); 
     bing.removeAttribute("class"); 
     baidu.removeAttribute("class"); 
