@@ -30,6 +30,7 @@ function googleon(){
     zhihu.removeAttribute("class"); 
     gscholar.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
+    baidudev.removeAttribute("class"); 
 }
 function bingon(){
     localStorage.setItem("sc", "bing") 
@@ -49,11 +50,12 @@ function bingon(){
     zhihu.removeAttribute("class"); 
     gscholar.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
+    baidudev.removeAttribute("class"); 
 }
 function baiduon(){
     localStorage.setItem("sc", "baidu") 
     sc.setAttribute("action", "https://www.baidu.com/s")
-     sc_text.setAttribute("placeholder", "百度一下，你就知道(bushi")
+     sc_text.setAttribute("placeholder", "百度一下，你就知道")
      sc_text.setAttribute("name", "word")
      sc_text.focus()
     baidu.setAttribute("class", "active"); 
@@ -68,6 +70,7 @@ function baiduon(){
     zhihu.removeAttribute("class"); 
     gscholar.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
+    baidudev.removeAttribute("class"); 
 }
 function sogouon(){
     localStorage.setItem("sc", "sogou") 
@@ -87,6 +90,7 @@ function sogouon(){
     zhihu.removeAttribute("class"); 
     gscholar.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
+    baidudev.removeAttribute("class"); 
 }
 function _360on(){
     localStorage.setItem("sc", "360") 
@@ -106,6 +110,7 @@ function _360on(){
     zhihu.removeAttribute("class"); 
     gscholar.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
+    baidudev.removeAttribute("class"); 
 }
 function fsouon(){
     localStorage.setItem("sc", "fsou") 
@@ -125,6 +130,7 @@ function fsouon(){
     zhihu.removeAttribute("class"); 
     gscholar.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
+    baidudev.removeAttribute("class"); 
 }
 function githubon(){
     localStorage.setItem("sc", "github") 
@@ -144,6 +150,7 @@ function githubon(){
     zhihu.removeAttribute("class"); 
     gscholar.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
+    baidudev.removeAttribute("class"); 
 }
 function gtranson(){
     localStorage.setItem("sc", "gtrans") 
@@ -163,6 +170,7 @@ function gtranson(){
     zhihu.removeAttribute("class"); 
     gscholar.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
+    baidudev.removeAttribute("class"); 
 }
 function bilibilion(){
     localStorage.setItem("sc", "bilibili") 
@@ -182,6 +190,7 @@ function bilibilion(){
     zhihu.removeAttribute("class"); 
     gscholar.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
+    baidudev.removeAttribute("class"); 
 }
 function zhihuon(){
     localStorage.setItem("sc", "zhihu") 
@@ -201,6 +210,27 @@ function zhihuon(){
     google.removeAttribute("class"); 
     gscholar.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
+    baidudev.removeAttribute("class"); 
+}
+function baidudevon(){
+    localStorage.setItem("sc", "baidudev") 
+    sc.setAttribute("action", "https://kaifa.baidu.com/searchPage")
+    sc_text.setAttribute("placeholder", "让技术搜索更简单有效")
+    sc_text.setAttribute("name", "wd")
+    sc_text.focus()
+    gscholar.setAttribute("class", "active"); 
+    bing.removeAttribute("class"); 
+    baidu.removeAttribute("class"); 
+    sogou.removeAttribute("class"); 
+    _360.removeAttribute("class"); 
+    fsou.removeAttribute("class"); 
+    github.removeAttribute("class"); 
+    gtrans.removeAttribute("class"); 
+    bilibili.removeAttribute("class"); 
+    zhihu.removeAttribute("class"); 
+    google.removeAttribute("class"); 
+    mdn.removeAttribute("class"); 
+    baidudev.removeAttribute("class"); 
 }
 function gscholaron(){
     localStorage.setItem("sc", "gscholar") 
@@ -220,6 +250,7 @@ function gscholaron(){
     zhihu.removeAttribute("class"); 
     google.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
+    baidudev.removeAttribute("class"); 
 }
 function mdnon(){
     localStorage.setItem("sc", "mdn") 
@@ -239,6 +270,7 @@ function mdnon(){
     zhihu.removeAttribute("class"); 
     gscholar.removeAttribute("class"); 
     google.removeAttribute("class"); 
+    baidudev.removeAttribute("class"); 
 }
 if( localStorage.getItem("sc") == null ){
     localStorage.setItem("sc", "bing")
