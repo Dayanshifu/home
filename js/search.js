@@ -218,7 +218,7 @@ function baidudevon(){
     sc_text.setAttribute("placeholder", "让技术搜索更简单有效")
     sc_text.setAttribute("name", "wd")
     sc_text.focus()
-    gscholar.setAttribute("class", "active"); 
+    baidudev.setAttribute("class", "active"); 
     bing.removeAttribute("class"); 
     baidu.removeAttribute("class"); 
     sogou.removeAttribute("class"); 
@@ -230,7 +230,7 @@ function baidudevon(){
     zhihu.removeAttribute("class"); 
     google.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
-    baidudev.removeAttribute("class"); 
+    gscholar.removeAttribute("class"); 
 }
 function gscholaron(){
     localStorage.setItem("sc", "gscholar") 
