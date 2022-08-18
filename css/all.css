@@ -130,6 +130,7 @@ body{
     -o-background-size: cover;
     text-align: center;
     font-size: 100%;
+    font-family: sans-serif;
 }
 .pcon{
     display:block;
