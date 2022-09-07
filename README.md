@@ -16,18 +16,6 @@ demo site: https://hao.littleyan.tk/ (please turn TRANSLATOR on to get BETTER ex
 
 # 关于 about
 
-i'm a middle-school-student in Lanzhou, China
-
-my hobby is programming
-
-this work is for my hobby
-
-我是一个初中生在中国兰州
-
-我的爱好是编程
-
-这个作品也是为我的爱好所作
-
 ![](https://img.littleyan.tk/img/logo.jpg)
 
 我的站点my site:https://www.littleyan.tk/
