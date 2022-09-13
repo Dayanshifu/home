@@ -12,6 +12,7 @@ var bilibili = document.getElementById('bilibili')
 var zhihu = document.getElementById('zhihu')
 var gscholar = document.getElementById('gscholar')
 var mdn = document.getElementById('mdn')
+var aur = document.getElementById('aur')
 function googleon(){
     localStorage.setItem("sc", "google")
     sc.setAttribute("action", "https://www.google.com/search")
@@ -31,6 +32,7 @@ function googleon(){
     gscholar.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
     baidudev.removeAttribute("class"); 
+    aur.removeAttribute("class");
 }
 function bingon(){
     localStorage.setItem("sc", "bing") 
@@ -51,6 +53,7 @@ function bingon(){
     gscholar.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
     baidudev.removeAttribute("class"); 
+    aur.removeAttribute("class");
 }
 function baiduon(){
     localStorage.setItem("sc", "baidu") 
@@ -71,6 +74,7 @@ function baiduon(){
     gscholar.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
     baidudev.removeAttribute("class"); 
+    aur.removeAttribute("class");
 }
 function sogouon(){
     localStorage.setItem("sc", "sogou") 
@@ -91,6 +95,7 @@ function sogouon(){
     gscholar.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
     baidudev.removeAttribute("class"); 
+    aur.removeAttribute("class");
 }
 function _360on(){
     localStorage.setItem("sc", "360") 
@@ -111,6 +116,7 @@ function _360on(){
     gscholar.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
     baidudev.removeAttribute("class"); 
+    aur.removeAttribute("class");
 }
 function fsouon(){
     localStorage.setItem("sc", "fsou") 
@@ -131,6 +137,7 @@ function fsouon(){
     gscholar.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
     baidudev.removeAttribute("class"); 
+    aur.removeAttribute("class");
 }
 function githubon(){
     localStorage.setItem("sc", "github") 
@@ -151,6 +158,7 @@ function githubon(){
     gscholar.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
     baidudev.removeAttribute("class"); 
+    aur.removeAttribute("class");
 }
 function gtranson(){
     localStorage.setItem("sc", "gtrans") 
@@ -171,6 +179,7 @@ function gtranson(){
     gscholar.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
     baidudev.removeAttribute("class"); 
+    aur.removeAttribute("class");
 }
 function bilibilion(){
     localStorage.setItem("sc", "bilibili") 
@@ -191,6 +200,7 @@ function bilibilion(){
     gscholar.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
     baidudev.removeAttribute("class"); 
+    aur.removeAttribute("class");
 }
 function zhihuon(){
     localStorage.setItem("sc", "zhihu") 
@@ -211,6 +221,7 @@ function zhihuon(){
     gscholar.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
     baidudev.removeAttribute("class"); 
+    aur.removeAttribute("class");
 }
 function baidudevon(){
     localStorage.setItem("sc", "baidudev") 
@@ -231,6 +242,7 @@ function baidudevon(){
     google.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
     gscholar.removeAttribute("class"); 
+    aur.removeAttribute("class");
 }
 function gscholaron(){
     localStorage.setItem("sc", "gscholar") 
@@ -251,6 +263,7 @@ function gscholaron(){
     google.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
     baidudev.removeAttribute("class"); 
+    aur.removeAttribute("class");
 }
 function mdnon(){
     localStorage.setItem("sc", "mdn") 
@@ -270,6 +283,28 @@ function mdnon(){
     zhihu.removeAttribute("class"); 
     gscholar.removeAttribute("class"); 
     google.removeAttribute("class"); 
+    baidudev.removeAttribute("class"); 
+    aur.removeAttribute("class");
+}
+function auron(){
+    localStorage.setItem("sc", "aur") 
+    sc.setAttribute("action", "https://aur.archlinux.org/packages")
+     sc_text.setAttribute("placeholder", "AUR")
+     sc_text.setAttribute("name", "K")
+     sc_text.focus()
+    aur.setAttribute("class", "active"); 
+    bing.removeAttribute("class"); 
+    baidu.removeAttribute("class"); 
+    sogou.removeAttribute("class"); 
+    _360.removeAttribute("class"); 
+    fsou.removeAttribute("class"); 
+    github.removeAttribute("class"); 
+    gtrans.removeAttribute("class"); 
+    bilibili.removeAttribute("class"); 
+    zhihu.removeAttribute("class"); 
+    gscholar.removeAttribute("class"); 
+    google.removeAttribute("class"); 
+    mdn.removeAttribute("class");
     baidudev.removeAttribute("class"); 
 }
 if( localStorage.getItem("sc") == null ){
@@ -310,4 +345,7 @@ if(localStorage.getItem("sc") == 'gscholar'){
 }
 if(localStorage.getItem("sc") == 'mdn'){
     mdnon()
+}
+if(localStorage.getItem("sc") == 'aur'){
+    auron()
 }
