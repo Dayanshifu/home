@@ -12,7 +12,7 @@ var bilibili = document.getElementById('bilibili')
 var zhihu = document.getElementById('zhihu')
 var gscholar = document.getElementById('gscholar')
 var mdn = document.getElementById('mdn')
-var aur = document.getElementById('aur')
+var archwiki = document.getElementById('archwiki')
 function googleon(){
     localStorage.setItem("sc", "google")
     sc.setAttribute("action", "https://www.google.com/search")
@@ -32,7 +32,7 @@ function googleon(){
     gscholar.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
     baidudev.removeAttribute("class"); 
-    aur.removeAttribute("class");
+    archwiki.removeAttribute("class");
 }
 function bingon(){
     localStorage.setItem("sc", "bing") 
@@ -53,7 +53,7 @@ function bingon(){
     gscholar.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
     baidudev.removeAttribute("class"); 
-    aur.removeAttribute("class");
+    archwiki.removeAttribute("class");
 }
 function baiduon(){
     localStorage.setItem("sc", "baidu") 
@@ -74,7 +74,7 @@ function baiduon(){
     gscholar.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
     baidudev.removeAttribute("class"); 
-    aur.removeAttribute("class");
+    archwiki.removeAttribute("class");
 }
 function sogouon(){
     localStorage.setItem("sc", "sogou") 
@@ -95,7 +95,7 @@ function sogouon(){
     gscholar.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
     baidudev.removeAttribute("class"); 
-    aur.removeAttribute("class");
+    archwiki.removeAttribute("class");
 }
 function _360on(){
     localStorage.setItem("sc", "360") 
@@ -116,7 +116,7 @@ function _360on(){
     gscholar.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
     baidudev.removeAttribute("class"); 
-    aur.removeAttribute("class");
+    archwiki.removeAttribute("class");
 }
 function fsouon(){
     localStorage.setItem("sc", "fsou") 
@@ -137,7 +137,7 @@ function fsouon(){
     gscholar.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
     baidudev.removeAttribute("class"); 
-    aur.removeAttribute("class");
+    archwiki.removeAttribute("class");
 }
 function githubon(){
     localStorage.setItem("sc", "github") 
@@ -158,7 +158,7 @@ function githubon(){
     gscholar.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
     baidudev.removeAttribute("class"); 
-    aur.removeAttribute("class");
+    archwiki.removeAttribute("class");
 }
 function gtranson(){
     localStorage.setItem("sc", "gtrans") 
@@ -179,7 +179,7 @@ function gtranson(){
     gscholar.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
     baidudev.removeAttribute("class"); 
-    aur.removeAttribute("class");
+    archwiki.removeAttribute("class");
 }
 function bilibilion(){
     localStorage.setItem("sc", "bilibili") 
@@ -200,7 +200,7 @@ function bilibilion(){
     gscholar.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
     baidudev.removeAttribute("class"); 
-    aur.removeAttribute("class");
+    archwiki.removeAttribute("class");
 }
 function zhihuon(){
     localStorage.setItem("sc", "zhihu") 
@@ -221,7 +221,7 @@ function zhihuon(){
     gscholar.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
     baidudev.removeAttribute("class"); 
-    aur.removeAttribute("class");
+    archwiki.removeAttribute("class");
 }
 function baidudevon(){
     localStorage.setItem("sc", "baidudev") 
@@ -242,7 +242,7 @@ function baidudevon(){
     google.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
     gscholar.removeAttribute("class"); 
-    aur.removeAttribute("class");
+    archwiki.removeAttribute("class");
 }
 function gscholaron(){
     localStorage.setItem("sc", "gscholar") 
@@ -263,7 +263,7 @@ function gscholaron(){
     google.removeAttribute("class"); 
     mdn.removeAttribute("class"); 
     baidudev.removeAttribute("class"); 
-    aur.removeAttribute("class");
+    archwiki.removeAttribute("class");
 }
 function mdnon(){
     localStorage.setItem("sc", "mdn") 
@@ -284,15 +284,15 @@ function mdnon(){
     gscholar.removeAttribute("class"); 
     google.removeAttribute("class"); 
     baidudev.removeAttribute("class"); 
-    aur.removeAttribute("class");
+    archwiki.removeAttribute("class");
 }
-function auron(){
-    localStorage.setItem("sc", "aur") 
-    sc.setAttribute("action", "https://aur.archlinux.org/packages")
-     sc_text.setAttribute("placeholder", "AUR")
-     sc_text.setAttribute("name", "K")
+function archwikion(){
+    localStorage.setItem("sc", "archwiki") 
+    sc.setAttribute("action", "https://wiki.archlinux.org/index.php")
+     sc_text.setAttribute("placeholder", "Arch Wiki")
+     sc_text.setAttribute("name", "search")
      sc_text.focus()
-    aur.setAttribute("class", "active"); 
+    archwiki.setAttribute("class", "active"); 
     bing.removeAttribute("class"); 
     baidu.removeAttribute("class"); 
     sogou.removeAttribute("class"); 
@@ -346,6 +346,6 @@ if(localStorage.getItem("sc") == 'gscholar'){
 if(localStorage.getItem("sc") == 'mdn'){
     mdnon()
 }
-if(localStorage.getItem("sc") == 'aur'){
-    auron()
+if(localStorage.getItem("sc") == 'archwiki'){
+    archwikion()
 }
