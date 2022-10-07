@@ -7,7 +7,7 @@ var sogou = document.getElementById('sogou')
 var _360 = document.getElementById('360')
 var fsou = document.getElementById('fsou')
 var github = document.getElementById('github')
-var gtrans = document.getElementById('gtrans')
+var btrans = document.getElementById('btrans')
 var bilibili = document.getElementById('bilibili')
 var zhihu = document.getElementById('zhihu')
 var gscholar = document.getElementById('gscholar')
@@ -26,7 +26,7 @@ function googleon(){
     _360.removeAttribute("class"); 
     fsou.removeAttribute("class"); 
     github.removeAttribute("class"); 
-    gtrans.removeAttribute("class"); 
+    btrans.removeAttribute("class"); 
     bilibili.removeAttribute("class"); 
     zhihu.removeAttribute("class"); 
     gscholar.removeAttribute("class"); 
@@ -47,7 +47,7 @@ function bingon(){
     _360.removeAttribute("class"); 
     fsou.removeAttribute("class"); 
     github.removeAttribute("class"); 
-    gtrans.removeAttribute("class"); 
+    btrans.removeAttribute("class"); 
     bilibili.removeAttribute("class"); 
     zhihu.removeAttribute("class"); 
     gscholar.removeAttribute("class"); 
@@ -68,7 +68,7 @@ function baiduon(){
     _360.removeAttribute("class"); 
     fsou.removeAttribute("class"); 
     github.removeAttribute("class"); 
-    gtrans.removeAttribute("class"); 
+    btrans.removeAttribute("class"); 
     bilibili.removeAttribute("class"); 
     zhihu.removeAttribute("class"); 
     gscholar.removeAttribute("class"); 
@@ -89,7 +89,7 @@ function sogouon(){
     _360.removeAttribute("class"); 
     fsou.removeAttribute("class"); 
     github.removeAttribute("class"); 
-    gtrans.removeAttribute("class"); 
+    btrans.removeAttribute("class"); 
     bilibili.removeAttribute("class"); 
     zhihu.removeAttribute("class"); 
     gscholar.removeAttribute("class"); 
@@ -110,7 +110,7 @@ function _360on(){
     google.removeAttribute("class"); 
     fsou.removeAttribute("class"); 
     github.removeAttribute("class"); 
-    gtrans.removeAttribute("class"); 
+    btrans.removeAttribute("class"); 
     bilibili.removeAttribute("class"); 
     zhihu.removeAttribute("class"); 
     gscholar.removeAttribute("class"); 
@@ -131,7 +131,7 @@ function fsouon(){
     _360.removeAttribute("class"); 
     google.removeAttribute("class"); 
     github.removeAttribute("class"); 
-    gtrans.removeAttribute("class"); 
+    btrans.removeAttribute("class"); 
     bilibili.removeAttribute("class"); 
     zhihu.removeAttribute("class"); 
     gscholar.removeAttribute("class"); 
@@ -152,7 +152,7 @@ function githubon(){
     _360.removeAttribute("class"); 
     fsou.removeAttribute("class"); 
     google.removeAttribute("class"); 
-    gtrans.removeAttribute("class"); 
+    btrans.removeAttribute("class"); 
     bilibili.removeAttribute("class"); 
     zhihu.removeAttribute("class"); 
     gscholar.removeAttribute("class"); 
@@ -160,13 +160,13 @@ function githubon(){
     baidudev.removeAttribute("class"); 
     archwiki.removeAttribute("class");
 }
-function gtranson(){
-    localStorage.setItem("sc", "gtrans") 
-    sc.setAttribute("action", "https://translate.google.cn/")
-     sc_text.setAttribute("placeholder", "Google Translator")
+function btranson(){
+    localStorage.setItem("sc", "btrans") 
+    sc.setAttribute("action", "https://cn.bing.com/translator")
+     sc_text.setAttribute("placeholder", "Bing Translator")
      sc_text.setAttribute("name", "text")
      sc_text.focus()
-    gtrans.setAttribute("class", "active"); 
+    btrans.setAttribute("class", "active"); 
     bing.removeAttribute("class"); 
     baidu.removeAttribute("class"); 
     sogou.removeAttribute("class"); 
@@ -194,7 +194,7 @@ function bilibilion(){
     _360.removeAttribute("class"); 
     fsou.removeAttribute("class"); 
     github.removeAttribute("class"); 
-    gtrans.removeAttribute("class"); 
+    btrans.removeAttribute("class"); 
     google.removeAttribute("class"); 
     zhihu.removeAttribute("class"); 
     gscholar.removeAttribute("class"); 
@@ -215,7 +215,7 @@ function zhihuon(){
     _360.removeAttribute("class"); 
     fsou.removeAttribute("class"); 
     github.removeAttribute("class"); 
-    gtrans.removeAttribute("class"); 
+    btrans.removeAttribute("class"); 
     bilibili.removeAttribute("class"); 
     google.removeAttribute("class"); 
     gscholar.removeAttribute("class"); 
@@ -236,7 +236,7 @@ function baidudevon(){
     _360.removeAttribute("class"); 
     fsou.removeAttribute("class"); 
     github.removeAttribute("class"); 
-    gtrans.removeAttribute("class"); 
+    btrans.removeAttribute("class"); 
     bilibili.removeAttribute("class"); 
     zhihu.removeAttribute("class"); 
     google.removeAttribute("class"); 
@@ -257,7 +257,7 @@ function gscholaron(){
     _360.removeAttribute("class"); 
     fsou.removeAttribute("class"); 
     github.removeAttribute("class"); 
-    gtrans.removeAttribute("class"); 
+    btrans.removeAttribute("class"); 
     bilibili.removeAttribute("class"); 
     zhihu.removeAttribute("class"); 
     google.removeAttribute("class"); 
@@ -278,7 +278,7 @@ function mdnon(){
     _360.removeAttribute("class"); 
     fsou.removeAttribute("class"); 
     github.removeAttribute("class"); 
-    gtrans.removeAttribute("class"); 
+    btrans.removeAttribute("class"); 
     bilibili.removeAttribute("class"); 
     zhihu.removeAttribute("class"); 
     gscholar.removeAttribute("class"); 
@@ -299,7 +299,7 @@ function archwikion(){
     _360.removeAttribute("class"); 
     fsou.removeAttribute("class"); 
     github.removeAttribute("class"); 
-    gtrans.removeAttribute("class"); 
+    btrans.removeAttribute("class"); 
     bilibili.removeAttribute("class"); 
     zhihu.removeAttribute("class"); 
     gscholar.removeAttribute("class"); 
@@ -331,8 +331,8 @@ if(localStorage.getItem("sc") == 'fsou'){
 if(localStorage.getItem("sc") == 'github'){
     githubon()
 }
-if(localStorage.getItem("sc") == 'gtrans'){
-    gtranson()
+if(localStorage.getItem("sc") == 'btrans'){
+    btranson()
 }
 if(localStorage.getItem("sc") == 'zhihu'){
     zhihuon()
