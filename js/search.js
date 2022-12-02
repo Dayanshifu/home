@@ -162,9 +162,9 @@ function githubon(){
 }
 function btranson(){
     localStorage.setItem("sc", "btrans") 
-    sc.setAttribute("action", "https://fanyi.baidu.com/")
-    sc_text.setAttribute("placeholder", "百度翻译")
-    sc_text.setAttribute("name", "word")
+    sc.setAttribute("action", "https://cn.bing.com/translator")
+    sc_text.setAttribute("placeholder", "Bing Translator")
+    sc_text.setAttribute("name", "text")
     sc_text.focus()
     btrans.setAttribute("class", "active"); 
     bing.removeAttribute("class"); 
