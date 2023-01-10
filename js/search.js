@@ -288,7 +288,7 @@ function mdnon(){
 }
 function archwikion(){
     localStorage.setItem("sc", "archwiki") 
-    sc.setAttribute("action", "https://wiki.archlinux.org/index.php")
+    sc.setAttribute("action", "https://wiki.archlinuxcn.org/wzh/index.php")
      sc_text.setAttribute("placeholder", "Arch Wiki")
      sc_text.setAttribute("name", "search")
      sc_text.focus()
