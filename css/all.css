@@ -1,63 +1,66 @@
-
 .nav {
-    border:solid 1px #00ff0059; 
-    margin-bottom:15px; 
-    border-radius: 20px; 
+    border:solid 1px #00ff0059;
+    margin-bottom:15px;
+    border-radius: 20px;
     background-color: #d3ffde;
 }
 .nav h3 {
-    margin:3px 0px 0px 3px; 
-    padding:5px 10px; 
-    color:rgb(20,110,29)
+    margin:3px 0px 0px 3px;
+    padding:5px 10px;
+    color:rgb(20,110,29) 
 }
 .nav h3 i {
-    font-style:normal; 
-    padding-left:10px; 
+    font-style:normal;
+    padding-left:10px;
     color:rgb(0, 255, 21);
 }
 .clear {
-    clear:both; height:15px;
+    clear:both;
+    height:15px;
 }
 .clear-s {
-    clear:both; height:5px;
+    clear:both;
+    height:5px;
 }
 .nav a {
-    float:left; width:150px; 
-    margin-top:15px; 
-    margin-left:10px; 
-    text-align:center; 
-    text-decoration: none;}
+    float:left;
+    width:150px;
+    margin-top:15px;
+    margin-left:10px;
+    text-align:center;
+    text-decoration: none;
+}
 .nav a:hover {
-    text-decoration: none; 
+    text-decoration: none;
     color:rgb(20, 110, 29);
 }
 .nav a i {
-    font-style:normal; 
-    color:#20a53a; 
-    position: relative; 
+    font-style:normal;
+    color:#20a53a;
+    position: relative;
     padding:1px 3px;
 }
 .ad {
-    border:solid 1px #00ff0059; 
-    margin-bottom:20px; 
-    border-radius: 20px; 
+    border:solid 1px #00ff0059;
+    margin-bottom:20px;
+    border-radius: 20px;
     background-color: #d3ffde;
 }
 .ad h3 {
-    margin:3px 0px 0px 3px; 
-    padding:5px 10px; 
-    color:rgb(20,110,29)
+    margin:3px 0px 0px 3px;
+    padding:5px 10px;
+    color:rgb(20,110,29) 
 }
 .ad p {
-    margin:3px 0px 0px 3px; 
-    padding:5px 10px; 
-    color:rgb(20,110,29)
+    margin:3px 0px 0px 3px;
+    padding:5px 10px;
+    color:rgb(20,110,29) 
 }
 .sc {
-    border:solid 1px #00ff0059; 
-    margin-bottom:15px; 
-    border-radius: 20px; 
-    background-color: #d3ffde; 
+    border:solid 1px #00ff0059;
+    margin-bottom:15px;
+    border-radius: 20px;
+    background-color: #d3ffde;
     text-align: center;
 }
 .container {
@@ -66,16 +69,16 @@
     background-color: #d3ffe7;
     padding: 0% 5%;
     border-radius: 25px;
-    opacity:0.7
+    opacity:0.7 
 }
 ul {
     padding-left: 20px;
 }
 ul li {
-    line-height: 2.3
+    line-height: 2.3 
 }
 a {
-    color: #20a53a
+    color: #20a53a 
 }
 .user-input {
     width: 50%;
@@ -85,7 +88,7 @@ a {
     box-sizing: border-box;
     outline: none;
     text-indent: 10px;
-    border-radius:20px; 
+    border-radius:20px;
 }
 .user-btn {
     width: 80px;
@@ -97,7 +100,7 @@ a {
     outline: none;
     color: #20a53a;
     font-size: 18px;
-    border-radius:20px; 
+    border-radius:20px;
     font-weight: bold;
 }
 div.sc div a {
@@ -136,15 +139,23 @@ body{
     display:block;
 }
 .mbon{
-    display:none
+    display:none 
 }
 @media only screen and (max-width: 600px) {
-    .pcon{display: none;}
-    .mbon{display: block;}
+    .pcon{
+       display: none;
+   }
+    .mbon{
+       display: block;
+   }
 }
 @media only screen and (min-width: 600px) {
-    .pcon{display: block;}
-    .mbon{display: none;}
+    .pcon{
+       display: block;
+   }
+    .mbon{
+       display: none;
+   }
 }
 #timer {
     color:#20a53a;
@@ -155,41 +166,40 @@ body{
 div.container h1{
     margin: 0px auto 10px;
 }
-#word{ 
-    position: absolute; 
-    list-style: none; 
+#word{
+    position: absolute;
+    list-style: none;
     left:25%;
     right:25%;
     margin:auto;
-    border:solid 2px #00ff0059; 
-    margin-bottom:15px; 
-    border-radius: 20px; 
+    border:solid 2px #00ff0059;
+    margin-bottom:15px;
+    border-radius: 20px;
     background-color: #d3ffde;
-    box-shadow: 0 0 10px #aaa; 
+    box-shadow: 0 0 10px #aaa;
 }
-#word li{ 
-    height:35px; 
-    padding: 0 5px; 
-    text-indent: 30px; 
-    background: url(../img/sou.svg) no-repeat 5px; 
-    background-size: 20px;  
-    line-height: 35px; 
-    cursor: pointer; 
-    font-size: 16px; 
+#word li{
+    height:35px;
+    padding: 0 5px;
+    text-indent: 30px;
+    background: url(../img/sou.svg) no-repeat 5px;
+    background-size: 20px;
+    line-height: 35px;
+    cursor: pointer;
+    font-size: 16px;
     color:#20a53a;
     border-radius: 5px;
 }
-#word li:hover{ 
+#word li:hover{
     color:rgb(20, 110, 29);
     background-color: #d3ffde;
 }
-
 .pagination{
-    border:solid 1px #00ff0059; 
-    padding:15px auto 15px; 
+    border:solid 1px #00ff0059;
+    padding:15px auto 15px;
     padding-left: 15px;
     padding-right: 15px;
-    border-radius: 20px; 
+    border-radius: 20px;
     background-color: #d3ffde;
     opacity:0.7;
     display:inline-block;
@@ -201,7 +211,7 @@ div.container h1{
     left:10px;
     z-index: 90000;
 }
-#openedmulu p a{ 
+#openedmulu p a{
     padding:0px 0px 0px 0px;
-    color:#20a53a; 
+    color:#20a53a;
 }
