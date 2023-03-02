@@ -38,7 +38,7 @@ function googleon() {
 
 function bingon() {
     localStorage.setItem("sc", "bing")
-    sc.setAttribute("action", "https://cn.bing.com/search")
+    sc.setAttribute("action", "https://www.bing.com/search")
     sc_text.setAttribute("placeholder", "MIcrosoft Bing")
     sc_text.setAttribute("name", "q")
     sc_text.focus()
@@ -170,7 +170,7 @@ function githubon() {
 
 function btranson() {
     localStorage.setItem("sc", "btrans")
-    sc.setAttribute("action", "https://cn.bing.com/translator")
+    sc.setAttribute("action", "https://www.bing.com/translator")
     sc_text.setAttribute("placeholder", "Bing Translator")
     sc_text.setAttribute("name", "text")
     sc_text.focus()
