@@ -1,14 +1,17 @@
+html {
+    height: 100%;
+}
 .nav {
-    border: solid 1px #00ff0059;
     margin-bottom: 15px;
     border-radius: 20px;
-    background-color: #d3ffde;
+    border: 2px solid #aaa;
+    background-color: #555;
 }
 
 .nav h3 {
     margin: 3px 0px 0px 3px;
     padding: 5px 10px;
-    color: rgb(20, 110, 29)
+    color: rgb(141, 255, 151)
 }
 
 .nav h3 i {
@@ -38,50 +41,33 @@
 
 .nav a:hover {
     text-decoration: none;
-    color: rgb(20, 110, 29);
+    color: rgb(190, 255, 197);
 }
 
 .nav a i {
     font-style: normal;
-    color: #20a53a;
+    color: #fff;
     position: relative;
     padding: 1px 3px;
 }
 
-.ad {
-    border: solid 1px #00ff0059;
-    margin-bottom: 20px;
-    border-radius: 20px;
-    background-color: #d3ffde;
-}
-
-.ad h3 {
-    margin: 3px 0px 0px 3px;
-    padding: 5px 10px;
-    color: rgb(20, 110, 29)
-}
-
-.ad p {
-    margin: 3px 0px 0px 3px;
-    padding: 5px 10px;
-    color: rgb(20, 110, 29)
-}
-
 .sc {
-    border: solid 1px #00ff0059;
     margin-bottom: 15px;
     border-radius: 20px;
-    background-color: #d3ffde;
     text-align: center;
 }
 
 .container {
-    max-width: 1200px;
+    position: relative;
+    max-width: 720px;
     margin: 0px auto 0px;
-    background-color: #d3ffe7;
+    min-height: 100%;
+    background-color: #555;
     padding: 0% 5%;
-    border-radius: 25px;
-    opacity: 0.85
+    opacity:0.75;
+    min-height:100%;
+    text-align: center;
+    /*border-radius: 25px;*/
 }
 
 ul {
@@ -93,13 +79,15 @@ ul li {
 }
 
 a {
-    color: #20a53a
+    color: #fff
 }
 
 .user-input {
-    width: 50%;
+    width: 80%;
     height: 40px;
-    border: 2px solid #00ff0059;
+    border: 2px solid #aaa;
+    background-color: #555;
+    color:#fff;
     border-radius: 5px;
     box-sizing: border-box;
     outline: none;
@@ -108,14 +96,13 @@ a {
 }
 
 .user-btn {
-    width: 80px;
-    height: 38px;
-    border: 2px solid #00ff0059;
-    border-radius: 5px;
-    background: #00ff003d;
+    max-width: 80px;
+    height: 40px;
+    border: 2px solid #aaa;
     vertical-align: middle;
     outline: none;
-    color: #20a53a;
+    background-color: #555;
+    color: rgb(141, 255, 151);
     font-size: 18px;
     border-radius: 20px;
     font-weight: bold;
@@ -124,21 +111,19 @@ a {
 div.sc div a {
     color: black;
     padding: 0px 9px;
-    border-radius: 20px;
+    border-radius: 25px;
     text-align: center;
     font-size: 32px;
 }
 
 div.sc div a.active {
-    background-color: #48a54b;
-    border: 2px solid #00ff0059;
-    background: #00ff003d;
+    border: 2px solid #aaa;
     color: white;
     border-radius: 30px;
 }
 
 div.sc div a:hover:not(.active) {
-    background-color: rgb(185, 236, 169);
+    border: 2px solid #777;
 }
 
 .chose {
@@ -146,6 +131,7 @@ div.sc div a:hover:not(.active) {
 }
 
 body {
+    height: 100%;
     background-image: url(https://img.littleyan.tk/img/bg.jpg) !important;
     background-position: center center;
     background-repeat: no-repeat;
@@ -185,7 +171,7 @@ body {
 }
 
 #timer {
-    color: #20a53a;
+    color: #fff;
     font-size: 25px;
     margin: 0px auto 5px;
     font-weight: bold;
@@ -198,14 +184,16 @@ div.container h1 {
 #word {
     position: absolute;
     list-style: none;
-    left: 25%;
-    right: 25%;
-    margin: auto;
-    border: solid 2px #00ff0059;
+    left: 10%;
+    right: 10%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    border: 2px solid #aaa;
+    background-color: #555;
     margin-bottom: 15px;
     border-radius: 20px;
-    background-color: #d3ffde;
-    box-shadow: 0 0 10px #aaa;
+    box-shadow: 0 0 10px #000;
 }
 
 #word li {
@@ -214,25 +202,25 @@ div.container h1 {
     text-indent: 30px;
     background: url(../img/sou.svg) no-repeat 5px;
     background-size: 20px;
-    line-height: 35px;
+    line-height: 25px;
     cursor: pointer;
     font-size: 16px;
-    color: #20a53a;
-    border-radius: 5px;
+    color: #fff;
+    border-radius: 20px;
 }
 
 #word li:hover {
-    color: rgb(20, 110, 29);
-    background-color: #d3ffde;
+    color: rgb(190, 255, 197);
+    background-color: #999;
 }
 
 .pagination {
-    border: solid 1px #00ff0059;
+    border: 2px solid #aaa;
     padding: 15px auto 15px;
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 20px;
-    background-color: #d3ffde;
+    background-color: #555;
     opacity: 0.7;
     display: inline-block;
     list-style-type: none;
@@ -241,10 +229,16 @@ div.container h1 {
     text-align: left;
     top: 10px;
     left: 10px;
-    z-index: 90000;
+    z-index: 9fff0;
 }
 
 #openedmulu p a {
     padding: 0px 0px 0px 0px;
-    color: #20a53a;
+    color: #fff;
+}
+.foot {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }

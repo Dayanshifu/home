@@ -23,9 +23,9 @@ function googleon() {
     google.setAttribute("class", "active");
     bing.removeAttribute("class");
     baidu.removeAttribute("class");
+    fsou.removeAttribute("class");
     sogou.removeAttribute("class");
     _360.removeAttribute("class");
-    fsou.removeAttribute("class");
     github.removeAttribute("class");
     btrans.removeAttribute("class");
     bilibili.removeAttribute("class");
@@ -45,9 +45,9 @@ function bingon() {
     bing.setAttribute("class", "active");
     google.removeAttribute("class");
     baidu.removeAttribute("class");
+    fsou.removeAttribute("class");
     sogou.removeAttribute("class");
     _360.removeAttribute("class");
-    fsou.removeAttribute("class");
     github.removeAttribute("class");
     btrans.removeAttribute("class");
     bilibili.removeAttribute("class");
@@ -67,9 +67,9 @@ function baiduon() {
     baidu.setAttribute("class", "active");
     bing.removeAttribute("class");
     google.removeAttribute("class");
+    fsou.removeAttribute("class");
     sogou.removeAttribute("class");
     _360.removeAttribute("class");
-    fsou.removeAttribute("class");
     github.removeAttribute("class");
     btrans.removeAttribute("class");
     bilibili.removeAttribute("class");
@@ -133,9 +133,9 @@ function fsouon() {
     fsou.setAttribute("class", "active");
     bing.removeAttribute("class");
     baidu.removeAttribute("class");
+    google.removeAttribute("class");
     sogou.removeAttribute("class");
     _360.removeAttribute("class");
-    google.removeAttribute("class");
     github.removeAttribute("class");
     btrans.removeAttribute("class");
     bilibili.removeAttribute("class");
