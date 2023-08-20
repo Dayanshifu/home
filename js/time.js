@@ -10,9 +10,9 @@ function show() {
     hs = currentDT.getHours(); //时
     if (hs < 10){hs='0'+String(hs)}
     ms = currentDT.getMinutes(); //分
-    if (hs < 10){ms='0'+String(hs)}
+    if (ms < 10){ms='0'+String(hs)}
     ss = currentDT.getSeconds(); //秒
-    if (hs < 10){ss='0'+String(hs)}
+    if (ss < 10){ss='0'+String(hs)}
     theDateStr = y + "年" + m + "月" + date + "日 星期" + days[day] + " ";
     theTimeStr =hs + ":" + ms;
     document.getElementById("nowDiv").innerHTML = theDateStr;
