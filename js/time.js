@@ -10,8 +10,10 @@ function show() {
     hs = currentDT.getHours(); //时
     ms = currentDT.getMinutes(); //分
     ss = currentDT.getSeconds(); //秒
-    theDateStr = y + "年" + m + "月" + date + "日 星期" + days[day] + " " + hs + ":" + ms + ":" + ss;
+    theDateStr = y + "年" + m + "月" + date + "日 星期" + days[day] + " ";
+    theTimeStr =hs + ":" + ms;
     document.getElementById("nowDiv").innerHTML = theDateStr;
+    document.getElementById("nowTime").innerHTML = theTimeStr;
     // setTimeout 在执行时,是在载入后延迟指定时间后,去执行一次表达式,仅执行一次
     window.setTimeout(show, 1000);
 }

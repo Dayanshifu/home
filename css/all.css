@@ -2,6 +2,7 @@ html {
     height: 100%;
 }
 .nav {
+    box-shadow: 0px 0px 15px #555;
     margin-bottom: 15px;
     border-radius: 20px;
     border: 2px solid #aaa;
@@ -62,7 +63,7 @@ html {
     max-width: 720px;
     margin: 0px auto 0px;
     min-height: 100%;
-    background-color: #555;
+    /*background-color: #555;*/
     padding: 0% 5%;
     opacity:0.75;
     min-height:100%;
@@ -83,6 +84,7 @@ a {
 }
 
 .user-input {
+    box-shadow: 0px 0px 15px #555;
     width: 80%;
     height: 40px;
     border: 2px solid #aaa;
@@ -96,6 +98,7 @@ a {
 }
 
 .user-btn {
+    box-shadow: 0px 0px 15px #555;
     max-width: 80px;
     height: 40px;
     border: 2px solid #aaa;
@@ -109,6 +112,8 @@ a {
 }
 
 div.sc div a {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #555;
     color: black;
     padding: 0px 9px;
     border-radius: 25px;
@@ -117,6 +122,7 @@ div.sc div a {
 }
 
 div.sc div a.active {
+    background-color: #555;
     border: 2px solid #aaa;
     color: white;
     border-radius: 30px;
@@ -184,8 +190,8 @@ div.container h1 {
 #word {
     position: absolute;
     list-style: none;
-    left: 10%;
-    right: 10%;
+    left: 5%;
+    right: 5%;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-right: 20px;
@@ -198,13 +204,13 @@ div.container h1 {
 
 #word li {
     height: 35px;
-    padding: 0 5px;
+    padding: 0px auto 0px;
     text-indent: 30px;
     background: url(../img/sou.svg) no-repeat 5px;
     background-size: 20px;
     line-height: 25px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
     color: #fff;
     border-radius: 20px;
 }

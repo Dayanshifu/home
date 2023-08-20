@@ -10,7 +10,7 @@ $(function() {
                 jsonp: 'cb', //回调函数的参数名(键值)key
                 // jsonpCallback: 'fun', //回调函数名(值) value
                 beforeSend: function() {
-                    // $('#word').append('<li>正在加载。。。</li>');
+                    $('#word').append('<li>正在加载。。。</li>');
                 },
                 success: function(data) {
                     $('#word').empty().show();
