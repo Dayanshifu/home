@@ -86,21 +86,50 @@
             <div class="clear"></div>
         </div>
         </div>
+        <div class="clear"></div><div class="clear"></div><div class="clear"></div><div class="clear"></div><div class="clear"></div>
+
         <div class="foot">
-        <p style="color:#fff;font-size: 15px;"><b><a style="text-decoration:none;color:#fff" target="_blank"
-                href="https://github.com/Dayanshifu/hao-littleyan">Github</a> |
-            <a style="text-decoration:none;color:#fff" href="https://www.littleyan.tk">©2021-<a id="2year">114514</a> little颜</a> | <a
-                style="text-decoration:none;color:#fff" href="https://icp.gov.moe/?keyword=20233721" 
-                target="_blank">萌ICP备20233721号</a> | <a
-                style="text-decoration:none;color:#fff" href="achieve.html" 
-                target="_blank">旧</a></b>
-                <script type="text/javascript">
-                  var nowyear = new Date().getFullYear();
-                  document.getElementById("2year").innerHTML = nowyear;
-                </script>
-        </p>
-        <div class="clear"></div></div>
+            <div class="clear-s"></div>
+            <b>
+            <span style="font-size: 17px;" id="hitokoto"></span>
+            </b>
+            <span id="fromwho"></span>
+            
+            <br>
+            <script>  
+                // 获取p标签
+                var p = document.getElementById("hitokoto");
+                var q = document.getElementById("fromwho");
+    
+                // 发起请求
+                fetch("https://v1.hitokoto.cn/?c=i")
+                    .then(function(response) {
+                        return response.json();
+                    })
+                    .then(function(data) {
+                        // 将hitokoto内容替换到p标签中
+                        p.innerText = "「  "+ data.hitokoto+"」";
+                        q.innerText ="——"+data.from_who;
+                    });
+            </script>
+            <span style="color:#fff;font-size: 14px;">
+                <a style="text-decoration:none;color:#fff" target="_blank"
+                    href="https://github.com/Dayanshifu/hao-littleyan">Github</a> |
+                <a style="text-decoration:none;color:#fff" href="https://www.littleyan.tk">©2021-<span id="2year">114514</span> little颜</a> | <a
+                    style="text-decoration:none;color:#fff" href="https://icp.gov.moe/?keyword=20233721" 
+                    target="_blank">萌ICP备20233721号</a> | <a
+                    style="text-decoration:none;color:#fff" href="achieve.html" 
+                    target="_blank">旧</a>
+                    <script type="text/javascript">
+                      var nowyear = new Date().getFullYear();
+                      document.getElementById("2year").innerHTML = nowyear;
+                    </script>
+            </span>
+            <div class="clear-s"></div>
+        </div>
     </div>
+    
+    
 </body>
 
 </html>
