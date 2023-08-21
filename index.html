@@ -10,7 +10,7 @@
     </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>haolittle颜网址导航_上网从这里开始！</title>
+    <title>Home</title>
     <link rel="icon" href="https://img.littleyan.tk/img/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="css/all.css" />
     <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
@@ -96,22 +96,7 @@
             <span id="fromwho"></span>
             
             <br>
-            <script>  
-                // 获取p标签
-                var p = document.getElementById("hitokoto");
-                var q = document.getElementById("fromwho");
-    
-                // 发起请求
-                fetch("https://v1.hitokoto.cn/?c=i")
-                    .then(function(response) {
-                        return response.json();
-                    })
-                    .then(function(data) {
-                        // 将hitokoto内容替换到p标签中
-                        p.innerText = "「  "+ data.hitokoto+"」";
-                        q.innerText ="——"+data.from_who;
-                    });
-            </script>
+            <script src="js/hitokoto.js"></script>
             <span style="color:#fff;font-size: 14px;">
                 <a style="text-decoration:none;color:#fff" target="_blank"
                     href="https://github.com/Dayanshifu/hao-littleyan">Github</a> |
