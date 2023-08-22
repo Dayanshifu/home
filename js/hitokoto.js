@@ -2,7 +2,7 @@ var p = document.getElementById("hitokoto");
 var q = document.getElementById("fromwho");
 // 发起请求
 function getHitokoto(){
-    fetch("https://v1.hitokoto.cn/?c=i&c=c")
+    fetch("https://v1.hitokoto.cn/?c=c&c=i")
         .then(function(response) {
             return response.json();
         })
