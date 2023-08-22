@@ -11,10 +11,7 @@ function getHitokoto(){
                 // 将hitokoto内容替换到p标签中
                 p.innerText = "「  "+ data.hitokoto+"」";
                 if(data.from_who!=null){
-                    if(from_who=="原神"){
                     q.innerText = data.from_who/*+" "+data.from*/;}
-                    else{
-                    q.innerText = '——'+data.from_who/*+" "+data.from*/;}}
                 else{
                     q.innerText=data.from
                 }
