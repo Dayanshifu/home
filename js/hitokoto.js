@@ -14,6 +14,9 @@ function getHitokoto(){
                     if(data.from_who=="原神"){
                         q.innerText = data.from_who/*+" "+data.from*/;
                     }
+                    else if(data.from_who=="佚名"){
+                        q.innerText=data.from
+                    }
                     else{
                     q.innerText = '——'+data.from_who/*+" "+data.from*/;
                     }
