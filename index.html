@@ -2,130 +2,152 @@
 <html>
 
 <head>
-    <style type="text/css">
-    * {
-      padding:0 auto;
-      margin:0 auto;
-    }
-    </style>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Home</title>
-    <link rel="icon" href="https://img.littleyan.tk/img/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="css/all.css" />
-    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+  <style type="text/css">
+  * {
+    padding:0 auto;
+    margin:0 auto;
+  }
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home</title>
+  <link rel="icon" href="https://img.littleyan.tk/img/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="css/all.css" />
+  <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
 </head>
 
 <body onload="show()">
-    <div class="container">
-        <div class="clear"></div>
-        
-        <div  id="weatherandtime">
-            
-            <div id="timer">
-                <div class="clear-s"></div>
-                <div class="clear-s"></div>
-                <script type="text/javascript" src="js/time.js"></script>
-                <div style="font-size: 125px;line-height: 1;text-shadow: 10px 10px 12px #555;" id="nowTime"></div>
-                <div style="text-shadow: 5px 5px 10px #555;"id="nowDiv"></div>
-            
-        </div></div>
+  <div class="container">
+    <div class="clear"></div>
+    
+    <div  id="weatherandtime">
+      
+      <div id="timer" onclick="changemod()">
         <div class="clear-s"></div>
-        
-        <div class="sc" id="scdiv">
-            <div class="clear-s"></div>
-            <div class="chose">
-                <div>
-                    <center>
-                        <a id='google' onclick="googleon()"><img src="https://img.littleyan.tk/img/google.png"
-                            width=24px height=24px /></a>
-                        <a id='bing' onclick="bingon()"><img src="https://img.littleyan.tk/img/bing.ico"
-                            width=24px height=24px /></a>
-                        <a id='baidu' onclick="baiduon()"><img src="https://img.littleyan.tk/img/baidu.ico" 
-                            width=24px height=24px /></a>
-                        <a id='fsou' onclick="fsouon()"><img src="https://img.littleyan.tk/img/fsou.ico" 
-                            width=24px height=24px /></a>
-                    </center>
-                </div>
-            </div>
-            <div class="clear-s"></div>
-            <div class="clear-s"></div>
-            <form id="sc" action="https://www.google.com/search" method="get" target="_blank" autocomplete="off">
-                <input id="sc-text" class="user-input" size="38" type="text" autofocus="autofocus" placeholder="Google"
-                    name="q" />
-                <input type="submit" value=" Go " class="user-btn" />
-            </form>
-            <script src="js/search.js"></script>
-            <div class="clear-s"></div>
-            <ul id="word" style="display: none;"></ul>
-            <script src="js/sou.js"></script>
+        <div class="clear-s"></div>
+        <script type="text/javascript" src="js/time.js"></script>
+        <div style="font-size: 125px;line-height: 1;text-shadow: 10px 10px 12px #555;" id="nowTime"></div>
+        <div style="text-shadow: 5px 5px 10px #555;"id="nowDiv"></div>
+      
+    </div></div>
+    <div class="clear-s"></div>
+    
+    <div class="sc" id="scdiv">
+      <div class="clear-s"></div>
+      <div class="chose">
+        <div>
+          <center>
+            <a id='google' onclick="googleon()"><img src="https://img.littleyan.tk/img/google.png"
+              width=24px height=24px /></a>
+            <a id='bing' onclick="bingon()"><img src="https://img.littleyan.tk/img/bing.ico"
+              width=24px height=24px /></a>
+            <a id='baidu' onclick="baiduon()"><img src="https://img.littleyan.tk/img/baidu.ico" 
+              width=24px height=24px /></a>
+            <a id='fsou' onclick="fsouon()"><img src="https://img.littleyan.tk/img/fsou.ico" 
+              width=24px height=24px /></a>
+          </center>
         </div>
-        
-        <div id="sites">
-        <div class="nav" id="链接">
-            <h3> 链接<i></i></h3>
-            <a target="_blank" href="https://www.bilibili.com/">bilibili</a>
-            <a target="_blank" href="https://www.github.com">Github</a>
-            <a target="_blank" href="https://vercel.com/">Vercel</a>
-            <a target="_blank" href="https://stackoverflow.com/">StackOverflow</a>
-            <a target="_blank" href="https://outlook.live.com">Hotmail</a>
-            <a target="_blank" href="https://developer.mozilla.org/">MDN</a>
-            <a target="_blank" href="https://dict.youdao.com/">有道</a>
-            <a target="_blank" href="https://nio.fystart.cn/">Chat Nio</a>
-            <div class="clear"></div>
-        </div>
-        </div>
-        <div class="clear"></div><div class="clear"></div><div class="clear"></div><div class="clear"></div><div class="clear"></div>
-
-        
-        <div class="foot">
-
-
-            <div class="clear-s"></div>
-
-            <b>
-            <span onclick="getHitokoto()" style="font-size: 17px;" id="hitokoto"></span>
-            </b>
-
-            <span id="fromwho"></span>
-
-            <script src="js/hitokoto.js"></script>
-            
-
-            <br>
-            <span style="color:#fff;font-size: 14px;">
-                <a style="text-decoration:none;color:#fff" target="_blank"
-                    href="https://github.com/Dayanshifu/hao-littleyan">Github</a> |
-                <a style="text-decoration:none;color:#fff" href="https://www.littleyan.tk">©2021-<span id="2year">114514</span> little颜</a> | <a
-                    style="text-decoration:none;color:#fff" href="https://icp.gov.moe/?keyword=20233721" 
-                    target="_blank">萌ICP备20233721号</a> | <a
-                    style="text-decoration:none;color:#fff" href="achieve.html" 
-                    target="_blank">旧</a>
-                    <script type="text/javascript">
-                      var nowyear = new Date().getFullYear();
-                      document.getElementById("2year").innerHTML = nowyear;
-                    </script>
-            </span>
-
-            <div class="clear-s"></div>
-
-        </div>
+      </div>
+      <div class="clear-s"></div>
+      <div class="clear-s"></div>
+      <form id="sc" action="https://www.google.com/search" method="get" target="_blank" autocomplete="off">
+        <input id="sc-text" class="user-input" size="38" type="text" autofocus="autofocus" placeholder="Google"
+          name="q" />
+        <input type="submit" value=" Go " class="user-btn" />
+      </form>
+      <script src="js/search.js"></script>
+      <div class="clear-s"></div>
+      <ul id="word" style="display: none;"></ul>
+      <script src="js/sou.js"></script>
     </div>
     
+    <div class="wg"  style="display: none;" id="wg">
+    <div class="card">
+      <div id="he-plugin-standard"></div>
+      <script>
+      WIDGET = {
+        "CONFIG": {
+        "layout": "1",
+        "width": "220",
+        "height": "180",
+        "background": "5",
+        "dataColor": "FFFFFF",
+        "modules": "10",
+        "key": "15d5720fc4644deda84f8d5b347f1662"
+        }
+      }
+      </script>
+      <script src="https://widget.qweather.net/standard/static/js/he-standard-common.js?v=2.0"></script>
+      <div class="clear"></div>
+    </div>
+    </div>
+
+    <div id="sites">
+    <div class="nav" id="链接">
+      <h3> 链接<i></i></h3>
+      <a target="_blank" href="https://www.bilibili.com/">bilibili</a>
+      <a target="_blank" href="https://www.github.com">Github</a>
+      <a target="_blank" href="https://vercel.com/">Vercel</a>
+      <a target="_blank" href="https://stackoverflow.com/">StackOverflow</a>
+      <a target="_blank" href="https://outlook.live.com">Hotmail</a>
+      <a target="_blank" href="https://developer.mozilla.org/">MDN</a>
+      <a target="_blank" href="https://dict.youdao.com/">有道</a>
+      <a target="_blank" href="https://nio.fystart.cn/">Chat Nio</a>
+      <div class="clear"></div>
+    </div>
+    </div>
+    <div class="clear"></div><div class="clear"></div><div class="clear"></div><div class="clear"></div><div class="clear"></div>
+
+    <script src="js/changemod.js"></script>
     
+    <div class="foot">
+
+
+      <div class="clear-s"></div>
+
+      <b>
+      <span onclick="getHitokoto()" style="font-size: 17px;" id="hitokoto"></span>
+      </b>
+
+      <span id="fromwho"></span>
+
+      <script src="js/hitokoto.js"></script>
+      
+
+      <br>
+      <span style="color:#fff;font-size: 14px;">
+        <a style="text-decoration:none;color:#fff" target="_blank"
+          href="https://github.com/Dayanshifu/hao-littleyan">Github</a> |
+        <a style="text-decoration:none;color:#fff" href="https://www.littleyan.tk">©2021-<span id="2year">114514</span> little颜</a> | <a
+          style="text-decoration:none;color:#fff" href="https://icp.gov.moe/?keyword=20233721" 
+          target="_blank">萌ICP备20233721号</a> | <a
+          style="text-decoration:none;color:#fff" href="achieve.html" 
+          target="_blank">旧</a>
+          <script type="text/javascript">
+            var nowyear = new Date().getFullYear();
+            document.getElementById("2year").innerHTML = nowyear;
+          </script>
+      </span>
+
+      <div class="clear-s"></div>
+
+    </div>
+  </div>
+  
+  
 </body>
 
 </html>
 
 <!-- 
-       　  　▃▆█▇▄▖
+     　  　▃▆█▇▄▖
 　 　 　 ▟◤▖　　　◥█▎
    　 ◢◤　 ▐　　　 　▐▉
 　 ▗◤　　　▂　▗▖　　▕█▎
 　◤　▗▅▖◥▄　▀◣　　█▊
 ▐　▕▎◥▖◣◤　　　　◢██
 █◣　◥▅█▀　　　　▐██◤
-▐█▙▂　　     　◢██◤
+▐█▙▂　　   　◢██◤
 ◥██◣　　　　◢▄◤
  　　▀██▅▇▀
 哲学♂♂ 114514-->
