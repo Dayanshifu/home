@@ -1,27 +1,29 @@
-var a = document.getElementById('wg');  
-var b = document.getElementById('sites');  
+var wg = document.getElementById('wg');  
+var sites = document.getElementById('sites');  
+var wordl = document.getElementById('word')
 
 function changemod(){
-  if (b.style.display === 'none') {  
-    b.style.display = 'block';  
-    a.style.display = 'none';  
-    localStorage.setItem("mod","a")
+  if (sites.style.display === 'none') {  
+    sites.style.display = 'block';  
+    wg.style.display = 'none';  
+    localStorage.setItem("mod","wg")
   } else {  
-    b.style.display = 'none';  
-    a.style.display = 'block';  
-    localStorage.setItem("mod","b")
+    sites.style.display = 'none';  
+    wg.style.display = 'block';  
+    localStorage.setItem("mod","sites")
   }  
 }
-if(localStorage.getItem("mod")=="a"){
-    b.style.display = 'block';  
-    a.style.display = 'none';  
+
+if(localStorage.getItem("mod")=="wg"){
+    wg.style.display = 'block';  
+    sites.style.display = 'none';  
 } 
-else if(localStorage.getItem("mod")==null){
-    b.style.display = 'block';  
-    a.style.display = 'none';  
-    localStorage.setItem("mod","a")
+else if(localStorage.getItem("mod")=="sites"){
+    sites.style.display = 'block';  
+    wg.style.display = 'none';  
 }
 else{  
-    b.style.display = 'none';  
-    a.style.display = 'block';  
+    wg.style.display = 'none';  
+    sites.style.display = 'block';  
+    localStorage.setItem("mod","sites")
 } 

@@ -277,7 +277,11 @@ div.foot span#fromwho{
     margin: 3px 0px 0px 3px;
     padding: 5px 10px;
     color: rgb(141, 255, 151)
-}*/#he-plugin-standard {
+}*/
+
+
+
+#he-plugin-standard {
     padding: 4px !important;
 }
 
@@ -381,10 +385,9 @@ div.foot span#fromwho{
     border-radius: 20px;
     width: 220px;
     height: 180px;
-    /*margin: 15px 15px 30px 15px;*/
     transition: .3s;
     overflow: hidden;
     text-align: center;
     font-family: var(--fonts-cn);
     user-select: none;
-  }
+  }*/

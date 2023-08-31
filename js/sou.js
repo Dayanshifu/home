@@ -3,7 +3,9 @@ $(function() {
     //当键盘键被松开时发送Ajax获取数据
     $('#sc-text').keyup(function() {
             var keywords = $(this).val();
-            if (keywords == '') { $('#word').hide(); return };
+            if (keywords == '') { 
+                $('#word').hide();if(localStorage.getItem("mod")=="wg"){$('#wg').show()} 
+                return };
             $.ajax({
                 url: 'https://suggestion.baidu.com/su?wd=' + keywords,
                 dataType: 'jsonp',
@@ -14,10 +16,16 @@ $(function() {
                 },
                 success: function(data) {
                     $('#word').empty().show();
+                    if(localStorage.getItem("mod")=="wg"){
+                        $('#wg').hide()
+                    }
                     if (data.s == '') {
                         //$('#word').append('<div class="error">Not find  "' + keywords + '"</div>');
                         $('#word').empty();
                         $('#word').hide();
+                        if(localStorage.getItem("mod")=="wg"){
+                            $('#wg').show()
+                        }
                     }
                     $.each(data.s, function() {
                         $('#word').append('<li>' + this + '</li>');
@@ -25,8 +33,14 @@ $(function() {
                 },
                 error: function() {
                     $('#word').empty().show();
+                    if(localStorage.getItem("mod")=="wg"){
+                        $('#wg').hide()
+                    }
                     //$('#word').append('<div class="click_work">Fail "' + keywords + '"</div>');
                     $('#word').hide();
+                    if(localStorage.getItem("mod")=="wg"){
+                        $('#wg').show()
+                    }
                 }
             })
         })
@@ -36,6 +50,9 @@ $(function() {
         $('#sc-text').val(word);
         $('#word').empty();
         $('#word').hide();
+        if(localStorage.getItem("mod")=="wg"){
+            $('#wg').show()
+        }
         //$("form").submit();
         $('.submit').trigger('click'); //触发搜索事件
         $('#sc-text').focus()
@@ -43,6 +60,9 @@ $(function() {
     $(document).on('click', '.container,.banner-video,nav', function() {
         $('#word').empty();
         $('#word').hide();
+        if(localStorage.getItem("mod")=="wg"){
+            $('#wg').show()
+        }
     })
 
 })
