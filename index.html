@@ -19,17 +19,14 @@
 <body onload="show()">
   <div class="container">
     <div class="clear"></div>
+      
+    <div id="timer" onclick="changeshow()">
+      <script type="text/javascript" src="js/time.js"></script>
+      <div style="font-size: 125px;line-height: 1;text-shadow: 10px 10px 12px #555;" id="nowTime"></div>
+      <div style="text-shadow: 5px 5px 10px #555;"id="nowDiv"></div>
     
-    <div  id="weatherandtime">
-      
-      <div id="timer" onclick="changemod()">
-        <div class="clear-s"></div>
-        <div class="clear-s"></div>
-        <script type="text/javascript" src="js/time.js"></script>
-        <div style="font-size: 125px;line-height: 1;text-shadow: 10px 10px 12px #555;" id="nowTime"></div>
-        <div style="text-shadow: 5px 5px 10px #555;"id="nowDiv"></div>
-      
-    </div></div>
+    </div>
+
     <div class="clear-s"></div>
     
     <div class="sc" id="scdiv">
@@ -61,6 +58,7 @@
       <script src="js/sou.js"></script>
     </div>
     
+    <div id="main">
     <div class="wg"  style="display: none;" id="wg">
 
       <div class="card" title="样式来源：fystart.cn">
@@ -118,6 +116,8 @@
 
     <script src="js/changemod.js"></script>
     
+    </div>
+
     <div class="foot">
 
 
