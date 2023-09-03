@@ -4,6 +4,11 @@ var wordl = document.getElementById('word')
 var clear = document.getElementById('timer')
 var main = document.getElementById('main')
 
+document.addEventListener("contextmenu", function(event){
+  // 阻止浏览器默认的右键菜单行为
+  event.preventDefault();
+  changemod()
+}) 
 
 function changemod(){
   if (sites.style.display == 'none') {  
