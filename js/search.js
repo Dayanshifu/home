@@ -3,7 +3,7 @@ var sc_text = document.getElementById('sc-text')
 var google = document.getElementById('google')
 var bing = document.getElementById('bing')
 var baidu = document.getElementById('baidu')
-var fsou = document.getElementById('fsou')
+/*var fsou = document.getElementById('fsou')*/
 
 function googleon() {
     localStorage.setItem("sc", "google")
@@ -14,7 +14,7 @@ function googleon() {
     google.setAttribute("class", "active");
     bing.removeAttribute("class");
     baidu.removeAttribute("class");
-    fsou.removeAttribute("class");
+    /*fsou.removeAttribute("class");*/
 }
 
 function bingon() {
@@ -26,7 +26,7 @@ function bingon() {
     bing.setAttribute("class", "active");
     google.removeAttribute("class");
     baidu.removeAttribute("class");
-    fsou.removeAttribute("class");
+    /*fsou.removeAttribute("class");*/
 }
 
 function baiduon() {
@@ -38,9 +38,9 @@ function baiduon() {
     baidu.setAttribute("class", "active");
     bing.removeAttribute("class");
     google.removeAttribute("class");
-    fsou.removeAttribute("class");
+    /*fsou.removeAttribute("class");*/
 }
-
+/*
 function fsouon() {
     localStorage.setItem("sc", "fsou")
     sc.setAttribute("action", "https://fsofso.com/search")
@@ -51,7 +51,7 @@ function fsouon() {
     bing.removeAttribute("class");
     baidu.removeAttribute("class");
     google.removeAttribute("class");
-}
+}*/
 
 if (localStorage.getItem("sc") == null) {
     localStorage.setItem("sc", "bing")
@@ -64,7 +64,7 @@ if (localStorage.getItem("sc") == 'google') {
 }
 if (localStorage.getItem("sc") == 'baidu') {
     baiduon()
-}
+}/*
 if (localStorage.getItem("sc") == 'fsou') {
     fsouon()
-}
+}*/
