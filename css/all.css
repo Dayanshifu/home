@@ -393,9 +393,43 @@ div.foot span#fromwho{
     user-select: none;
     display: inline-block;
   }
+.card-weather {
+    color: #fff;
+    flex-direction: column;
+    box-shadow: 0px 0px 15px #555;
+    border: 2px solid #aaa;
+    border-radius: 20px;
+    width: 220px;
+    height: 180px;
+    transition: .3s;
+    overflow: hidden;
+    text-align: center;
+    font-family: var(--fonts-cn);
+    user-select: none;
+    display: inline-block;
+  }
+.card-zkdjs {
+    color: #fff;
+    background-image: url(https://img.littleyan.tk/img/Stalin.jpg) !important;
+    background-size: contain;  
+    background-position: center;  
+    flex-direction: column;
+    box-shadow: 0px 0px 15px #555;
+    border: 2px solid #aaa;
+    border-radius: 20px;
+    width: 220px;
+    height: 180px;
+    transition: .3s;
+    overflow: hidden;
+    text-align: center;
+    font-family: var(--fonts-cn);
+    user-select: none;
+    display: inline-block;
+  }
 
 
 .countdown{
+    background-color: #555555c5;
     display: flex;
     margin-top: 5px;
     padding-bottom: 3px;
