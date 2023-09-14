@@ -6,7 +6,7 @@ $(function() {
             if (keywords == '') { 
                 $('#word').hide();if(localStorage.getItem("mod")=="wg"){$('#wg').show()} 
                 return };
-            $.ajax({
+            $.ajax({ 
                 url: 'https://suggestion.baidu.com/su?wd=' + keywords,
                 dataType: 'jsonp',
                 jsonp: 'cb', //回调函数的参数名(键值)key

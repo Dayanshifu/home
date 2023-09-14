@@ -6,7 +6,7 @@ function updateCountdown() {
   var now = new Date();
   
   // 计算时间差，单位为毫秒
-  var diff = examDate - now;
+  var diff = examDate - now; 
 
   // 如果时间差小于等于59,400,000，说明中考已经开始或结束
       

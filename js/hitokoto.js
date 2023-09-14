@@ -6,7 +6,7 @@ function getHitokoto(){
     fetch("https://v1.hitokoto.cn/?c=c&c=i")
         .then(function(response) {
             return response.json();
-        })
+        }) 
         .then(function(data) {
             if((data.type=='c'&& (data.from=="原神" || data.from_who=="原神"))||data.type!='c'){
                 // 将hitokoto内容替换到p标签中

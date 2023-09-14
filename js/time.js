@@ -7,7 +7,7 @@ function show() {
     m = currentDT.getMonth() + 1; //月
     date = currentDT.getDate(); //日
     day = currentDT.getDay(); //星期
-    hs = currentDT.getHours(); //时
+    hs = currentDT.getHours(); //时 
     if (hs < 10){hs='0'+String(hs)}
     ms = currentDT.getMinutes(); //分
     if (ms < 10){ms='0'+String(ms)}

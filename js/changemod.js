@@ -21,7 +21,7 @@ function changemod(){
     wg.style.display = 'block';  
     localStorage.setItem("mod","wg")
   }  
-}
+} 
 function changeshow(){
   if (main.style.display == 'none') {  
     main.style.display = 'block';  

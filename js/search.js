@@ -61,7 +61,7 @@ if (localStorage.getItem("sc") == 'bing') {
 }
 if (localStorage.getItem("sc") == 'google') {
     googleon()
-}
+} 
 if (localStorage.getItem("sc") == 'baidu') {
     baiduon()
 }/*
