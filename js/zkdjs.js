@@ -1,4 +1,4 @@
-var examDate = new Date("2024-06-12T00:00:00");
+var examDate = new Date("2024-06-16T00:00:00");
           
 // 更新倒计时函数
 function updateCountdown() {
