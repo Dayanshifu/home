@@ -408,7 +408,8 @@ div.foot span#fromwho{
     display: inline-block;
   }
 .card-zkdjs {
-    color: #fff;/*
+    color: #fff;
+    background: rgb(49, 58, 68, 0.75);/*
     background-image: url(https://img.littleyan.tk/img/Stalin.jpg) !important;
     */background-size: contain;  
     background-position: center;  
