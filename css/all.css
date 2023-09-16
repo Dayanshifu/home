@@ -242,7 +242,6 @@ div.container h1 {
     color: #fff;
 }
 .foot {
-    max-width: 720px;
     margin: 0% 1%;
     position: absolute;
     bottom: 5px;
@@ -252,13 +251,14 @@ div.container h1 {
     border-radius: 20px;/*
     box-shadow: 0px 0px 15px #555;
     border: 2px solid #aaa;
-    background-color: rgb(49, 58, 68, 0.75);*/
+    background-color: rgb(49, 58, 68, 0.75);
+    max-width: 720px;*/
     color:#fff;
 }
-div.foot:hover span#fromwho{
+.yiyan:hover span#fromwho{
     display:inline
 }
-div.foot span#fromwho{
+span#fromwho{
     display: none;
 }
 .wg {
