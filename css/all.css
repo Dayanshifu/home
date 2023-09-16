@@ -248,11 +248,11 @@ div.container h1 {
     bottom: 5px;
     left: 0;
     right: 0;
+    margin-bottom: 5px;
+    border-radius: 20px;/*
     box-shadow: 0px 0px 15px #555;
-    margin-bottom: 15px;
-    border-radius: 20px;
     border: 2px solid #aaa;
-    background-color: rgb(49, 58, 68, 0.75);
+    background-color: rgb(49, 58, 68, 0.75);*/
     color:#fff;
 }
 div.foot:hover span#fromwho{
