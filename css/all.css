@@ -305,13 +305,13 @@ span#fromwho{
 }
 
 .wv-lt-refresh a {
-    color: ffffff9c !important;
+    color: #ffffff9c !important;
     cursor: pointer !important;
     transition: 0.25s !important;
 }
 
 .wv-lt-refresh a:hover {
-    color: ffffff !important;
+    color: #ffffff !important;
 }
 
 .wv-top-backdrop {
