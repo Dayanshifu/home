@@ -1,6 +1,5 @@
 var p = document.getElementById("hitokoto");
 var q = document.getElementById("fromwho");
-document.onselectstart = function(){ return false; };
 // 发起请求
 function getHitokoto(){
     fetch("https://v1.hitokoto.cn/?c=c&c=i")
