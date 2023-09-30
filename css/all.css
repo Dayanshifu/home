@@ -409,7 +409,7 @@ span#fromwho{
   }
 .card-zkdjs {
     color: #fff;
-    background: rgb(49, 58, 68, 0.75);/*
+    background: #ff0000c5;/*
     background-image: url(https://img.littleyan.tk/img/Stalin.jpg) !important;
     */background-size: contain;  
     background-position: center;  
@@ -429,16 +429,15 @@ span#fromwho{
 
 
 .countdown{
-    background-color: #555555c5;
     display: flex;
     margin-top: 5px;
     padding-bottom: 3px;
     border-radius: 10px;
     padding: 5px auto 5px;
-    border: 2px solid rgb(139, 191, 248);
+    border: 2px solid #ffff00;
 }
 .countdown div{
-    color: rgb(139, 191, 248);
+    color: #ffff00;
     position: relative;
     width: 60px;
     height: 60px;
@@ -450,7 +449,7 @@ span#fromwho{
     font-weight: 50.0;
 }
 .countdown div:before{
-    color: rgb(139, 191, 248);
+    color: #ffff00;
     content: '';
     position: absolute;
     bottom: 0.7px;
