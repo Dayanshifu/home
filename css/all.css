@@ -136,7 +136,7 @@ div.sc div a:hover:not(.active) {
 
 body {
     height: 100%;
-    background-image: url(https://img.littleyan.tk/img/bg.webp) !important;
+    background-image: url(../img/bg.webp) !important;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
