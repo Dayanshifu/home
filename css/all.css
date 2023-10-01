@@ -136,6 +136,7 @@ div.sc div a:hover:not(.active) {
 
 body {
     height: 100%;
+    background-image: url('../img/bg1080p.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -146,24 +147,6 @@ body {
     font-size: 100%;
     font-family: sans-serif;
 }
-/* 当屏幕宽度小于 768px 时的背景 */  
-@media screen and (max-height: 540px) {     body {  
-    background-image: url('../img/bg540p.jpg');  
-}  }  
-/* 当屏幕宽度在 768px 到 1024px 之间的背景 */  
-@media screen and (min-height: 541px) and (max-height: 720px) {      body {  
-    background-image: url('../img/bg720p.jpg');  
-}  }    
-@media screen and (min-height: 721px) and (max-height: 900px) {      body {  
-    background-image: url('../img/bg900p.jpg');  
-}  }  
-@media screen and (min-height: 901px) and (max-height: 1080px) {      body {  
-    background-image: url('../img/bg1080p.jpg');  
-}  }  
-@media screen and (min-height: 1081) {      body {  
-    background-image: url('../img/bg2k.jpg');  
-}  }  
-
 
 
 .pcon {
