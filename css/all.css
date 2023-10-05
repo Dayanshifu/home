@@ -181,8 +181,8 @@ body {
     margin: 0px auto 5px;
     padding-top: 10%;
     padding-bottom: 3%;
-    font-weight:lighter;
-    font-family:monospace
+    font-weight:100;
+    font-family:'simhei', '微软雅黑', monospace
 }
 
 div.container h1 {
