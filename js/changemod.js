@@ -25,12 +25,14 @@ function changemod(){
 function changeshow(){
   if (main.style.display == 'none') {  
     main.style.display = 'block';  
-    clear.style.paddingTop = '3%';  
+    clear.style.paddingTop = '10%';  
+    clear.style.paddingBottom = '3%';  
     localStorage.setItem("show",1)
   } 
   else {  
     main.style.display = 'none';  
-    clear.style.paddingTop = '12%';  
+    clear.style.paddingTop = '15%'; 
+    clear.style.paddingBottom = '7%';  
     localStorage.setItem("show",0)
   }  
 }
@@ -50,15 +52,18 @@ else{
 } 
 
 if(localStorage.getItem("show")==0){
-  clear.style.paddingTop = '12%'; 
+  clear.style.paddingTop = '15%'; 
+  clear.style.paddingBottom = '7%';  
   main.style.display = 'none';  
 } 
 else if(localStorage.getItem("show")==1){
   main.style.display = 'block';  
-  clear.style.paddingTop = '3%';  
+  clear.style.paddingTop = '10%';  
+  clear.style.paddingBottom = '3%';  
 }
 else{  
   main.style.display = 'block';  
-  clear.style.paddingTop = '3%';  
+  clear.style.paddingTop = '10%';  
+  clear.style.paddingBottom = '3%';   
   localStorage.setItem("show",1)
 } 

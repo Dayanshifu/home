@@ -179,8 +179,10 @@ body {
     color: #fff;
     font-size: 25px;
     margin: 0px auto 5px;
-    padding-top: 3%;
-    font-weight: bold;
+    padding-top: 10%;
+    padding-bottom: 3%;
+    font-weight:lighter;
+    font-family:Consolas, 'Courier New', monospace
 }
 
 div.container h1 {
