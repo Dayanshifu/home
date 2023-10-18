@@ -2,23 +2,23 @@ html {
     height: 100%;
 }
 .nav {
-    box-shadow: 0px 0px 15px #555;
+    box-shadow:  0px 0px 5px #541919;
     margin-bottom: 15px;
     border-radius: 20px;
-    border: 2px solid #aaa;
-    background-color: rgb(49, 58, 68, 0.75);
+    border: 2px solid #572e2e;
+    background-color: #392825b6;
 }
 
 .nav h3 {
     margin: 3px 0px 0px 3px;
     padding: 5px 10px;
-    color: rgb(141, 255, 151)
+    color: #d2bb80
 }
 
 .nav h3 i {
     font-style: normal;
     padding-left: 10px;
-    color: rgb(0, 255, 21);
+    color: #d2bb80;
 }
 
 .clear {
@@ -42,7 +42,7 @@ html {
 
 .nav a:hover {
     text-decoration: none;
-    color: rgb(190, 255, 197);
+    color: #d2bb80;
 }
 
 .nav a i {
@@ -63,7 +63,7 @@ html {
     max-width: 720px;
     margin: 0px auto 0px;
     min-height: 100%;
-    /*background-color: rgb(49, 58, 68, 0.75);*/
+    /*background-color: #392825b6;*/
     padding: 0% 1%;
     text-align: center;
     /*border-radius: 25px;*/
@@ -78,16 +78,16 @@ ul li {
 }
 
 a {
-    color: #fff
+    color: #f9e1c7
 }
 
 .user-input {
-    box-shadow: 0px 0px 15px #555;
+    box-shadow:  0px 0px 5px #541919;
     width: 80%;
     height: 40px;
-    border: 2px solid #aaa;
-    background-color: rgba(49, 58, 68, 0.75);
-    color:#fff;
+    border: 2px solid #572e2e;
+    background-color: #392825b6;
+    color: #d2bb80;
     border-radius: 5px;
     box-sizing: border-box;
     outline: none;
@@ -96,22 +96,22 @@ a {
 }
 
 .user-btn {
-    box-shadow: 0px 0px 15px #555;
+    box-shadow:  0px 0px 5px #541919;
     max-width: 80px;
     height: 40px;
-    border: 2px solid #aaa;
+    border: 2px solid #572e2e;
     vertical-align: middle;
     outline: none;
-    background-color: rgb(49, 58, 68, 0.75);
-    color: rgb(141, 255, 151);
+    background-color: #392825b6;
+    color: #d2bb80;
     font-size: 18px;
     border-radius: 20px;
     font-weight: bold;
 }
 
 div.sc div a {
-    background-color: #fff;
-    box-shadow: 0px 0px 10px #555;
+    background-color: #d2bb80b6;
+    box-shadow:  0px 0px 5px #541919;
     color: black;
     padding: 0px 9px;
     border-radius: 25px;
@@ -120,14 +120,14 @@ div.sc div a {
 }
 
 div.sc div a.active {
-    background-color: rgb(49, 58, 68, 0.75);
-    border: 2px solid #aaa;
+    background-color: #b61b00b6;
+    border: 2px solid #572e2e;
     color: white;
     border-radius: 30px;
 }
 
 div.sc div a:hover:not(.active) {
-    border: 2px solid #777;
+    border: 2px solid #572e2e;
 }
 
 .chose {
@@ -176,7 +176,7 @@ body {
 }
 
 #timer {
-    color: #fff;
+    color: #d2bb80;
     font-size: 25px;
     margin: 0px auto 5px;
     padding-top: 10%;
@@ -197,11 +197,11 @@ div.container h1 {
     padding-top: 15px;
     padding-bottom: 15px;
     padding-right: 20px;
-    border: 2px solid #aaa;
-    background-color: rgb(49, 58, 68, 0.75);
+    border: 2px solid #572e2e;
+    background-color: #392825b6;
     margin-bottom: 15px;
     border-radius: 20px;
-    box-shadow: 0 0 10px #000;
+    box-shadow: 0 0 10px #572e2e;
 }
 
 #word li {
@@ -218,17 +218,17 @@ div.container h1 {
 }
 
 #word li:hover {
-    color: rgb(190, 255, 197);
-    background-color: #999;
+    color: #cdba89;
+    background-color: #572e2e7f;
 }
 
 .pagination {
-    border: 2px solid #aaa;
+    border: 2px solid #572e2e;
     padding: 15px auto 15px;
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 20px;
-    background-color: rgb(49, 58, 68, 0.75);
+    background-color: #392825b6;
     opacity: 0.7;
     display: inline-block;
     list-style-type: none;
@@ -252,9 +252,9 @@ div.container h1 {
     right: 0;
     margin-bottom: 5px;
     border-radius: 20px;/*
-    box-shadow: 0px 0px 15px #555;
-    border: 2px solid #aaa;
-    background-color: rgb(49, 58, 68, 0.75);
+    box-shadow:  0px 0px 5px #541919;
+    border: 2px solid #572e2e;
+    background-color: #392825b6;
     max-width: 720px;*/
     color:#fff;
 }
@@ -273,13 +273,13 @@ span#fromwho{
 .wg h3 {
     margin: 3px 0px 0px 3px;
     padding: 5px 10px;
-    color: rgb(141, 255, 151)
+    color: #d2bb80
 }
 
 .wg p {
     margin: 3px 0px 0px 3px;
     padding: 5px 10px;
-    color: rgb(141, 255, 151)
+    color: #d2bb80
 }*/
 
 
@@ -342,7 +342,7 @@ span#fromwho{
     padding: 2px 10px !important;
     margin: 2px 0 !important;
     background: var(--color-background);
-    color: #ccc;
+    color: #572e2e;
     font-size: 14px;
     font-family: var(--fonts);
     transition: 0.25s;
@@ -368,7 +368,7 @@ span#fromwho{
     padding: 0 8px;
     margin-top: 8px;
     background: var(--color-background);
-    color: #ccc;
+    color: #572e2e;
     font-size: 14px;
     font-family: var(--fonts);
     transition: 0.25s;
@@ -381,10 +381,10 @@ span#fromwho{
 }
 .card {
     color: #fff;
-    background: rgb(49, 58, 68, 0.75);
+    background: #392825b6;
     flex-direction: column;
-    box-shadow: 0px 0px 15px #555;
-    border: 2px solid #aaa;
+    box-shadow:  0px 0px 5px #541919;
+    border: 2px solid #572e2e;
     border-radius: 20px;
     width: 220px;
     height: 180px;
@@ -398,8 +398,8 @@ span#fromwho{
 .card-weather {
     color: #fff;
     flex-direction: column;
-    box-shadow: 0px 0px 15px #555;
-    border: 2px solid #aaa;
+    box-shadow:  0px 0px 5px #541919;
+    border: 2px solid #572e2e;
     border-radius: 20px;
     width: 220px;
     height: 180px;
@@ -416,8 +416,8 @@ span#fromwho{
     background-size: contain;  
     background-position: center;  
     flex-direction: column;
-    box-shadow: 0px 0px 15px #555;
-    border: 2px solid #aaa;
+    box-shadow:  0px 0px 5px #541919;
+    border: 2px solid #572e2e;
     border-radius: 20px;
     width: 220px;
     height: 180px;
@@ -445,7 +445,7 @@ span#fromwho{
     height: 60px;
     line-height: 50.0px;
     text-align: center;
-    /*border: 2px solid #aaa;*/
+    /*border: 2px solid #572e2e;*/
     margin-right: 10px;
     font-size: 35px;
     font-weight: 50.0;
