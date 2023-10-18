@@ -245,7 +245,6 @@ div.container h1 {
     color: #fff;
 }
 .foot {
-    z-index: -999999999999;
     margin: 0% 1%;
     position: absolute;
     bottom: 5px;

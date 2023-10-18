@@ -4,7 +4,7 @@ $(function() {
     $('#sc-text').keyup(function() {
             var keywords = $(this).val();
             if (keywords == '') { 
-                $('#word').hide();if(localStorage.getItem("mod")=="wg"){$('#wg').show()} 
+                $('#word').hide();if(localStorage.getItem("mod")=="wg"){$('#wg').show()};$('#foot').show()
                 return };
             $.ajax({ 
                 url: 'https://suggestion.baidu.com/su?wd=' + keywords,
@@ -18,14 +18,14 @@ $(function() {
                     $('#word').empty().show();
                     if(localStorage.getItem("mod")=="wg"){
                         $('#wg').hide()
-                    }
+                    };$('#foot').hide()
                     if (data.s == '') {
                         //$('#word').append('<div class="error">Not find  "' + keywords + '"</div>');
                         $('#word').empty();
                         $('#word').hide();
                         if(localStorage.getItem("mod")=="wg"){
                             $('#wg').show()
-                        }
+                        };$('#foot').show()
                     }
                     $.each(data.s, function() {
                         $('#word').append('<li>' + this + '</li>');
@@ -35,12 +35,12 @@ $(function() {
                     $('#word').empty().show();
                     if(localStorage.getItem("mod")=="wg"){
                         $('#wg').hide()
-                    }
+                    };$('#foot').hide()
                     //$('#word').append('<div class="click_work">Fail "' + keywords + '"</div>');
                     $('#word').hide();
                     if(localStorage.getItem("mod")=="wg"){
                         $('#wg').show()
-                    }
+                    };$('#foot').show()
                 }
             })
         })
@@ -52,7 +52,7 @@ $(function() {
         $('#word').hide();
         if(localStorage.getItem("mod")=="wg"){
             $('#wg').show()
-        }
+        };$('#foot').show()
         //$("form").submit();
         $('.submit').trigger('click'); //触发搜索事件
         $('#sc-text').focus()
@@ -62,7 +62,7 @@ $(function() {
         $('#word').hide();
         if(localStorage.getItem("mod")=="wg"){
             $('#wg').show()
-        }
+        };$('#foot').show()
     })
 
 })
