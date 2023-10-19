@@ -382,6 +382,7 @@ span#fromwho{
     color: #fff;
     background: #392825b6;
     flex-direction: column;
+    margin:5px;
     box-shadow:  0px 0px 5px #541919;
     border: 2px solid #572e2e;
     border-radius: 20px;
@@ -395,6 +396,7 @@ span#fromwho{
     display: inline-block;
   }
 .card-weather {
+    margin:5px;
     background: #392825b6;
     color: #fff;
     flex-direction: column;
@@ -411,6 +413,7 @@ span#fromwho{
     display: inline-block;
   }
 .card-zkdjs {
+    margin:5px;
     color: #fff;
     background: #ff0000c5; 
     background-size: contain;  
