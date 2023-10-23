@@ -83,7 +83,7 @@ a {
 
 .user-input {
     box-shadow:  0px 0px 5px #541919;
-    width: 80%;
+    width: 75%;
     height: 40px;
     border: 2px solid #572e2e;
     background-color: #392825b6;
@@ -95,9 +95,10 @@ a {
     border-radius: 20px;
 }
 
+
 .user-btn {
     box-shadow:  0px 0px 5px #541919;
-    max-width: 80px;
+    width: 80px;
     height: 40px;
     border: 2px solid #572e2e;
     vertical-align: middle;
@@ -108,6 +109,7 @@ a {
     border-radius: 20px;
     font-weight: bold;
 }
+
 
 div.sc div a {
     background-color: #d2bb80b6;
@@ -155,24 +157,6 @@ body {
 
 .mbon {
     display: none
-}
-
-@media only screen and (max-width: 600px) {
-    .pcon {
-        display: none;
-    }
-    .mbon {
-        display: block;
-    }
-}
-
-@media only screen and (min-width: 600px) {
-    .pcon {
-        display: block;
-    }
-    .mbon {
-        display: none;
-    }
 }
 
 #timer {
@@ -387,7 +371,7 @@ span#fromwho{
     border: 2px solid #572e2e;
     border-radius: 20px;
     width: 220px;
-    height: 180px;
+    height: 170px;
     transition: .3s;
     overflow: hidden;
     text-align: center;
@@ -413,17 +397,19 @@ span#fromwho{
     display: inline-block;
   }
 .card-zkdjs {
-    margin:5px;
-    color: #fff;
-    background: #ff0000c5; 
-    background-size: contain;  
-    background-position: center;  
+    padding-left: 5px;
+    padding-top: 25px;
+    padding-right: 5px;
+    padding-bottom:5px;
+    width:210px;
+    height:150px;
+    color: #ffff00;
+    background-color: #ff0000c5;
     flex-direction: column;
+    margin:5px;
     box-shadow:  0px 0px 5px #541919;
     border: 2px solid #572e2e;
     border-radius: 20px;
-    width: 220px;
-    height: 180px;
     transition: .3s;
     overflow: hidden;
     text-align: center;
@@ -534,4 +520,21 @@ span#fromwho{
 }
 .gptarea::-webkit-scrollbar-track {
    background-color: transparent;
+}
+@media only screen and (max-width: 500px) {
+    .user-input{width: 80%;}
+    .user-btn {width: 80%;}
+    .card{width: 85%;height:300px}
+    .card-weather{width: 85%;}
+    .card-zkdjs{width:calc(85% - 10px);}
+    .gptarea{height: 240px;}
+}
+
+@media only screen and (min-width: 500px) {
+    .user-input{max-width: 75%;}
+    .user-btn {max-width: 60px;}
+    .card{width: 220px;height: 170;}
+    .card-weather{width: 220px;}
+    .card-zkdjs{width: 210px;}
+    .gptarea{height: 120px;}
 }
