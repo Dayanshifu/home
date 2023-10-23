@@ -497,8 +497,6 @@ span#fromwho{
     border-radius: 15px;
 }
 .gptarea{
-    width: 210px;
-    height: 120px;
     resize: none;
     background-color: #39282500;
     border: 2px solid #39282500;
@@ -527,7 +525,8 @@ span#fromwho{
     .card{width: 85%;height:300px}
     .card-weather{width: 85%;}
     .card-zkdjs{width:calc(85% - 10px);}
-    .gptarea{height: 240px;}
+    .gptarea{height: 240px;width: 96%;}
+    .scspace{display: block;}
 }
 
 @media only screen and (min-width: 500px) {
@@ -536,5 +535,6 @@ span#fromwho{
     .card{width: 220px;height: 170;}
     .card-weather{width: 220px;}
     .card-zkdjs{width: 210px;}
-    .gptarea{height: 120px;}
+    .gptarea{height: 120px;width: 210px;}
+    .scspace{display: none;}
 }
