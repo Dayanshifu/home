@@ -18,7 +18,7 @@ function send(data) {
 
 function sendRequest() {
     const message = input.value.trim();
-    send({ message, model: 'gpt-3.5-turbo', web: false });
+    send({ message, model: 'gpt-3.5-turbo', web: true });
     gpt.value = '';
 }
 
