@@ -1,5 +1,8 @@
 html {
     height: 100%;
+    
+    -webkit-filter: grayscale(0.8); /* Chrome, Safari, Opera */
+    filter: grayscale(0.8);
 }
 .nav {
     box-shadow:  0px 0px 5px #541919;
@@ -269,6 +272,7 @@ span#fromwho{
 
 #he-plugin-standard {
     padding: 4px !important;
+    margin: auto;
 }
 
 .wv-v-h-row {
@@ -442,7 +446,8 @@ span#fromwho{
     margin-top: 5px;
     padding-bottom: 3px;
     border-radius: 10px;
-    padding: 5px auto 5px;
+    padding: 5px 5px 5px;
+    max-width: 210px;
     border: 2px solid #ffff00;
 }
 .countdown div{
