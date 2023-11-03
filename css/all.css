@@ -502,6 +502,7 @@ span#fromwho{
     border-radius: 15px;
 }
 .gptarea{
+    font-family: sans-serif;
     resize: none;
     background-color: #39282500;
     border: 2px solid #39282500;
