@@ -46,9 +46,9 @@ else if(localStorage.getItem("mod")=="sites"){
   wg.style.display = 'none';  
 }
 else{  
-  wg.style.display = 'none';  
-  sites.style.display = 'block';  
-  localStorage.setItem("mod","sites")
+  wg.style.display = 'block';  
+  sites.style.display = 'none';  
+  localStorage.setItem("mod","wg")
 } 
 
 if(localStorage.getItem("show")==0){
