@@ -406,9 +406,11 @@ span#fromwho{
     padding-right: 5px;
     padding-bottom:5px;
     width:210px;
-    height:150px;
+    height:150px;/*
     color: #ffff00;
-    background-color: #ff0000c5;
+    background-color: #ff0000c5;*/
+    color:#fff;
+    background-color: #000;
     flex-direction: column;
     margin:5px;
     box-shadow:  0px 0px 5px #541919;
@@ -447,11 +449,12 @@ span#fromwho{
     padding-bottom: 3px;
     border-radius: 10px;
     padding: 5px 5px 5px;
-    max-width: 210px;
-    border: 2px solid #ffff00;
+    max-width: 210px;/*
+    border: 2px solid #ffff00;*/
+    border: 2px solid #fff;
 }
 .countdown div{
-    color: #ffff00;
+    color: #fff;
     position: relative;
     width: 60px;
     height: 60px;
@@ -463,7 +466,7 @@ span#fromwho{
     font-weight: 50.0;
 }
 .countdown div:before{
-    color: #ffff00;
+    color: #fff;
     content: '';
     position: absolute;
     bottom: 0.7px;
