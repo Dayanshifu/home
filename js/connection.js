@@ -21,13 +21,12 @@ function sendRequest() {
     const memory = gpt.value
     const question = input.value
     const message = input.value.trim();
-    send({ message, model: 'gpt-3.5-turbo', web: true });
-    input.value = ''
-    console.log(gpt.value.length)
     if (gpt.value.length==0){
         gpt.value = '['+question+']\n\n';}
     else{gpt.value += '\n\n  ['+question+']\n\n'}
     gpt.scrollTop = gpt.scrollHeight;
+    send({ message, model: 'gpt-3.5-turbo', web: true });
+    input.value = ''
 
 
 }
