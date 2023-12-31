@@ -27,6 +27,7 @@ function sendRequest() {
     if (gpt.value.length==0){
         gpt.value = '['+question+']\n\n';}
     else{gpt.value += '\n\n  ['+question+']\n\n'}
+    gpt.scrollTop = gpt.scrollHeight;
 
 
 }
