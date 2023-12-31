@@ -3,7 +3,7 @@ WIDGET = {
     "layout": "1",
     "width": "220",
     "height": "180",
-    "background": "1",
+    "background": "5",
     "dataColor": "FFFFFF",
     "modules": "10",
     "city": "CN101160101",

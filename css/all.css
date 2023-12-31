@@ -211,7 +211,6 @@ div.container h1 {
     width: 100%;
     padding-top: 5px;
     height: 30px;
-    text-indent: 30px;
     background-size: 20px;
     line-height: 25px;
     cursor: pointer;
@@ -289,7 +288,7 @@ span#fromwho{
 }
 
 .wv-lt-refresh a {
-    color: #ffffff9c !important;
+    color: #8bbff8!important;
     cursor: pointer !important;
     transition: 0.25s !important;
 }
@@ -379,7 +378,7 @@ span#fromwho{
   }
 .card-weather {
     margin:5px;
-    background: #392825b6;
+    background: #313a44;
     color: #fff;
     flex-direction: column;
     box-shadow:  0px 0px 5px #541919;
