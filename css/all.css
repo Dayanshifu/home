@@ -156,7 +156,7 @@ div.sc div a:hover:not(.active) {
 }
 
 body {
-    height: calc(100%-1px);
+    height: calc(100%-2px);
     background-color:#572e2e;
     background-image: url('https://fystart.com/background.webp');
     background-position: center center;
