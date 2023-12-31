@@ -101,7 +101,7 @@ a {
   }
 
 .user-input {
-    max-width: 300px;
+    max-width: 72%;
     height: 35px;
     text-align: center;
     border: 2px solid #572e2e00;
@@ -117,7 +117,7 @@ a {
 
 
 .user-btn {
-    width: 50px;
+    max-width: 15%;
     height: 35px;
     border: 2px solid #39282500;
     vertical-align: middle;
@@ -543,21 +543,19 @@ span#fromwho{
     color: #f9e1c7;
 }
 @media only screen and (max-width: 500px) {
-    .user-input{width: 80%;}
-    .user-btn {width: 80%;}
     .card{width: 85%;height:300px}
     .card-weather{width: 85%;}
     .card-zkdjs{width:calc(85% - 10px);}
     .gptarea{height: 240px;width: 96%;}
     .scspace{display: block;}
+    #search-box{max-width:85%;}
 }
 
 @media only screen and (min-width: 500px) {
-    .user-input{max-width: 75%;}
-    .user-btn {max-width: 60px;}
     .card{width: 220px;height: 170;}
     .card-weather{width: 220px;}
     .card-zkdjs{width: 210px;}
     .gptarea{height: 120px;width: 210px;}
     .scspace{display: none;}
+    #search-box{max-width:350px;}
 }
