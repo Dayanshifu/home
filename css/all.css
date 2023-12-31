@@ -157,6 +157,7 @@ div.sc div a:hover:not(.active) {
 
 body {
     height: 100%;
+    background-color:#572e2e;
     background-image: url('https://fystart.com/background.webp');
     background-position: center center;
     background-repeat: no-repeat;
@@ -199,7 +200,7 @@ div.container h1 {
     right: 5%;
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-right: 20px;
+    padding-left: 0;
     border: 2px solid #572e2e;
     background-color: #392825b6;
     border-radius: 20px;
@@ -223,28 +224,6 @@ div.container h1 {
     background-color: #572e2e7f;
 }
 
-.pagination {
-    border: 2px solid #572e2e;
-    padding: 15px auto 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 20px;
-    background-color: #392825b6;
-    opacity: 0.7;
-    display: inline-block;
-    list-style-type: none;
-    overflow: hidden;
-    position: fixed;
-    text-align: left;
-    top: 10px;
-    left: 10px;
-    z-index: 999999999999999999999;
-}
-
-#openedmulu p a {
-    padding: 0px 0px 0px 0px;
-    color: #fff;
-}
 .foot {
     margin: 0% 1%;
     position: absolute;
