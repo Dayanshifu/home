@@ -61,6 +61,7 @@ html {
     text-align: center;
 }
 
+
 .container {
     position: relative;
     max-width: 720px;
@@ -84,29 +85,44 @@ a {
     color: #f9e1c7
 }
 
-.user-input {
+#search-box {
     box-shadow:  0px 0px 5px #541919;
-    width: 75%;
+    max-width: 350px;
     height: 40px;
+    text-align: center;
     border: 2px solid #572e2e;
     background-color: #392825b6;
-    color: #d2bb80;
     border-radius: 5px;
     box-sizing: border-box;
-    outline: none;
     text-indent: 10px;
     border-radius: 20px;
+    margin: -1 auto -1;
+    
+  }
+
+.user-input {
+    max-width: 300px;
+    height: 35px;
+    text-align: center;
+    border: 2px solid #572e2e00;
+    outline: none;
+    background-color: #39282500;
+    color: #d2bb80;
+    line-height: 28px \9;
+    padding: 0 8px
 }
+
+.user-input::placeholder{
+    color: #bba690;}
 
 
 .user-btn {
-    box-shadow:  0px 0px 5px #541919;
-    width: 80px;
-    height: 40px;
-    border: 2px solid #572e2e;
+    width: 50px;
+    height: 35px;
+    border: 2px solid #39282500;
     vertical-align: middle;
     outline: none;
-    background-color: #392825b6;
+    background-color: #39282500;
     color: #d2bb80;
     font-size: 18px;
     border-radius: 20px;
@@ -191,16 +207,15 @@ div.container h1 {
 }
 
 #word li {
-    height: 35px;
-    padding: 0px auto 0px;
+    width: 100%;
+    padding-top: 5px;
+    height: 30px;
     text-indent: 30px;
-    background: url(../img/sou.svg) no-repeat 5px;
     background-size: 20px;
     line-height: 25px;
     cursor: pointer;
     font-size: 18px;
     color: #f9e1c7;
-    border-radius: 20px;
 }
 
 #word li:hover {
