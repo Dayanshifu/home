@@ -380,8 +380,8 @@ span#fromwho{
   }
 .card-weather {
     margin:5px;
-    background: #313a44;
     color: #fff;
+    background-color: #313a44c5;
     flex-direction: column;
     box-shadow:  0px 0px 5px #541919;
     border: 2px solid #572e2e;
