@@ -10,6 +10,7 @@ connection.onmessage = function(event) {
     const { message, end } = JSON.parse(event.data);
     gpt.value += message;
     loading = !end
+    gpt.scrollTop = gpt.scrollHeight;
 };
 
 function send(data) {
@@ -17,9 +18,17 @@ function send(data) {
 }
 
 function sendRequest() {
+    const memory = gpt.value
+    const question = input.value
     const message = input.value.trim();
     send({ message, model: 'gpt-3.5-turbo', web: true });
-    gpt.value = '';
+    input.value = ''
+    console.log(gpt.value.length)
+    if (gpt.value.length==0){
+        gpt.value = '['+question+']\n\n';}
+    else{gpt.value += '\n\n  ['+question+']\n\n'}
+
+
 }
 
 let timeout = null;

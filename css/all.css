@@ -524,6 +524,9 @@ span#fromwho{
 .gptarea::-webkit-scrollbar-track {
    background-color: transparent;
 }
+.gptarea::placeholder{
+    color: #f9e1c7;
+}
 @media only screen and (max-width: 500px) {
     .user-input{width: 80%;}
     .user-btn {width: 80%;}
