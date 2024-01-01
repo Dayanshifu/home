@@ -7,8 +7,8 @@ var baidu = document.getElementById('baidu')
 
 function googleon() {
     localStorage.setItem("sc", "google")
-    sc.setAttribute("action", "https://www.google.com/search")
-    sc_text.setAttribute("placeholder", "Google")
+    sc.setAttribute("action", "https://www.google.com/search")/*
+    sc_text.setAttribute("placeholder", "Google")*/
     sc_text.setAttribute("name", "q")
     sc_text.focus()
     google.setAttribute("class", "active");
@@ -19,8 +19,8 @@ function googleon() {
 
 function bingon() {
     localStorage.setItem("sc", "bing")
-    sc.setAttribute("action", "https://www.bing.com/search")
-    sc_text.setAttribute("placeholder", "MIcrosoft Bing")
+    sc.setAttribute("action", "https://www.bing.com/search")/*
+    sc_text.setAttribute("placeholder", "MIcrosoft Bing")*/
     sc_text.setAttribute("name", "q")
     sc_text.focus()
     bing.setAttribute("class", "active");
@@ -31,8 +31,8 @@ function bingon() {
 
 function baiduon() {
     localStorage.setItem("sc", "baidu")
-    sc.setAttribute("action", "https://www.baidu.com/s")
-    sc_text.setAttribute("placeholder", "百度一下，你就知道")
+    sc.setAttribute("action", "https://www.baidu.com/s")/*
+    sc_text.setAttribute("placeholder", "百度一下，你就知道")*/
     sc_text.setAttribute("name", "word")
     sc_text.focus()
     baidu.setAttribute("class", "active");

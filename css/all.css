@@ -495,6 +495,9 @@ span#fromwho{
     text-indent: 10px;
     border-radius: 15px;
 }
+.search-container::placeholder{
+    color: #bba690;}
+    
 .gptarea{
     font-family: sans-serif;
     resize: none;
