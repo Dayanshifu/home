@@ -73,15 +73,22 @@
           <div id="countdown-widget" class="card-zkdjs">
             <span style="font-size: 16px;color:#ffff00;"><!--革命尚未成功<br>同志还需努力
               <br>-->
-              <b style="font-size: 20px;">革命尚未成功<br>同志仍需努力</b>
+              <b style="font-size: 20px;" id="countdown2">革命尚未成功<br>同志仍需努力</b>
+              <b style="font-size: 20px; display: none;" id="countdown3">距离寒假结束<br>只剩下</b>
               <!--<br>还有-->
               <div class="clear-s"></div>
-              <h2 id="started">
+              <h2 id="started" onclick="changeclock()">
                 <div class="countdown" id="countdown">
                   <div id="day">NA</div>
                   <div id="hour">NA</div>
                   <div id="minute">NA</div> 
                   <div id="second">NA</div></div>
+                <div class="countdown" id="countdown1">
+                  <div id="day1">NA</div>
+                  <div id="hour1">NA</div>
+                  <div id="minute1">NA</div> 
+                  <div id="second1">NA</div></div>
+          <script src="js/changeclock.js"></script>
               </h2> 
             </span>
             <script src="js/zkdjs.js"></script>

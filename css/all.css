@@ -445,6 +445,10 @@ span#fromwho{
     max-width: 210px;
     border: 2px solid #ffff00;
 }
+#countdown1{
+    display: none;
+    padding-left: 10px;
+}
 .countdown div{
     color: #ffff00;
     position: relative;
@@ -479,6 +483,18 @@ span#fromwho{
     content: '分';
 }
 #second:before{
+    content: '秒';
+}
+#day1:before{
+    content: '日';
+}
+#hour1:before{
+    content: '时';
+}
+#minute1:before{
+    content: '分';
+}
+#second1:before{
     content: '秒';
 }
 
