@@ -39,32 +39,6 @@ function updateCountdown() {
   document.getElementById("hour").innerHTML = hours;
   document.getElementById("minute").innerHTML = minutes;
   document.getElementById("second").innerHTML = seconds;
-
-  
-  // 计算时间差，单位为毫秒
-  var diff1 = school - now; 
-
-  // 如果时间差小于等于59,400,000，说明中考已经开始或结束
-  if (diff1 <= 0) {
-      // 显示中考已经开始的信息
-      document.getElementById("started").innerHTML = "开学了，祝你好运！";
-      document.getElementById("countdown1").style.display="none";
-      // 停止更新倒计时
-      //clearInterval(interval);
-      //return;
-  }
-
-  // 将时间差转换为天、小时、分钟和秒
-  var days1 = Math.floor(diff1 / (1000 * 60 * 60 * 24));
-  var hours1 = Math.floor((diff1 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes1 = Math.floor((diff1 % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds1 = Math.floor((diff1 % (1000 * 60)) / 1000);
-
-  // 显示倒计时信息
-  document.getElementById("day1").innerHTML = days1;
-  document.getElementById("hour1").innerHTML = hours1;
-  document.getElementById("minute1").innerHTML = minutes1;
-  document.getElementById("second1").innerHTML = seconds1;
 }
 
 // 调用一次更新倒计时函数，显示初始倒计时信息
