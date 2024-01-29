@@ -25,7 +25,7 @@ function changemod(){
 function changeshow(){
   if (main.style.display == 'none') {  
     main.style.display = 'block';  
-    clear.style.paddingTop = '10%';  
+    clear.style.paddingTop = '7%';  
     clear.style.paddingBottom = '3%';  
     localStorage.setItem("show",1)
   } 
@@ -58,12 +58,12 @@ if(localStorage.getItem("show")==0){
 } 
 else if(localStorage.getItem("show")==1){
   main.style.display = 'block';  
-  clear.style.paddingTop = '10%';  
+  clear.style.paddingTop = '7%';  
   clear.style.paddingBottom = '3%';  
 }
 else{  
   main.style.display = 'block';  
-  clear.style.paddingTop = '10%';  
+  clear.style.paddingTop = '7%';  
   clear.style.paddingBottom = '3%';   
   localStorage.setItem("show",1)
 } 
