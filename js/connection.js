@@ -25,7 +25,7 @@ function sendRequest() {
         gpt.value = '['+question+']\n\n';}
     else{gpt.value += '\n\n  ['+question+']\n\n'}
     gpt.scrollTop = gpt.scrollHeight;
-    send({ message, model: 'gpt-3.5-turbo', web: true });
+    send({ message, model: 'azure-gpt-3.5-turbo', web: true });
     input.value = ''
 
 
