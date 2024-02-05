@@ -2,7 +2,7 @@ const gpt = document.getElementById('gpt');
 const input = document.getElementById('input');
 const connection = new WebSocket('wss://api.chatnio.net/chat');
 connection.onopen = () => {
-    send({ token: 'anonymous', id: -1 });
+    send({ token: 'sk-5b4d5cb480785d4ba30daafedfccc375be7549b3868d06db6087ba2a91c5698a', id: -1 });
 }
 let loading = false;
 
