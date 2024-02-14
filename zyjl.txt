@@ -1,0 +1,168 @@
+||wxsnsdythumb.wxs.qq.com^
+||wxsnsdy.wxs.qq.com^
+||gromore.pangolin-sdk-toutiao.com^
+||p3-be-pack-sign.pglstatp-toutiao.com^
+||p6-be-pack-sign.pglstatp-toutiao.com^
+||log-api.pangolin-sdk-toutiao-b.com^
+||101.206.201.229:80^
+tcp://101.206.241.228:80
+tcp://
+||open.e.kuaishou.cn^
+||ali-ad.a.yximgs.com^
+||comp.360os.com^
+||js-ad.a.yximgs.com^$important
+||api.map.baidu.com^$app=com.baidu.map.location
+||appdist.360os.com^
+||tobapplog.ctobsnssdk.com^
+||p5-pro.a.yximgs.com^
+||tx-ad.a.yximgs.com^
+||t-dsp.pinduoduo.com^
+||v1-lm.adbkwai.com^
+||toblog.ctobsnssdk.com^
+||tnc3-aliec2.zijieapi.com^
+||toblog.ctobsnssdk.com^$app=com.pcncn.jj
+||117.174.147.220:80^
+||112.19.198.91:80^
+||tnc3-alisc1.zijieapi.com^
+||gdfp.gifshow.com^
+||hmma.baidu.com^
+||open.e.kuaishou.com^
+||httpdns.bcelive.com^
+||34.120.100.217:80^
+||p.s.360.cn^
+||112.45.117.195:80^
+||p1-lm.adukwai.com^$important
+||tnc3-bjlgy.zijieapi.com^$important
+||mssdk-bu.bytedance.com^$important
+||sdkoptedge.chinanetcenter.com^$important
+||v1-lm.adukwai.com^$important
+||117.180.236.6:80^$important
+||119.29.29.29^$important
+||httpdns.alicdn.com^$important
+||sdkoptedge.chinanetcenter.com^$important
+||v3-be-pack.pglstatp-toutiao.com^$important
+||sf3-fe-tos.pglstatp-toutiao.com^$important
+||p9-be-pack-sign.pglstatp-toutiao.com^$important
+||coolapk.com/^$replace=/{"title":\u4eca\u65e5\u9177\u5b89.*?}\,//
+||coolapk.com/^$replace=/{"entityTemplate":imageCarouselCard_1.*?}\,//
+||www.toutiao.com/api/web_ads/
+||pstatp.com^*/bannersdk/
+||pstatp.com/growth/mobile_list/image/bonus_
+127.0.0.1 access1.tpns.tencent.com
+127.0.0.1 astrategy.beacon.qq.com.com
+127.0.0.1 ug.snssdk.com
+127.0.0.1 v3-be-pack.pglstatp-toutiao.com
+127.0.0.1 sf3-be-pack.pglstatp-toutiao.com
+127.0.0.1 tobapplog.ctobsnssdk.com
+127.0.0.1 access.pangolin-sdk-toutiao-b.com
+127.0.0.1 ulogs.umengcloud.com
+||midas.gtimg.cn^
+||game.weixin.qq.com^
+||wxsnsdythumb.wxs.qq.com^
+||oth.eve.mdt.qq.com^
+||wxsnsdythumb.wxs.qq.com^
+||wxsnsdy.wxs.qq.com^
+127.0.0.1 api-access.pangolin-sdk-toutiao-b.com
+127.0.0.1 mssdk-bu.snssdk.com
+127.0.0.1 aaid.umeng.com
+127.0.0.1 img14.360buyimg.com
+127.0.0.1 i.snssdk.com
+127.0.0.1 is.snssdk.com
+127.0.0.1 pangolin.snssdk.com
+127.0.0.1 extlog.snssdk.com
+127.0.0.1 sf3-ttcdn-tos.pstatp.com
+127.0.0.1 bds.snssdk.com
+127.0.0.1 dig.bdurl.net
+127.0.0.1 api-access.pangolin-sdk-toutiao.com
+127.0.0.1 sfl-fe-tos.pglstatp-toutiao.com
+127.0.0.1 sf1-be-pack.pglstatp-toutiao.com
+127.0.0.1 sf3-fe-tos.pglstatp-toutiao.com
+127.0.0.1 log-api.pangolin-sdk-toutiao.com
+127.0.0.1 s3-fe-scm.pglstatp-toutiao.com
+127.0.0.1 s3a.pstatp.com
+127.0.0.1 log-api.pangolin-sdk-toutiao-b.com
+127.0.0.1 sf6-be-pack.pglstatp-toutiao.com
+||*.ad.*.com
+||p6-webcast.douyinpic.com/img/webcast/user_grade_level_v5_21.png~tplv-obj.image$app=com.dragon.read
+||p6-webcast.douyinpic.com/img/webcast/user_grade_level_v5_21.png~tplv-obj.image$app=com.dragon.read
+||p6-webcast.douyinpic.com/img/webcast/fansclub_level_v6_7.png~tplv-obj.image$app=com.dragon.read
+||p3-webcast.douyinpic.com/img/webcast/user_grade_level_v5_14.png~tplv-obj.image$app=com.dragon.read
+||p3-webcast.douyinpic.com/img/webcast/user_grade_level_v5_2.png~tplv-obj.image$app=com.dragon.read
+||p3-webcast.douyinpic.com/img/webcast/user_grade_level_v5_11.png~tplv-obj.image$app=com.dragon.read
+||p6-webcast.douyinpic.com/img/webcast/user_grade_level_v5_11.png~tplv-obj.image$app=com.dragon.read
+||p9-webcast.douyinpic.com/img/webcast/user_grade_level_v5_2.png~tplv-obj.image$app=com.dragon.read
+||pull-flv-l11.douyincdn.com/stage/stream-110613234335613073_or4.flv?_session_id=037-2022032613073701015108321400226FF7.1648271269286$app=com.dragon.read
+||gecko5-hl.zijieapi.com^$app=com.dragon.read
+||pull-flv-l11.douyincdn.com/stage/stream-110613234335613073_or4.flv?_session_id=000-202203261252400101502180451C1C358A.1648271209874$app=com.dragon.read
+||api-access.pangolin-sdk-toutiao.com^
+||log-api.pangolin-sdk-toutiao.com^
+||api-access.pangolin-sdk-toutiao-b.com^
+||com.ss.android.socialbase.
+||com.ss.android.downloadlib.
+||com.bytedance.embedapplog.
+||com.bytedance.pangle.
+||com.bytedance.sdk.openadsdk.
+||com.bytedance.tea.crash.
+||com.yxcorp.gifshow.ad.
+||com.yxcorp.gifshow.map.
+||shark-tracer.netease.com^$app=com.dragon.read
+||apps.bytesfield.com^$app=com.dragon.read
+||imp-toutiao-data.37.com.cn^$app=com.dragon.read
+||sf6-amtos-cdn.bytesmanager.com^$app=com.dragon.read
+||www.chengzijianzhan.com^$app=com.dragon.read
+||apps.bytesfield.com^$app=com.dragon.read
+||imp-toutiao-data.37.com.cn^$app=com.dragon.read
+||api5-normal-hl.fqnovel.com^$app=com.dragon.read
+||webcast-open.douyin.com^$app=com.dragon.read
+||p3.douyinpic.com^$app=com.dragon.read
+||rtlog5-applog-hl.fqnovel.com^$app=com.dragon.read
+||webcast-open.douyin.com^$app=com.dragon.read
+||webcast-open.douyin.com^$app=com.dragon.read
+||webcast-open.douyin.com^$app=com.dragon.read
+||p3.douyinpic.com^$app=com.dragon.read
+||p9-ad-sign.byteimg.com^$app=com.dragon.read
+||p9-ad-sign.byteimg.com/ad-app-package/0da29c84654dce9516015a83bd11c316~tplv-iq460dd072-origin.image?from=ad&x-expires=1650857384&x-signature=kiLqJi8wd%2FY3XzgY%2F3Ud3C7C1Jc%3D$app=com.dragon.read
+||o2o-ad-dev.oss-cn-shanghai.aliyuncs.com^$app=io.iftech.android.box
+||o2o-ad-clicking.alibaba.com^$app=io.iftech.android.box
+||h5.ele.me^$app=io.iftech.android.box
+||gw.alipayobjects.com^$app=io.iftech.android.box
+||g.alicdn.com^$app=io.iftech.android.box
+||s.click.ele.me^$app=io.iftech.android.box
+||remembrall.midway.run^$app=io.iftech.android.box
+||acs.m.taobao.com/gw/mtop.common.getTimestamp/*$app=com.autonavi.minimap
+||bucket-ynote-online-cdn.note.youdao.com^$app=com.auto.greenskipad
+||ae01.alicdn.com^$app=com.auto.greenskipad
+||www.bq6666.cn^$app=com.auto.greenskipad
+||app.yi9939.com^$app=com.auto.greenskipad
+||qnsjzs.oss-cn-hangzhou.aliyuncs.com^$app=com.auto.greenskipad
+||sf3-fe-tos.pglstatp-toutiao.com^$app=com.github.eprendre.tingshu
+||log1.cmpassport.com^$app=com.dragon.read
+||log1.cmpassport.com^$app=com.dragon.read
+||activity-ag.awemeughun.com^$app=com.dragon.read
+||tnc3-aliec2.bytedance.com^$app=com.dragon.read
+||api-access.pangolin-sdk-toutiao.com^$app=com.taifeng.tffilms
+||webcast-open.douyin.com^$app=com.dragon.read
+||p6-reading-sign.fqnovelpic.com^$app=com.dragon.read
+||p26-be-pack-sign.pglstatp-toutiao.com/tos-cn-p
+127.0.0.1 sdk.e.qq.com
+127.0.0.1 api-access.pangolin-sdk-toutiao-b.com
+127.0.0.1 mssdk-bu.snssdk.com
+127.0.0.1 aaid.umeng.com
+127.0.0.1 img14.360buyimg.com
+127.0.0.1 i.snssdk.com
+127.0.0.1 is.snssdk.com
+127.0.0.1 pangolin.snssdk.com
+127.0.0.1 extlog.snssdk.com
+127.0.0.1 sf3-ttcdn-tos.pstatp.com
+127.0.0.1 bds.snssdk.com
+127.0.0.1 dig.bdurl.net
+127.0.0.1 api-access.pangolin-sdk-toutiao.com
+127.0.0.1 sfl-fe-tos.pglstatp-toutiao.com
+127.0.0.1 sf1-be-pack.pglstatp-toutiao.com
+127.0.0.1 sf3-fe-tos.pglstatp-toutiao.com
+127.0.0.1 log-api.pangolin-sdk-toutiao.com
+127.0.0.1 s3-fe-scm.pglstatp-toutiao.com
+127.0.0.1 s3a.pstatp.com
+127.0.0.1 log-api.pangolin-sdk-toutiao-b.com
+127.0.0.1 sf6-be-pack.pglstatp-toutiao.com
+127.0.0.1 pp.myapp.com
