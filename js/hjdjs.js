@@ -12,7 +12,7 @@ function updateCountdown() {
   // 如果时间差小于等于59,400,000，说明中考已经开始或结束
   if (diff1 <= 0) {
       // 显示中考已经开始的信息
-      document.getElementById("started").innerHTML = "开学了，祝你好运！";
+      document.getElementById("started1").innerHTML = "开学了，<br>祝你好运！";
       document.getElementById("countdown1").style.display="none";
       // 停止更新倒计时
       //clearInterval(interval);
