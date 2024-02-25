@@ -6,6 +6,9 @@ html {
     -webkit-filter: grayscale(0.8);
     filter: grayscale(0.8);*/
 }
+* {
+    transition: all 0.15s;
+}
 .nav {
     box-shadow:  0px 0px 5px #541919;
     margin-bottom: 15px;
@@ -159,6 +162,7 @@ div.sc div a:hover:not(.active) {
 
 body {
     height: 100%;
+    overflow:hidden;
     background-color:#572e2e;
     background-image: url('https://fystart.com/background.webp');
     background-position: center center;
@@ -392,6 +396,7 @@ span#fromwho{
     font-family: var(--fonts-cn);
     user-select: none;
     display: inline-block;
+    margin-top: 0px;
   }
 .card-zkdjs {
     padding-left: 5px;
@@ -413,6 +418,7 @@ span#fromwho{
     font-family: var(--fonts-cn);
     user-select: none;
     display: inline-block;
+    margin-top: 0px;
   }
 
 .card {
@@ -420,6 +426,7 @@ span#fromwho{
     background: #392825b6;
     flex-direction: column;
     margin:5px;
+    margin-top: 0px;
     padding-top: 5px;
     box-shadow:  0px 0px 5px #541919;
     border: 2px solid #572e2e;
@@ -539,22 +546,24 @@ span#fromwho{
 .gptarea::placeholder{
     color: #f9e1c7;
 }
-@media only screen and (max-width: 500px) {
-    .card{width: 85%;height:300px}
+@media only screen and (max-width: 725px) {
+    .card{width: 85%;height:270px}
     .card-weather{width: 85%;}
     .card-zkdjs{width:calc(85% - 10px);}
-    .gptarea{height: 240px;width: 96%;}
+    .gptarea{height: 210px;width: 96%;}
     .scspace{display: block;}
     #search-box{max-width:85%;}
+    #wg{height:287px;}
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 725px) {
     .card{width: 220px;height: 170;}
     .card-weather{width: 220px;}
     .card-zkdjs{width: 210px;}
     .gptarea{height: 120px;width: 210px;}
     .scspace{display: none;}
     #search-box{max-width:350px;}
+    #wg{height:195px;}
 }
 
 
@@ -641,3 +650,12 @@ input[type='checkbox'].switch:checked::after {
     left: 55%;
     top: 2px;
 }
+.wg{
+    display: none; 
+    overflow:auto; 
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.wg::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+  }

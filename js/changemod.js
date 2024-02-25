@@ -25,14 +25,14 @@ function changemod(){
 function changeshow(){
   if (main.style.display == 'none') {  
     main.style.display = 'block';  
-    clear.style.paddingTop = '7%';  
-    clear.style.paddingBottom = '3%';  
+    clear.style.paddingTop = '70px';  
+    clear.style.paddingBottom = '30px';  
     localStorage.setItem("show",1)
   } 
   else {  
     main.style.display = 'none';  
-    clear.style.paddingTop = '15%'; 
-    clear.style.paddingBottom = '7%';  
+    clear.style.paddingTop = '17%'; 
+    clear.style.paddingBottom = '70px';  
     localStorage.setItem("show",0)
   }  
 }
@@ -52,18 +52,18 @@ else{
 } 
 
 if(localStorage.getItem("show")==0){
-  clear.style.paddingTop = '15%'; 
-  clear.style.paddingBottom = '7%';  
+  clear.style.paddingTop = '17%'; 
+  clear.style.paddingBottom = '70px';  
   main.style.display = 'none';  
 } 
 else if(localStorage.getItem("show")==1){
   main.style.display = 'block';  
-  clear.style.paddingTop = '7%';  
-  clear.style.paddingBottom = '3%';  
+  clear.style.paddingTop = '70px';  
+  clear.style.paddingBottom = '30px';  
 }
 else{  
   main.style.display = 'block';  
-  clear.style.paddingTop = '7%';  
-  clear.style.paddingBottom = '3%';   
+  clear.style.paddingTop = '70px';  
+  clear.style.paddingBottom = '30px';   
   localStorage.setItem("show",1)
 } 
