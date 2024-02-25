@@ -228,7 +228,6 @@ div.container h1 {
 }
 
 .foot {
-    margin: 0% 1%;
     position: absolute;
     bottom: 5px;
     left: 0;
@@ -240,6 +239,7 @@ div.container h1 {
     background-color: #392825b6;
     max-width: 720px;*/
     color:#fff;
+    margin-top: 0px;
 }
 .yiyan:hover span#fromwho{
     display:inline
@@ -252,18 +252,6 @@ span#fromwho{
     max-width: 20;
     max-height: 200;
 }
-/*
-.wg h3 {
-    margin: 3px 0px 0px 3px;
-    padding: 5px 10px;
-    color: #d2bb80
-}
-
-.wg p {
-    margin: 3px 0px 0px 3px;
-    padding: 5px 10px;
-    color: #d2bb80
-}*/
 
 
 
