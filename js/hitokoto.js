@@ -3,7 +3,7 @@ var q = document.getElementById("fromwho");
 
 // 发起请求
 function getHitokoto(){
-    fetch("https://international.v1.hitokoto.cn//?c=c&c=i")
+    fetch("https://international.v1.hitokoto.cn/?c=i")
     .then(function(response) {
         return response.json();
     }) 

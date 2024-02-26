@@ -229,17 +229,17 @@ div.container h1 {
 
 .foot {
     position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    color:#fff;
+}
+.foot1 {
+    position: absolute;
     bottom: 5px;
     left: 0;
     right: 0;
-    margin-bottom: 5px;
-    border-radius: 20px;/*
-    box-shadow:  0px 0px 5px #541919;
-    border: 2px solid #572e2e;
-    background-color: #392825b6;
-    max-width: 720px;*/
     color:#fff;
-    margin-bottom: 10px;
 }
 .yiyan:hover span#fromwho{
     display:inline
@@ -534,6 +534,8 @@ span#fromwho{
 .gptarea::placeholder{
     color: #f9e1c7;
 }
+.nowTime{display: inline;font-size: 100px;line-height: 1;text-shadow: 2px 2px 12px #541919;}
+.nowSeconds{display: none;font-size: 60px;line-height: 1;text-shadow: 1px 1px 7px #541919;}
 @media only screen and (max-width: 725px) {
     .card{width: 85%;height:270px}
     .card-weather{width: 85%;}
@@ -541,7 +543,11 @@ span#fromwho{
     .gptarea{height: 210px;width: 96%;}
     .scspace{display: block;}
     #search-box{max-width:85%;}
-    #wg{height:287px;}
+    #wg{height:290px;}
+    .nowTime{font-size: 80px;}
+    .nowSeconds{font-size: 48px;}
+    .clear{height: 5px;}
+    .timer{padding-bottom: 0px;}
 }
 
 @media only screen and (min-width: 725px) {
@@ -551,7 +557,11 @@ span#fromwho{
     .gptarea{height: 120px;width: 210px;}
     .scspace{display: none;}
     #search-box{max-width:350px;}
-    #wg{height:195px;}
+    #wg{height:192px;}
+    .nowTime{font-size: 100px;}
+    .nowSeconds{font-size: 60px;}
+    .clear{height: 15px;}
+    .timer{padding-bottom: 30px;}
 }
 
 
