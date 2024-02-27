@@ -537,13 +537,13 @@ span#fromwho{
 .nowTime{display: inline;font-size: 100px;line-height: 1;text-shadow: 2px 2px 12px #541919;}
 .nowSeconds{display: none;font-size: 60px;line-height: 1;text-shadow: 1px 1px 7px #541919;}
 @media only screen and (max-width: 725px) {
-    .card{width: 85%;height:calc(100vh - 440px)}
+    .card{width: 85%;height:calc(100vh - 435px)}
     .card-weather{width: 85%;}
     .card-zkdjs{width:calc(85% - 10px);}
-    .gptarea{height:calc(100vh - 500px);width: 96%;}
+    .gptarea{height:calc(100vh - 495px);width: 96%;}
     .scspace{display: block;}
     #search-box{max-width:85%;}
-    #wg{height:calc(100vh - 420px);}
+    #wg{height:calc(100vh - 415px);}
     .nowTime{font-size: 80px;}
     .nowSeconds{font-size: 48px;}
     .clear{height: 5px;}
