@@ -56,7 +56,7 @@ function sendRequest() {
     else{gpt.value += '\n\n   ['+question+']\n'}
     gpt.scrollTop = gpt.scrollHeight;
     if(checkForSensitiveWords(input.value)){
-        gpt.value += '请不要随意拿同学或老师开玩笑';
+        gpt.value += '来自十九中警告：请不要随意拿同学或老师开玩笑';
         gpt.scrollTop = gpt.scrollHeight;
         input.value = ''
         return}
