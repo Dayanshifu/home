@@ -467,6 +467,30 @@ span#fromwho{
     text-indent: 10px;
     border-radius: 15px;
 }
+.search-container0{
+    width: 80%;
+    height: 30px;
+    border: 2px solid #572e2e;
+    background-color: #392825b6;
+    color: #d2bb80;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+    text-indent: 10px;
+    border-radius: 15px;
+}
+.search-container2{
+    width: 80%;
+    height: 30px;
+    border: 2px solid #572e2e;
+    background-color: #392825b6;
+    color: #d2bb80;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+    text-indent: 10px;
+    border-radius: 15px;
+}
 .search-container::placeholder{
     color: #bba690;}
     
@@ -507,6 +531,8 @@ span#fromwho{
     .scspace{display: block;}
     #wg{height:calc(100vh - 415px);}
     #nav{height:calc(100vh - 415px);}
+    #gptbtn{display: block;}
+    .search-container0{display: none;}
     .nowTime{font-size: 80px;}
     .nowSeconds{font-size: 48px;}
     .clear{height: 5px;}
@@ -521,6 +547,8 @@ span#fromwho{
     .scspace{display: none;}
     #wg{height:194px;}
     #nav{height:210px;}
+    #gptbtn{display: none;}
+    .search-container0{display: block;}
     .nowTime{font-size: 100px;}
     .nowSeconds{font-size: 60px;}
     .clear{height: 15px;}
@@ -704,3 +732,19 @@ input[type='checkbox'].switch:checked::after {
     color: #fff;
     position: relative;
 }
+
+
+@media only screen and (height<400px) {
+    #timer{display: none;}
+    #scdiv{display: none;}
+    #weather{display: none;}
+    #countdown-widget{display: none;}
+    #foot{display: none;}
+    #foot1{display: none;}}
+@media only screen and (min-height: 400px) {
+    #timer{display:                  block;}
+    #scdiv{display:                  block;}
+    #weather{display:                block;}
+    #countdown-widget{display:       block;}
+    #foot{display:                   block;}
+    #foot1{display:                  block;}}

@@ -1,5 +1,5 @@
 const gpt = document.getElementById('gpt');
-const input = document.getElementById('input');
+const input = document.getElementById('gptinput');
 const connection = new WebSocket('wss://api.chatnio.net/chat');
 var cost = 0.0
 var costnow = 0.0
@@ -32,13 +32,17 @@ connection.onmessage = function(event) {
     const { message, end, quota } = JSON.parse(event.data);
     costnow += quota
     gpt.value += message;
+    gpt1.value += message;
     loading = !end
     gpt.scrollTop = gpt.scrollHeight;
+    gpt1.scrollTop = gpt1.scrollHeight;
     
     if (loading) return;
     gpt.value += '\n   ['+(costnow-cost).toFixed(2)+']';
+    gpt1.value += '\n   ['+(costnow-cost).toFixed(2)+']';
     loading = !end
     gpt.scrollTop = gpt.scrollHeight;
+    gpt1.scrollTop = gpt1.scrollHeight;
     cost=costnow
 };
 
@@ -63,6 +67,22 @@ function sendRequest() {
     send({ message, model: 'azure-gpt-3.5-turbo', web: false });
     input.value = ''
 }
+function sendRequest1() {
+    const memory = gpt1.value
+    const question = input1.value
+    const message = input1.value.trim();
+    if (gpt1.value.length==0){
+        gpt1.value = '['+question+']\n';}
+    else{gpt1.value += '\n\n   ['+question+']\n'}
+    gpt1.scrollTop = gpt1.scrollHeight;
+    if(checkForSensitiveWords(input1.value)){
+        gpt1.value += '请不要拿同学或老师来开玩笑☺️';
+        gpt1.scrollTop = gpt1.scrollHeight;
+        input1.value = ''
+        return}
+    send({ message, model: 'azure-gpt-3.5-turbo', web: false });
+    input1.value = ''
+}
 
 let timeout = null;
 input.onchange = function () {
@@ -70,6 +90,13 @@ input.onchange = function () {
     // function wrapper to prevent multiple calls
     clearTimeout(timeout);
     timeout = setTimeout(sendRequest, 0);
+};
+
+input1.onchange = function () {
+    if (loading) return;
+    // function wrapper to prevent multiple calls
+    clearTimeout(timeout);
+    timeout = setTimeout(sendRequest1, 0);
 };
 
 
