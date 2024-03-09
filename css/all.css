@@ -733,18 +733,3 @@ input[type='checkbox'].switch:checked::after {
     position: relative;
 }
 
-
-@media only screen and (height<400px) {
-    #timer{display: none;}
-    #scdiv{display: none;}
-    #weather{display: none;}
-    #countdown-widget{display: none;}
-    #foot{display: none;}
-    #foot1{display: none;}}
-@media only screen and (min-height: 400px) {
-    #timer{display:                  block;}
-    #scdiv{display:                  block;}
-    #weather{display:                block;}
-    #countdown-widget{display:       block;}
-    #foot{display:                   block;}
-    #foot1{display:                  block;}}
