@@ -436,11 +436,8 @@ span#fromwho{
     border-radius: 10px;
     padding: 5px 5px 5px;
     max-width: 210px;
-    border: 2px solid #ffff00;
-}
-#countdown1{
-    display: none;
     padding-left: 10px;
+    border: 2px solid #ffff00;
 }
 .countdown div{
     color: #ffff00;
