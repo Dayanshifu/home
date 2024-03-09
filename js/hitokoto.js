@@ -29,4 +29,5 @@ function getHitokoto(){
         }else{getHitokoto()}
     })}
 
+
 getHitokoto()
