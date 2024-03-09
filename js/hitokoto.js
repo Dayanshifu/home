@@ -1,30 +1,29 @@
 var p = document.getElementById("hitokoto");
 var q = document.getElementById("fromwho");
-
+var a=1
 // 发起请求
 function getHitokoto(){
-    fetch("https://international.v1.hitokoto.cn/?c=i")
+    fetch("https://v2.jinrishici.com/sentence")
     .then(function(response) {
         return response.json();
     }) 
     .then(function(data) {
-        if((data.type=='c'&& (data.from=="原神" || data.from_who=="原神"))||data.type!='c'){
+        if(a==1){
             // 将hitokoto内容替换到p标签中
-            p.innerText = "「  "+ data.hitokoto+"」";
-            if(data.from_who!=null){
-                if(data.from_who=="原神"){
-                    q.innerText = data.from_who/*+" "+data.from*/;
-                }
-                else if(data.from_who=="佚名"){
-                    q.innerText=data.from
-                }
-                else{
-                q.innerText = '——'+data.from_who/*+" "+data.from*/;
-                }
+            let cnt=100
+            a=0
+            p.innerText = "「  "
+            for (let c of data.content) {
+                setTimeout(function() {
+                    p.innerText = p.textContent + c;
+                }, cnt)
+                cnt += 100;
             }
-            else{
-                q.innerText=data.from
-            }
+            a=1
+            setTimeout(function() {
+                p.innerText = p.textContent + "」"
+            }, cnt)
+            q.innerText=data.origin.author
         }else{getHitokoto()}
     });
     
