@@ -554,10 +554,6 @@ span#fromwho{
     .clear{height: 15px;}
     .timer{padding-bottom: 30px;}
 }
-@media only screen and (max-width: 435px) {
-    #search-box{max-width:85%;}}
-@media only screen and (min-width: 435px) {
-    #search-box{max-width:350px;}}
 @media only screen and (max-width: 550px) {
     .nav{
     display: flex;  
@@ -569,8 +565,12 @@ span#fromwho{
         display: block;  
         flex-wrap: nowrap;  
         justify-content:flex-start /* 靠左对齐 */}}
+@media only screen and (max-width: 435px) {
+    #search-box{max-width:85%;}}
+@media only screen and (min-width: 435px) {
+    #search-box{max-width:350px;}}
 
-
+    
 .shadow_css {
     display: none;
     position: absolute;
