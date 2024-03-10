@@ -1,8 +1,10 @@
 const gpt = document.getElementById('gpt');
 const input = document.getElementById('gptinput');
+const div = document.getElementById('wg');
 const connection = new WebSocket('wss://api.chatnio.net/chat');
 var cost = 0.0
 var costnow = 0.0
+var scrh = 0
 const sensitiveWords = ['安敬瑜','白邓玉','白馥嫚','蔡馨菲','曾宇宸','丁雅珊','宫森洋','龚嘉林','顾才桢','何姝慧','贾宗榆','李璐含'
 ,'刘栩如','刘奕含','罗启瑞','吕佳蔓','马浩东','马小焯','马雨琛','马艺轩','牟智娴','南军','钱嘉欣','全思潼'
 ,'任博尔','师浚哲','宋雨喆','孙致洋','王慧轩','王彦杰','王怡皓','王奕博','王振恺','王梓宇','王梓舟','吴奇恒'
@@ -73,7 +75,19 @@ input.onchange = function () {
 };
 
 input.onfocus = function(){
-    setTimeout(function(){window.scrollTo(0, document.documentElement.scrollHeight)},500)
-    
+    setTimeout(function(){window.scrollTo(0, document.documentElement.scrollHeight)},400)
+    scrh=1
 }
 
+let lastHeight = window.innerHeight;  
+function checkHeightChange() {  
+    const newHeight = window.innerHeight;  
+    if (newHeight !== lastHeight) {  
+        lastHeight = newHeight;  
+        if(scrh=1){
+            div.scrollTop=div.scrollHeight
+        }
+    }  
+    setTimeout(checkHeightChange, 100); 
+}  
+window.addEventListener('resize', checkHeightChange);  
