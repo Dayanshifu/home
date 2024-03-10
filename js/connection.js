@@ -72,4 +72,8 @@ input.onchange = function () {
     timeout = setTimeout(sendRequest, 0);
 };
 
+input.onfocus = function(){
+    setTimeout(200)
+    window.scrollTo(0, document.documentElement.scrollHeight - 530)
+}
 

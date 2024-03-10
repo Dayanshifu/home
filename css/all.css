@@ -539,12 +539,12 @@ span#fromwho{
     .timer{padding-bottom: 0px;}
 }
 @media only screen and (max-width: 725px) and (max-height:600px){
-    .card{width: 85%;}
+    .card{width: 85%;height: calc(100vh - 150px);}
     .card-weather{width: 85%;}
     .card-zkdjs{width:calc(85% - 10px);}
-    .gptarea{width: 96%;height:120px}
+    .gptarea{width: 96%;height:calc(100vh - 150px - 50px)}
     .scspace{display: block;}
-    #wg{height:670px;
+    #wg{height:calc(100vh - 170px + 500px);
         overflow:none; }
     #nav{height:calc(100vh - 415px);}
     #gptbtn{display: block;}
@@ -553,6 +553,8 @@ span#fromwho{
     .nowSeconds{font-size: 48px;}
     .clear{height: 5px;}
     .timer{padding-bottom: 0px;}
+    
+    #sitefoot{display: none;}
 }
 
 @media only screen and (min-width: 725px) {
