@@ -94,13 +94,15 @@ window.addEventListener('resize', function() {
                     window.scrollTo(0, document.documentElement.scrollHeight)
                 },280)
                 isgpt = true;
-                console.log(isFocused,isgpt)
+                console.log(isFocused,isgpt);
+                return
             }else if (isgpt) {
                 setTimeout(function(){
                     div.scrollTop = div.scrollHeight;
                 },300 ) 
                 isgpt = false
-                console.log(isFocused,isgpt)
+                console.log(isFocused,isgpt);
+                return;
             }    
         }else if (!isFocused){
             if (isgpt) {
@@ -108,7 +110,8 @@ window.addEventListener('resize', function() {
                     div.scrollTop = div.scrollHeight;
                 },300 ) 
                 isgpt = false
-                console.log(isFocused,isgpt)
+                console.log(isFocused,isgpt);
+                return;
             } 
         }
     }, 1000); // 延迟1秒执行检查  
