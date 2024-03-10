@@ -93,7 +93,7 @@ window.addEventListener('resize', function() {
     else if (isgpt) {
         setTimeout(function(){
             div.scrollTop = div.scrollHeight;
-        },400 ) 
+        },300 ) 
         isgpt = false
     }        
     });
