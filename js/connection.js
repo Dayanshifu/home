@@ -78,12 +78,14 @@ input.onchange = function () {
 
 
 input.onfocus = function(){
-    setTimeout(function(){window.scrollTo(0, document.documentElement.scrollHeight)},400)
-    scrh=1
+    if (scrh === 0) {  
+        setTimeout(function(){window.scrollTo(0, document.documentElement.scrollHeight)},400)
+        scrh=1
+    }
 }
 window.addEventListener('resize', function() {  
     if (scrh === 1) {  
-        div.scrollTop = div.scrollHeight;  
+        this.setTimeout(function(){div.scrollTop = div.scrollHeight;},400 ) 
         scrh=0
     }  
 });
