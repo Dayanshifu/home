@@ -81,6 +81,6 @@ input.onfocus = function(){
 
 
 input.blur = function(){
-    setTimeout(function(){div.scrollTop=div.scrollHeight},360)
+    setTimeout(function(){div.scrollTop=div.scrollHeight},600)
     scrh=0
 }
