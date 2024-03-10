@@ -114,5 +114,5 @@ window.addEventListener('resize', function() {
                 return;
             } 
         }
-    }, 250); // 延迟1秒执行检查  
+    }, 201); // 延迟1秒执行检查  
 });
