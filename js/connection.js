@@ -83,9 +83,11 @@ input.onfocus = function(){
         scrh=1
     }
 }
-window.addEventListener('resize', function() {  
-    if (scrh === 1) {  
-        this.setTimeout(function(){div.scrollTop = div.scrollHeight;},648 ) 
-        scrh=0
-    }  
-});
+window.addEventListener('resize', 
+    function() {  
+        if (scrh === 1) {  
+            setTimeout(function(){div.scrollTop = div.scrollHeight;},648 ) 
+            scrh=0
+        }  
+    }
+);
