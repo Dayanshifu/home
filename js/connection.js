@@ -87,13 +87,13 @@ window.addEventListener('resize', function() {
     if (isFocused) {  
         setTimeout(function(){
             window.scrollTo(0, document.documentElement.scrollHeight)
-        },360)
+        },280)
         isgpt = true;
     } 
     else if (isgpt) {
         setTimeout(function(){
             div.scrollTop = div.scrollHeight;
-        },400 ) 
+        },360 ) 
         isgpt = false
     }        
     });
