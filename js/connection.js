@@ -75,18 +75,25 @@ input.onchange = function () {
 
 
 
-let scrh=0
-input.onfocus = function(){
-    setTimeout(function(){window.scrollTo(0, document.documentElement.scrollHeight)},400)
-    scrh=1
-    console.log(scrh)
-}
-window.addEventListener('resize', 
-    function() {  
-        if (scrh === 1) {  
-            setTimeout(function(){div.scrollTop = div.scrollHeight;},700 ) 
-            scrh=0
-            console.log(scrh)
-        }  
-    }
-);
+let isFocused = false;
+let isgpt = false;
+input.addEventListener('focus', function() {  
+    isFocused = true;   
+});  
+input.addEventListener('blur', function() {  
+    isFocused = false;  
+});  
+window.addEventListener('resize', function() { 
+    if (isFocused) {  
+        setTimeout(function(){
+            window.scrollTo(0, document.documentElement.scrollHeight)
+        },360)
+        isgpt = true;
+    } 
+    else if (isgpt) {
+        setTimeout(function(){
+            div.scrollTop = div.scrollHeight;
+        },400 ) 
+        isgpt = false
+    }        
+    });
