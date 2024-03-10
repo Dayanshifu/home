@@ -92,14 +92,14 @@ window.addEventListener('resize', function() {
             if (isgpt === false){
                 setTimeout(function(){
                     window.scrollTo(0, document.documentElement.scrollHeight)
-                },280)
+                },250)
                 isgpt = true;
                 console.log(isFocused,isgpt);
                 return
             }else if (isgpt) {
                 setTimeout(function(){
                     div.scrollTop = div.scrollHeight;
-                },300 ) 
+                },250 ) 
                 isgpt = false
                 console.log(isFocused,isgpt);
                 return;
@@ -108,11 +108,11 @@ window.addEventListener('resize', function() {
             if (isgpt) {
                 setTimeout(function(){
                     div.scrollTop = div.scrollHeight;
-                },300 ) 
+                },250 ) 
                 isgpt = false
                 console.log(isFocused,isgpt);
                 return;
             } 
         }
-    }, 100); // 延迟1秒执行检查  
+    }, 10); // 延迟1秒执行检查  
 });
