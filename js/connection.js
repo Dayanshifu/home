@@ -85,7 +85,7 @@ function checkHeightChange() {
     if (newHeight !== lastHeight) {  
         lastHeight = newHeight;  
         if(scrh=1){
-            div.scrollTop=div.scrollHeight
+            setTimeout(function(){div.scrollTop=div.scrollHeight},500)
         }
     }  
     setTimeout(checkHeightChange, 100); 
