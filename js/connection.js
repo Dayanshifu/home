@@ -75,21 +75,15 @@ input.onchange = function () {
 };
 
 
-let lastHeight = window.innerHeight;  
-function checkHeightChange() {  
-    const newHeight = window.innerHeight;  
-    if (newHeight !== lastHeight) {  
-        lastHeight = newHeight;  
-        if(scrh==1){
-            scrh=0
-            setTimeout(function(){div.scrollTop=div.scrollHeight},500)
-        }
-    }  
-    setTimeout(checkHeightChange, 100); 
-}  
-window.addEventListener('resize', checkHeightChange);  
+
 
 input.onfocus = function(){
     setTimeout(function(){window.scrollTo(0, document.documentElement.scrollHeight)},400)
     scrh=1
 }
+window.addEventListener('resize', function() {  
+    if (scrh === 1) {  
+        div.scrollTop = div.scrollHeight;  
+        scrh=0
+    }  
+});
