@@ -92,7 +92,7 @@ window.addEventListener('resize', function() {
             if (isgpt === false){
                 setTimeout(function(){
                     window.scrollTo(0, document.documentElement.scrollHeight)
-                },100)
+                },200)
                 isgpt = true;
                 console.log(isFocused,isgpt);
                 return
