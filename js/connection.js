@@ -75,7 +75,7 @@ input.onchange = function () {
 };
 
 input.onfocus = function(){
-    setTimeout(function(){window.scrollTo(0, document.documentElement.scrollHeight)},400)
+    setTimeout(function(){window.scrollTo(0, document.documentElement.scrollHeight)},360)
     scrh=1
 }
 
@@ -85,7 +85,7 @@ function checkHeightChange() {
     if (newHeight !== lastHeight) {  
         lastHeight = newHeight;  
         if(scrh=1){
-            setTimeout(function(){div.scrollTop=div.scrollHeight},500)
+            setTimeout(function(){div.scrollTop=div.scrollHeight},360)
         }
     }  
     setTimeout(checkHeightChange, 100); 
