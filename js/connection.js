@@ -84,8 +84,8 @@ function checkHeightChange() {
     const newHeight = window.innerHeight;  
     if (newHeight !== lastHeight) {  
         lastHeight = newHeight;  
-        if(scrh==1){
-            setTimeout(function(){div.scrollTop=div.scrollHeight},500)
+        if(scrh===1){
+            setTimeout(function(){div.scrollTop=div.scrollHeight},360);
             scrh=0
         }
     }  
