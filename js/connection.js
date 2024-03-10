@@ -79,16 +79,8 @@ input.onfocus = function(){
     scrh=1
 }
 
-let lastHeight = window.innerHeight;  
-function checkHeightChange() {  
-    const newHeight = window.innerHeight;  
-    if (newHeight !== lastHeight) {  
-        lastHeight = newHeight;  
-        if(scrh===1){
-            setTimeout(function(){div.scrollTop=div.scrollHeight},360);
-            scrh=0
-        }
-    }  
-    setTimeout(checkHeightChange, 100); 
-}  
-window.addEventListener('resize', checkHeightChange);  
+
+input.blur = function(){
+    setTimeout(function(){div.scrollTop=div.scrollHeight},360)
+    scrh=0
+}
