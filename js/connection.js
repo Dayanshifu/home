@@ -90,11 +90,13 @@ window.addEventListener('resize', function() {
                 window.scrollTo(0, document.documentElement.scrollHeight)
             },280)
             isgpt = true;
+            console.log(isFocused,isgpt)
         }else if (isgpt) {
             setTimeout(function(){
                 div.scrollTop = div.scrollHeight;
             },300 ) 
             isgpt = false
+            console.log(isFocused,isgpt)
         }    
     }else{
         if (isgpt) {
@@ -102,6 +104,7 @@ window.addEventListener('resize', function() {
                 div.scrollTop = div.scrollHeight;
             },300 ) 
             isgpt = false
+            console.log(isFocused,isgpt)
         } 
     }
     });
