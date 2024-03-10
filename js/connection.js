@@ -74,6 +74,6 @@ input.onchange = function () {
 
 input.onfocus = function(){
     setTimeout(700)
-    window.scrollTo(0, document.documentElement.scrollHeight - 530)
+    window.scrollTo(0, document.documentElement.scrollHeight)
 }
 
