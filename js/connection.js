@@ -74,10 +74,6 @@ input.onchange = function () {
     timeout = setTimeout(sendRequest, 0);
 };
 
-input.onfocus = function(){
-    setTimeout(function(){window.scrollTo(0, document.documentElement.scrollHeight)},300)
-    scrh=1
-}
 
 let lastHeight = window.innerHeight;  
 function checkHeightChange() {  
@@ -86,8 +82,14 @@ function checkHeightChange() {
         lastHeight = newHeight;  
         if(scrh==1){
             setTimeout(function(){div.scrollTop=div.scrollHeight},500)
+            scrh=0
         }
     }  
     setTimeout(checkHeightChange, 100); 
 }  
 window.addEventListener('resize', checkHeightChange);  
+
+input.onfocus = function(){
+    setTimeout(function(){window.scrollTo(0, document.documentElement.scrollHeight)},300)
+    scrh=1
+}
