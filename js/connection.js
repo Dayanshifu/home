@@ -85,15 +85,23 @@ input.addEventListener('blur', function() {
 });  
 window.addEventListener('resize', function() { 
     if (isFocused) {  
-        setTimeout(function(){
-            window.scrollTo(0, document.documentElement.scrollHeight)
-        },280)
-        isgpt = true;
-    } 
-    else if (isgpt) {
-        setTimeout(function(){
-            div.scrollTop = div.scrollHeight;
-        },300 ) 
-        isgpt = false
-    }        
+        if (isgpt === false){
+            setTimeout(function(){
+                window.scrollTo(0, document.documentElement.scrollHeight)
+            },280)
+            isgpt = true;
+        }else if (isgpt) {
+            setTimeout(function(){
+                div.scrollTop = div.scrollHeight;
+            },300 ) 
+            isgpt = false
+        }    
+    }else{
+        if (isgpt) {
+            setTimeout(function(){
+                div.scrollTop = div.scrollHeight;
+            },300 ) 
+            isgpt = false
+        } 
+    }
     });
