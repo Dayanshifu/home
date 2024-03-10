@@ -83,28 +83,33 @@ input.addEventListener('focus', function() {
 input.addEventListener('blur', function() {  
     isFocused = false;  
 });  
-window.addEventListener('resize', function() { 
-    if (isFocused) {  
-        if (isgpt === false){
-            setTimeout(function(){
-                window.scrollTo(0, document.documentElement.scrollHeight)
-            },280)
-            isgpt = true;
-            console.log(isFocused,isgpt)
-        }else if (isgpt) {
-            setTimeout(function(){
-                div.scrollTop = div.scrollHeight;
-            },300 ) 
-            isgpt = false
-            console.log(isFocused,isgpt)
-        }    
-    }else{
-        if (isgpt) {
-            setTimeout(function(){
-                div.scrollTop = div.scrollHeight;
-            },300 ) 
-            isgpt = false
-            console.log(isFocused,isgpt)
-        } 
-    }
-    });
+
+let resizeTimeout;  
+window.addEventListener('resize', function() {  
+    clearTimeout(resizeTimeout); // 清除之前的定时器，防止连续触发resize时多次设置定时器  
+    resizeTimeout = setTimeout(function() {  
+        if (isFocused) {  
+            if (isgpt === false){
+                setTimeout(function(){
+                    window.scrollTo(0, document.documentElement.scrollHeight)
+                },280)
+                isgpt = true;
+                console.log(isFocused,isgpt)
+            }else if (isgpt) {
+                setTimeout(function(){
+                    div.scrollTop = div.scrollHeight;
+                },300 ) 
+                isgpt = false
+                console.log(isFocused,isgpt)
+            }    
+        }else if (!isFocused){
+            if (isgpt) {
+                setTimeout(function(){
+                    div.scrollTop = div.scrollHeight;
+                },300 ) 
+                isgpt = false
+                console.log(isFocused,isgpt)
+            } 
+        }
+    }, 1000); // 延迟1秒执行检查  
+});
