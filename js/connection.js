@@ -90,6 +90,6 @@ function checkHeightChange() {
 window.addEventListener('resize', checkHeightChange);  
 
 input.onfocus = function(){
-    setTimeout(function(){window.scrollTo(0, document.documentElement.scrollHeight)},300)
+    setTimeout(function(){window.scrollTo(0, document.documentElement.scrollHeight)},400)
     scrh=1
 }
