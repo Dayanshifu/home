@@ -1,5 +1,5 @@
 var examDate = new Date("2024-06-16T00:00:00");
-var school = new Date("2024-04-08T00:00:00");
+var school = new Date("2024-05-10T00:00:00");
           
 // 更新倒计时函数
 function updateCountdown() {
@@ -11,9 +11,9 @@ function updateCountdown() {
 
   // 如果时间差小于等于59,400,000，说明中考已经开始或结束
 
-  if (diff1 <= -259200000) {
+  if (diff1 <= -172800000) {
       // 显示中考已经开结束的信息
-      document.getElementById("started1").innerHTML = "一诊已经结束！<br>祝你好运！";
+      document.getElementById("started1").innerHTML = "二诊已经结束！<br>祝你好运！";
       document.getElementById("countdown1").style.display="none";
       // 停止更新倒计时
       //clearInterval(interval);
@@ -21,7 +21,7 @@ function updateCountdown() {
   }
   else if (diff1 <= 0) {
       // 显示中考已经开始的信息
-      document.getElementById("started1").innerHTML = "一诊已经开始！<br>祝你好运！";
+      document.getElementById("started1").innerHTML = "二诊已经开始！<br>祝你好运！";
       document.getElementById("countdown1").style.display="none";
       // 停止更新倒计时
       //clearInterval(interval);
