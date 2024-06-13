@@ -21,7 +21,7 @@ function updateCountdown() {
   }
   else if (diff <= 0) {
       // 显示中考已经开始的信息
-      document.getElementById("started").innerHTML = "中考已经开始！<br>祝你好运！";
+      document.getElementById("started").innerHTML = "中考加油！<br>中考必胜！";
       document.getElementById("countdown").style.display="none";
       // 停止更新倒计时
       //clearInterval(interval);
