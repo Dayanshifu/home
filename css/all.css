@@ -334,9 +334,10 @@ span#fromwho{
     display: inline-block;
   }
 .card-weather {
+    text-align: center;
     margin:5px;
     color: #fff;
-    background-color: #313a44c5;
+    background-color: /*#313a44c5*/#392825b6;
     flex-direction: column;
     box-shadow:  0px 0px 5px #541919;
     border: 2px solid #572e2e;
@@ -749,4 +750,38 @@ input[type='checkbox'].switch:checked::after {
     font-style: normal;
     color: #fff;
     position: relative;
+}
+
+.headimage {  
+    position: relative;  
+    transition: opacity 1s ease-in-out;
+  }  
+
+.headimage img {  
+    height: auto;  
+    display: block;  
+  }  
+    
+.headimage::before {  
+  content: "";  
+  position: absolute;  
+  top: 0;  
+  left: 0;  
+  right: 0;  
+  bottom: 30%;
+  background: inherit; 
+  filter: blur(10px); 
+  z-index: 1;   
+}  
+  
+.text-overlay {  
+  position: absolute;  
+  bottom: 0;  
+  left: 0;  
+  right: 0;  
+  padding: 5px; 
+  background: #392825b6; 
+  color: f9e1c7; 
+  text-align: center; 
+  z-index: 2;
 }
