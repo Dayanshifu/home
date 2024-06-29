@@ -529,7 +529,7 @@ span#fromwho{
     .card-zkdjs{width:calc(85% - 10px);}
     .gptarea{height:calc(100vh - 495px);width: 96%;}
     .scspace{display: block;}
-    #wg{height:calc(100vh - 415px);
+    #wg{height:calc(100vh - 435px);
         overflow:auto; }
     #nav{height:calc(100vh - 415px);}
     #gptbtn{display: block;}
@@ -543,7 +543,7 @@ span#fromwho{
     .card{width: 85%;height: calc(100vh - 150px);}
     .card-weather{width: 85%;}
     .card-zkdjs{width:calc(85% - 10px);}
-    .gptarea{width: 96%;height:calc(100vh - 150px - 60px)}
+    .gptarea{width: 96%;height:calc(100vh - 150px - 80px)}
     .scspace{display: block;}
     #wg{height:calc(100vh - 170px + 420px);
         overflow:none; }
