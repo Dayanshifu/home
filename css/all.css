@@ -524,10 +524,10 @@ span#fromwho{
 .nowTime{display: inline;font-size: 100px;line-height: 1;text-shadow: 2px 2px 12px #541919;}
 .nowSeconds{display: none;font-size: 60px;line-height: 1;text-shadow: 1px 1px 7px #541919;}
 @media only screen and (max-width: 725px) and (min-height:600px){
-    .card{width: 85%;height:calc(100vh - 455px);margin-bottom: 30px;}
+    .card{width: 85%;height:calc(100vh - 460px);margin-bottom: 30px;}
     .card-weather{width: 85%;}
     .card-zkdjs{width:calc(85% - 10px);}
-    .gptarea{height:calc(100vh - 515px);width: 96%;}
+    .gptarea{height:calc(100vh - 520px);width: 96%;}
     .scspace{display: block;}
     #wg{height:calc(100vh - 415px);
         overflow:auto; }
