@@ -1,5 +1,4 @@
-var examDate = new Date("2024-08-13T14:30:00");
-var school =    new Date("2024-08-13T14:30:00");
+var examDate = new Date("2024-08-04T23:59:00");
           
 // 更新倒计时函数
 function updateCountdown() {
@@ -21,7 +20,7 @@ function updateCountdown() {
   }
   if (diff <= 0) {
       // 显示中考已经开始的信息
-      document.getElementById("started").innerHTML = "开学了";
+      document.getElementById("started").innerHTML = "已截止";
       document.getElementById("countdown").style.display="none";
       // 停止更新倒计时
       //clearInterval(interval);
