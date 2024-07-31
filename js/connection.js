@@ -3,13 +3,14 @@ const input = document.getElementById('gptinput');
 const div = document.getElementById('wg');
 const connection = new WebSocket('wss://api.chatnio.net/chat');
 var cost = 0.0
-var costnow = 0.0
+var costnow = 0.0/*
 const sensitiveWords = ['安敬瑜','白邓玉','白馥嫚','白雅楠','蔡馨菲','曾宇宸','丁雅珊','宫森洋','龚嘉林','顾才桢','何姝慧','贾宗榆','李璐含'
 ,'刘栩如','刘奕含','罗启瑞','吕佳蔓','马浩东','马小焯','马雨琛','马艺轩','牟智娴','南军','钱嘉欣','全思潼'
 ,'任博尔','师浚哲','宋雨喆','孙致洋','王慧轩','王彦杰','王怡皓','王奕博','王振恺','王梓宇','王梓舟','吴奇恒'
 ,'吴奇泽','肖钧原','邢煜婕','徐想','颜学谦','杨晨语','杨可轩','药基文','袁璐伟','张家荣','张祺玥','张润林'
 ,'张雨轩','赵瀚文','赵姝翰','郑承文','周文凯','李富明','李春燕','任泓宇','岳建生','韦玉琴','柴泽春','鲁明辉','陈文军'];
-
+*/
+const sensitiveWords = []
 // 检测文本中是否包含敏感词的函数
 function checkForSensitiveWords(text) {
   for (let word of sensitiveWords) {
