@@ -126,6 +126,9 @@ div.sc div a:hover:not(.active) {
     padding-bottom: 0;
 }
 
+html::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+  } 
 body {
     height: 100%;
     background-color:#572e2e;
