@@ -11,8 +11,16 @@ function isSymbol(char) {
 }  
   
 function generateResult() {  
-    var nickname = document.getElementById('nickname').value;  
-    var suffix = document.getElementById('suffix').value;  
+    if (document.getElementById('nickname').value.trim() !== '') {    
+        var nickname = document.getElementById('nickname').value;  
+    }else{
+        var nickname = '玫瑰'
+    }
+    if (document.getElementById('suffix').value.trim() !== '') {    
+        var suffix = document.getElementById('suffix').value;  
+    }else{  
+        var suffix = '喵~'
+    }
     var symbols = [];  
     var nonSymbols = [];  
     for (var i = 0; i < suffix.length; i++) {  
@@ -34,7 +42,7 @@ async function copyToClipboard() {
         alert('文本已复制到剪贴板！');  
     } catch (err) {  
         console.error('无法复制文本: ', err);  
-        alert('无法复制文本，请确保您的浏览器支持此功能。');  
+        alert('无法复制文本，请手动点输出文本框全选复制');  
     }  
 }  
 </script>  
