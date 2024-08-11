@@ -7,16 +7,12 @@
 <title>昵称小尾巴添加器</title>  
 <script>  
 function isSymbol(char) {  
-    // 简化的判断逻辑，这里只考虑非字母、非数字的情况  
-    // 注意：这不会精确地区分所有符号和汉字，但足以作为示例  
     return !/[a-zA-Z0-9\u4e00-\u9fa5]/.test(char);  
 }  
   
 function generateResult() {  
     var nickname = document.getElementById('nickname').value;  
     var suffix = document.getElementById('suffix').value;  
-      
-    // 分离符号和非符号字符  
     var symbols = [];  
     var nonSymbols = [];  
     for (var i = 0; i < suffix.length; i++) {  
@@ -26,29 +22,17 @@ function generateResult() {
             nonSymbols.push(suffix[i]);  
         }  
     }  
-      
-    // 颠倒符号数组  
     symbols.reverse();  
-      
-    // 拼接结果  
     var result = '⁧'+symbols.join('') + nonSymbols.join('') + '⁧'+nickname;  
-      
-    // 设置到第三个输入框中  
     document.getElementById('output').value = result;  
 }  
 async function copyToClipboard() {  
     generateResult()
     try {  
-        // 获取输入框的值  
         const textToCopy = document.getElementById('output').value;  
-  
-        // 使用navigator.clipboard.writeText()方法复制到剪贴板  
         await navigator.clipboard.writeText(textToCopy);  
-  
-        // 提示用户复制成功（可选）  
         alert('文本已复制到剪贴板！');  
     } catch (err) {  
-        // 如果复制失败，则提示用户  
         console.error('无法复制文本: ', err);  
         alert('无法复制文本，请确保您的浏览器支持此功能。');  
     }  
