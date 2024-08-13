@@ -19,6 +19,10 @@ html {
     clear: both;
     height: 5px;
 }
+.clear-m {
+    clear: both;
+    height: 10px;
+}
 
 
 .sc {
@@ -359,11 +363,11 @@ span#fromwho{
   }
 .card-zkdjs {
     padding-left: 5px;
-    padding-top: 25px;
+    padding-top: 5px;
     padding-right: 5px;
     padding-bottom:5px;
     width:210px;
-    height:150px;
+    height:170px;
     color: #fff;
     background-color: #ff0000c5;
     flex-direction: column;
