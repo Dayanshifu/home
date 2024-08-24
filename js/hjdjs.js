@@ -1,4 +1,4 @@
-var school =    new Date("2024-08-13T14:30:00");
+var school =    new Date("2024-08-26T06:30:00");
           
 // 更新倒计时函数
 function updateCountdown() {
