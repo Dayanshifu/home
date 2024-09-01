@@ -25,7 +25,7 @@ function checkForSensitiveWords(text) {
 
 
 connection.onopen = () => {
-    send({ token: 'sk-5b4d5cb480785d4ba30daafedfccc375be7549b3868d06db6087ba2a91c5698a', id: -1 });
+    send({ token: 'sk-38414e5a76079bcf9c6fbeb5a1f53c2912bd2100353a00004bf363fbf7b3f2cf', id: -1 });
 }
 let loading = false;   
 
@@ -62,7 +62,7 @@ function sendRequest() {
         gpt.scrollTop = gpt.scrollHeight;
         input.value = ''
         return}
-    send({ message, model: 'gpt-3.5-turbo', web: false });
+    send({ message, model: 'azure-gpt-3.5-turbo', web: false });
     input.value = ''
 }
 
