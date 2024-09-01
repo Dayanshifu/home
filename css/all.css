@@ -514,9 +514,9 @@ span#fromwho{
 .nowTime{display: inline;font-size: 100px;line-height: 1;text-shadow: 2px 2px 12px #541919;}
 .nowSeconds{display: none;font-size: 60px;line-height: 1;text-shadow: 1px 1px 7px #541919;}
 @media only screen and (max-width: 725px) and (min-height:600px){
-    .card{width: 85%;height:calc(100vh - 460px);margin-bottom: 30px;}
-    .card-weather{width: 85%;}
-    .card-zkdjs{width:calc(85% - 10px);}
+    .card{width: 85%;height:calc(100vh - 450px);margin-bottom: 20px;}
+    .card-weather{width: 85%;height:calc(100vh - 450px);margin-bottom: 10px;}
+    .card-zkdjs{width:calc(85% - 10px);;height:calc(100vh - 460px);margin-bottom: 10px;}
     .gptarea{height:calc(100vh - 520px);width: 96%;}
     .scspace{display: block;}
     #wg{height:calc(100vh - 415px);
@@ -528,11 +528,12 @@ span#fromwho{
     .nowSeconds{font-size: 48px;}
     .clear{height: 5px;}
     .timer{padding-bottom: 0px;}
+    #a000{height: calc((100%-220px)/2);color: #ff0000c5;display: block;}
 }
 @media only screen and (max-width: 725px) and (max-height:600px){
     .card{width: 85%;height: calc(100vh - 150px);margin-bottom: 0px;}
-    .card-weather{width: 85%;}
-    .card-zkdjs{width:calc(85% - 10px);}
+    .card-weather{width: 85%;height: calc(100vh - 160px);margin-bottom: 10px;}
+    .card-zkdjs{width:calc(85% - 10px);height: calc(100vh - 160px);margin-bottom: 10px;}
     .gptarea{width: 96%;height:calc(100vh - 150px - 60px)}
     .scspace{display: block;}
     #wg{height:calc(100vh - 170px + 420px);
@@ -544,13 +545,14 @@ span#fromwho{
     .nowSeconds{font-size: 48px;}
     .clear{height: 5px;}
     .timer{padding-bottom: 0px;}
+    #a000{height: calc((100%-220px)/2);color: #ff0000c5;display: block;}
     
     #sitefoot{display: none;}
 }
 
 @media only screen and (min-width: 725px) {
     .card{width: 220px;height: 170;margin-bottom: 5px;}
-    .card-weather{width: 220px;}
+    .card-weather{width: 220px;height: 170;margin-bottom: 5px;}
     .card-zkdjs{width: 210px;}
     .gptarea{height: 120px;width: 210px;}
     .scspace{display: none;}
@@ -562,6 +564,7 @@ span#fromwho{
     .nowSeconds{font-size: 60px;}
     .clear{height: 15px;}
     .timer{padding-bottom: 30px;}
+    #a000{display: none;}
 }
 @media only screen and (max-width: 550px) {
     .nav{
@@ -760,7 +763,7 @@ input[type='checkbox'].switch:checked::after {
   right: 0;  
   bottom: 30%;
   background: inherit; 
-  filter: blur(10px); 
+display: none;
   z-index: 1;   
 }  
   
