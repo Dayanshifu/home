@@ -1,5 +1,5 @@
-var school =    new Date("2024-08-26T06:30:00");
-          
+var school =    new Date("2025-06-30T08:30:00");
+                        //2025-11-30T09:00:00
 // 更新倒计时函数
 function updateCountdown() {
   // 获取当前时间
@@ -9,10 +9,10 @@ function updateCountdown() {
   var diff1 = school - now; 
 
   // 如果时间差小于等于59,400,000，说明中考已经开始或结束
-
-  if (diff1 <= -172800000 && false) {
+              //113400000
+  if (diff1 <= -32400000) {
       // 显示中考已经开结束的信息
-      document.getElementById("started1").innerHTML = "二诊已经结束！<br>祝你好运！";
+      document.getElementById("started1").innerHTML = "学考已经结束";
       document.getElementById("countdown1").style.display="none";
       // 停止更新倒计时
       //clearInterval(interval);
@@ -20,7 +20,7 @@ function updateCountdown() {
   }
   if (diff1 <= 0) {
       // 显示中考已经开始的信息
-      document.getElementById("started1").innerHTML = "";
+      document.getElementById("started1").innerHTML = "学考已经开始";
       document.getElementById("countdown1").style.display="none";
       // 停止更新倒计时
       //clearInterval(interval);
