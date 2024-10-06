@@ -4,10 +4,10 @@
 # [hao-littleyan](https://dayanshifu.github.io/home/ )
 #### 👏一个简洁方便的浏览器首页
 
-[![GitHub stars](https://img.shields.io/github/stars/dayanshifu/hao-littleyan?style=flat-square)](https://dayanshifu.github.io/home/ )
-[![GitHub forks](https://img.shields.io/github/forks/dayanshifu/hao-littleyan?style=flat-square)](https://dayanshifu.github.io/home/ )
-[![GitHub issues](https://img.shields.io/github/issues/dayanshifu/hao-littleyan?style=flat-square)](https://dayanshifu.github.io/home/ )
-[![GitHub license](https://img.shields.io/github/license/dayanshifu/hao-littleyan?style=flat-square)](https://dayanshifu.github.io/home/ )
+[![GitHub stars](https://img.shields.io/github/stars/Dayanshifu/home?style=flat-square)](https://dayanshifu.github.io/home/ )
+[![GitHub forks](https://img.shields.io/github/forks/Dayanshifu/home?style=flat-square)](https://dayanshifu.github.io/home/ )
+[![GitHub issues](https://img.shields.io/github/issues/Dayanshifu/home?style=flat-square)](https://dayanshifu.github.io/home/ )
+[![GitHub license](https://img.shields.io/github/license/Dayanshifu/home?style=flat-square)](https://dayanshifu.github.io/home/ )
 
 </div>
 
@@ -37,4 +37,4 @@
 - 自设背景图片及 自设快捷链接 更多自定义小组件等
 
 ## License
-[AGPL-3.0](https://github.com/dayanshifu/hao-littleyan/LICENSE)
+[AGPL-3.0](https://github.com/Dayanshifu/home/LICENSE)
