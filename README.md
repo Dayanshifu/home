@@ -1,13 +1,13 @@
 <div align="center"> 
 
 ![fystart](favicon.ico)
-# [hao-littleyan](https://dayanshifu.github.io/hao-littleyan/ )
+# [hao-littleyan](https://dayanshifu.github.io/home/ )
 #### 👏一个简洁方便的浏览器首页
 
-[![GitHub stars](https://img.shields.io/github/stars/dayanshifu/hao-littleyan?style=flat-square)](https://dayanshifu.github.io/hao-littleyan/ )
-[![GitHub forks](https://img.shields.io/github/forks/dayanshifu/hao-littleyan?style=flat-square)](https://dayanshifu.github.io/hao-littleyan/ )
-[![GitHub issues](https://img.shields.io/github/issues/dayanshifu/hao-littleyan?style=flat-square)](https://dayanshifu.github.io/hao-littleyan/ )
-[![GitHub license](https://img.shields.io/github/license/dayanshifu/hao-littleyan?style=flat-square)](https://dayanshifu.github.io/hao-littleyan/ )
+[![GitHub stars](https://img.shields.io/github/stars/dayanshifu/hao-littleyan?style=flat-square)](https://dayanshifu.github.io/home/ )
+[![GitHub forks](https://img.shields.io/github/forks/dayanshifu/hao-littleyan?style=flat-square)](https://dayanshifu.github.io/home/ )
+[![GitHub issues](https://img.shields.io/github/issues/dayanshifu/hao-littleyan?style=flat-square)](https://dayanshifu.github.io/home/ )
+[![GitHub license](https://img.shields.io/github/license/dayanshifu/hao-littleyan?style=flat-square)](https://dayanshifu.github.io/home/ )
 
 </div>
 
