@@ -62,7 +62,7 @@ function sendRequest() {
         gpt.scrollTop = gpt.scrollHeight;
         input.value = ''
         return}
-    send({ message, model: 'azure-gpt-3.5-turbo', web: true });
+    send({ message, model: 'gpt-4o-mini', web: true });
     input.value = ''
 }
 
