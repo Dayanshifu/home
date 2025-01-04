@@ -112,7 +112,7 @@ div.sc div a {
     border-radius: 25px;
     text-align: center;
     font-size: 32px;
-    border: 2px solid #572e2e00;
+    border: 2px solid #572e2e;
 }
 
 div.sc div a.active {
@@ -124,6 +124,7 @@ div.sc div a.active {
 
 div.sc div a:hover:not(.active) {
     border: 2px solid #572e2e;
+    background-color: #d75a43ee;
 }
 
 .chose {
@@ -706,7 +707,7 @@ input[type='checkbox'].switch:checked::after {
 }
 .btnl{
     float: left;
-    width: 90px;
+    width: 86px;
     margin-top: 15px;
     margin-bottom: -5px;
     overflow: hidden;
