@@ -522,7 +522,7 @@ span#fromwho{
     .scspace{display: block;}
     #wg{height:calc(100vh - 415px);
         overflow:auto; }
-    #nav{height:calc(100vh - 435px);}
+    #nav{height:calc(100vh - 400px);}
     #gptbtn{display: block;}
     .search-container0{display: none;}
     .nowTime{font-size: 80px;}
@@ -558,7 +558,7 @@ span#fromwho{
     .gptarea{height: 120px;width: 210px;}
     .scspace{display: none;}
     #wg{height:260px;}
-    #nav{height:270px;}
+    #nav{height:215px;}
     #gptbtn{display: none;}
     .search-container0{display: block;}
     .nowTime{font-size: 100px;}
@@ -567,13 +567,13 @@ span#fromwho{
     .timer{padding-bottom: 30px;}
     #a000{display: none;}
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 616px) {
     .nav{
     display: flex;  
     flex-wrap: wrap;  
     justify-content: flex-start; /* 靠左对齐 */}
     }
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 616px) {
     .nav{
         display: block;  
         flex-wrap: nowrap;  
@@ -699,7 +699,7 @@ input[type='checkbox'].switch:checked::after {
 }  
 
 .nav{  
-    max-width: 540px;
+    max-width: 606px;
     margin-top: 5px;
     overflow:auto; 
     scrollbar-width: none;
