@@ -551,7 +551,23 @@ span#fromwho{
     #sitefoot{display: none;}
 }
 
-@media only screen and (min-width: 725px) {
+@media only screen and (min-width: 725px) and (max-height:630px) {
+    .card{width: 220px;height: 170;margin-bottom: 5px;}
+    .card-weather{width: 220px;height: 170;margin-bottom: 5px;}
+    .card-zkdjs{width: 210px;}
+    .gptarea{height: 120px;width: 210px;}
+    .scspace{display: none;}
+    #wg{height:260px;}
+    #nav{height:calc(100vh - 410px);}
+    #gptbtn{display: none;}
+    .search-container0{display: block;}
+    .nowTime{font-size: 80px;}
+    .nowSeconds{font-size: 48px;}
+    .clear{height: 15px;}
+    .timer{padding-bottom: 30px;}
+    #a000{display: none;}
+}
+@media only screen and (min-width: 725px) and (min-height:630px) {
     .card{width: 220px;height: 170;margin-bottom: 5px;}
     .card-weather{width: 220px;height: 170;margin-bottom: 5px;}
     .card-zkdjs{width: 210px;}
