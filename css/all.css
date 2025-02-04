@@ -373,7 +373,7 @@ span#fromwho{
     background-color: #ff0000c5;
     flex-direction: column;
     margin:5px;
-    box-shadow:  0px 0px 5px #541919c5;
+    box-shadow:  0px 0px 5px #541919;
     border: 2px solid #572e2e;
     border-radius: 20px;
     transition: .3s;
@@ -389,8 +389,7 @@ span#fromwho{
 .countdown{
     text-align: center;
     width: 100%;
-    
-    background-color: #bd0000c5;
+    background-color: #bd00009e;
     display: flex;
     margin-top: 5px;
     padding-bottom: 3px;
