@@ -56,7 +56,7 @@ a {
 
 #search-box {
     box-shadow:  0px 0px 5px #541919;
-    height: 42px;
+    height: 40px;
     text-align: center;
     border: 2px solid #572e2e;
     background-color: #392825b6;
@@ -373,7 +373,7 @@ span#fromwho{
     background-color: #ff0000c5;
     flex-direction: column;
     margin:5px;
-    box-shadow:  0px 0px 5px #541919;
+    box-shadow:  0px 0px 5px #541919c5;
     border: 2px solid #572e2e;
     border-radius: 20px;
     transition: .3s;
