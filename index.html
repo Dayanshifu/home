@@ -34,9 +34,10 @@
         <div class="clear-s"></div>
         <form id="sc" action="https://www.google.com/search" method="get" autocomplete="off">
           <div id="search-box">
-          <input id="sc-text" class="user-input" size="38" type="text" autofocus="autofocus" placeholder="Search" name="q" />
-          <input type="submit" value=" Go " class="user-btn" /></form>
-        </div>
+            <input id="sc-text" class="user-input" size="38" type="text" autofocus="autofocus" placeholder="Search" name="q" />
+            <input type="submit" value=" Go " class="user-btn" />
+          </div>
+        </form>
         <script src="js/search.js"></script>
         <ul id="word" style="display: none;"></ul>
         <script src="js/sou.js"></script>
@@ -52,84 +53,84 @@
               </div>
             </a>
             <a href='https://github.com/'>
-              <div class="btnl">
+              <div class="btnl" id="btnl">
                 <div class="imgl" >
                 <img src="https://static.codemao.cn/pickduck/H1MvuBYap.svg" alt="Github" height="42px" width="42px"></div>
                 <span class="altsp">Github</span>
               </div>
             </a>
             <a href='https://shequ.codemao.cn/'>
-              <div class="btnl">
+              <div class="btnl" id="btnl">
                 <div class="imgl" >
                 <img src="https://static.codemao.cn/pickduck/rkoVTSFp6.svg" alt="codemao" height="42px" width="42px"></div>
                 <span class="altsp">猫站</span>
               </div>
             </a>
             <a href='https://www.luogu.com.cn/'>
-              <div class="btnl">
+              <div class="btnl" id="btnl">
                 <div class="imgl" >
                 <img src="https://fecdn.luogu.com.cn/luogu/logo-single.png" alt="luogu" height="42px" width="42px"></div>
                 <span class="altsp">洛谷</span>
               </div>
             </a>
             <a href='https://wiki.archlinuxcn.org/wiki/'>
-              <div class="btnl">
+              <div class="btnl" id="btnl">
                 <div class="imgl" >
                 <img src="https://static.codemao.cn/pickduck/SyV9JIF6T.png" alt="ArchWiki" height="42px" width="42px"></div>
                 <span class="altsp">ArchWiki</span>
               </div>
             </a>
             <a href='https://ggb123.cn/calculator'>
-              <div class="btnl">
+              <div class="btnl" id="btnl">
                 <div class="imgl" >
                 <img src="https://static.codemao.cn/pickduck/ByOrT4vt0.jpg" style="border-radius: 12px;" alt="zxx" height="42px" width="42px"></div>
                 <span class="altsp">Geogebra</span>
               </div>
             </a>
             <a href='https://dict.youdao.com/'>
-              <div class="btnl">
+              <div class="btnl" id="btnl">
                 <div class="imgl" >
                 <img src="https://static.codemao.cn/pickduck/rJ48GUKaa.png" style="border-radius: 12px;" alt="yd" height="42px" width="42px"></div>
                 <span class="altsp">有道</span>
               </div>
             </a>
             <a href='https://outlook.live.com/'>
-              <div class="btnl">
+              <div class="btnl" id="btnl">
                 <div class="imgl" >
                 <img src="https://static.codemao.cn/pickduck/ry8WILYaa.png" style="border-radius: 12px;" alt="outlook" height="42px" width="42px"></div>
                 <span class="altsp">Outlook</span>
               </div>
             </a>
             <a href='https://math.microsoft.com/zh'>
-              <div class="btnl">
+              <div class="btnl" id="btnl">
                 <div class="imgl" >
                 <img src="https://static.codemao.cn/pickduck/ryjEPIFT6.webp" style="border-radius: 12px;" alt="math" height="42px" width="42px"></div>
                 <span class="altsp">Math</span>
               </div>
             </a>
             <a href='https://lolikon.us.kg/15/'>
-              <div class="btnl">
+              <div class="btnl" id="btnl">
                 <div class="imgl" >
                 <img src="https://static.codemao.cn/pickduck/HJTNP4yn6.jpg" style="border-radius: 12px;" alt="MDN" height="42px" width="42px"></div>
                 <span class="altsp">班级云盘</span>
               </div>
             </a>
             <a href='https://chat.deepseek.com/'>
-              <div class="btnl">
+              <div class="btnl" id="btnl">
                 <div class="imgl" >
                 <img src="https://static.codemao.cn/pickduck/SkDJp1U_yx.png" style="border-radius: 12px;" alt="yiyan" height="42px" width="42px"></div>
                 <span class="altsp">DeepSeek</span>
               </div>
             </a>
             <a href='https://basic.smartedu.cn/'>
-              <div class="btnl">
+              <div class="btnl" id="btnl">
                 <div class="imgl" >
                 <img src="https://static.codemao.cn/pickduck/SJdj5G2pT.webp" style="border-radius: 12px;" alt="zxx" height="42px" width="42px"></div>
                 <span class="altsp">智慧中小学</span>
               </div>
             </a>
             <a href='https://developer.mozilla.org/zh-CN/'>
-              <div class="btnl">
+              <div class="btnl" id="btnl">
                 <div class="imgl" >
                 <img src="https://static.codemao.cn/pickduck/r1pwCLFpp.png" style="border-radius: 12px;" alt="MDN" height="42px" width="42px"></div>
                 <span class="altsp">MDN</span>
@@ -268,14 +269,11 @@
             <script src="js/zkdjs.js"></script>
             <script src="js/hjdjs.js"></script>
           </div>
-          <div class="card">
+          <div class="card" >
 <textarea class="gptarea" id="gpt" readonly placeholder="Hi,there👋&#10  gpt-4o-mini"></textarea>
 
             <input type="text" class="search-container" name="wd" id="gptinput" placeholder="Chat">
           
-            <p style="font-size: 13px;color:#f9e1c7"><a target="_blank" href="https://chatnio.net/" style=" text-decoration: none;color:#d2bb80">ChatNio</a> 
-              <a target="_blank" href="https://github.com/program-zoubg" style="text-decoration: none;color:#d2bb80">OvOtun</a> 
-              提供支持</p>
             <script src="js/connection.js"></script>
             <div class="clear"></div>
           </div>

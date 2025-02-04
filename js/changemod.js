@@ -4,11 +4,17 @@ var wordl = document.getElementById('word')
 var clear = document.getElementById('timer')
 var main = document.getElementById('main')
 
-document.addEventListener("contextmenu", function(event){
-  // 阻止浏览器默认的右键菜单行为
-  event.preventDefault();
-  changemod()
-}) 
+document.addEventListener('contextmenu', function(event) {
+  if (event.target.id !== 'sc-text' && event.target.id !== 'gpt' && event.target.id !== 'gptinput' && event.target.id !== ' ') {
+    event.preventDefault(); 
+    changemod()
+  }
+});
+document.addEventListener('dragstart', function(event) {
+  if (event.target.id !== 'sc-text' && event.target.id !== 'gpt' && event.target.id !== 'gptinput' && event.target.id !== ' ') {
+    event.preventDefault(); 
+}
+});
 
 function changemod(){
   if (sites.style.display == 'none') {  

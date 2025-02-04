@@ -56,21 +56,20 @@ a {
 
 #search-box {
     box-shadow:  0px 0px 5px #541919;
-    max-width: 350px;
-    height: 40px;
+    height: 45px;
     text-align: center;
     border: 2px solid #572e2e;
     background-color: #392825b6;
     border-radius: 5px;
     box-sizing: border-box;
+    padding: 0 0 0 0;
     text-indent: 10px;
     border-radius: 20px;
-    margin: -1 auto -1;
-    
+    overflow: hidden;
   }
 
 .user-input {
-    max-width: 72%;
+    width: 79.64%;
     height: 35px;
     text-align: center;
     border: 2px solid #572e2e00;
@@ -78,7 +77,8 @@ a {
     background-color: #39282500;
     color: #d2bb80;
     line-height: 28px \9;
-    padding: 0 8px
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
 }
 
 .user-input::placeholder{
@@ -86,15 +86,16 @@ a {
 
 
 .user-btn {
-    max-width: 15%;
-    height: 32px;
-    border: 2px solid #39282500;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    width: 15%;
+    height: 100%;
+    border: none;
     vertical-align: middle;
     outline: none;
     background-color: #39282500;
     color: #d2bb80;
     font-size: 18px;
-    border-radius: 20px;
     font-weight: bold;
 }
 
@@ -363,7 +364,6 @@ span#fromwho{
     margin-top: 0px;
   }
 .card-zkdjs {
-    padding-left: 5px;
     padding-top: 5px;
     padding-right: 5px;
     padding-bottom:5px;
@@ -387,14 +387,15 @@ span#fromwho{
 
 
 .countdown{
+    text-align: center;
+    width: 100%;
+    
+    background-color: #bd0000c5;
     display: flex;
     margin-top: 5px;
     padding-bottom: 3px;
-    border-radius: 10px;
     padding: 5px 5px 5px;
     max-width: 210px;
-    padding-left: 10px;
-    border: 2px solid #ffff00;
 }
 .countdown div{
     color: #ffff00;
@@ -447,16 +448,15 @@ span#fromwho{
 
 
 .search-container{
-    width: 80%;
-    height: 30px;
-    border: 2px solid #572e2e;
+    width: 100%;
+    height: 41px;
+    border: none;
     background-color: #392825b6;
     color: #d2bb80;
-    border-radius: 5px;
     box-sizing: border-box;
     outline: none;
     text-indent: 10px;
-    border-radius: 15px;
+    text-align: center;
 }
 .search-container0{
     width: 80%;
@@ -518,7 +518,7 @@ span#fromwho{
     .card{width: 85%;height:calc(100vh - 450px);margin-bottom: 20px;}
     .card-weather{width: 85%;height:calc(100vh - 450px);margin-bottom: 10px;}
     .card-zkdjs{width:calc(85% - 10px);;height:calc(100vh - 460px);margin-bottom: 10px;}
-    .gptarea{height:calc(100vh - 520px);width: 96%;}
+    .gptarea{height:calc(100vh - 495px);width: 98%;}
     .scspace{display: block;}
     #wg{height:calc(100vh - 415px);
         overflow:auto; }
@@ -535,7 +535,7 @@ span#fromwho{
     .card{width: 85%;height: calc(100vh - 150px);margin-bottom: 0px;}
     .card-weather{width: 85%;height: calc(100vh - 160px);margin-bottom: 10px;}
     .card-zkdjs{width:calc(85% - 10px);height: calc(100vh - 160px);margin-bottom: 10px;}
-    .gptarea{width: 96%;height:calc(100vh - 150px - 60px)}
+    .gptarea{width: 96%;height:calc(100vh - 150px - 45px)}
     .scspace{display: block;}
     #wg{height:calc(100vh - 170px + 420px);
         overflow:none; }
@@ -555,7 +555,7 @@ span#fromwho{
     .card{width: 220px;height: 170;margin-bottom: 5px;}
     .card-weather{width: 220px;height: 170;margin-bottom: 5px;}
     .card-zkdjs{width: 210px;}
-    .gptarea{height: 120px;width: 210px;}
+    .gptarea{height: 135px;width: 210px;}
     .scspace{display: none;}
     #wg{height:260px;}
     #nav{height:calc(100vh - 410px);}
@@ -571,7 +571,7 @@ span#fromwho{
     .card{width: 220px;height: 170;margin-bottom: 5px;}
     .card-weather{width: 220px;height: 170;margin-bottom: 5px;}
     .card-zkdjs{width: 210px;}
-    .gptarea{height: 120px;width: 210px;}
+    .gptarea{height: 135px;width: 200px;}
     .scspace{display: none;}
     #wg{height:260px;}
     #nav{height:215px;}
@@ -595,9 +595,9 @@ span#fromwho{
         flex-wrap: nowrap;  
         justify-content:flex-start /* 靠左对齐 */}}
 @media only screen and (max-width: 435px) {
-    #search-box{max-width:85%;}}
+    #search-box{width:85%;}}
 @media only screen and (min-width: 435px) {
-    #search-box{max-width:350px;}}
+    #search-box{width:350px;}}
 
     
 .shadow_css {
