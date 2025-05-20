@@ -1,0 +1,195 @@
+<!--Alist V3建议添加的，已经默认添加了，如果你的没有建议加上-->
+<script src="https://polyfill.alicdn.com/v3/polyfill.min.js?features=String.prototype.replaceAll"></script>
+
+<style>
+  /* 去除通知栏 右上角 X */
+  .notify-render .hope-close-button {
+    display: none;
+  }
+  /*去掉底部*/
+  .footer {
+    display: none !important;
+  }
+  html
+
+  /* 此选项两处CSS 在v3.31.0中已优化 滚动显示 和 右下角设置网格模式尺寸大小 */
+  /* 文字超长自动换行 */
+  /*.name-box .name {
+    white-space: unset !important;
+    overflow: unset !important;
+    }*/
+  /* 缩略图图片变大 代码中的160px 自己改 现在是注释状态若需要自行解除注释 */
+  /*.obj-box > div {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr))
+    }
+    .obj-box > div .item-thumbnail{
+    height: 100px;
+    }*/
+
+  /*
+    图片API用法点进去都会有食用说明的,API来自网络不保证实效性稳定性自己测试
+    樱花：https://www.dmoe.cc
+    夏沫：https://cdn.seovx.com
+    搏天：https://api.btstu.cn/doc/sjbz.php
+    姬长信：https://github.com/insoxin/API
+    小歪：https://api.ixiaowai.cn/
+    保罗：https://api.paugram.com
+    墨天逸：https://api.mtyqx.cn
+    岁月小筑：https://img.xjh.me
+    东方Project：https://img.paulzzh.com
+    */
+  /*白天背景图*/
+  .hope-ui-light {
+    background-image: url("https://static.codemao.cn/pickduck/Sk1vWCbc0.jpg") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: center;
+  }
+  /*夜间背景图*/
+  .hope-ui-dark {
+    background-image: url("https://static.codemao.cn/pickduck/Sk1vWCbc0.jpg") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: center;
+  }
+
+  /*主列表白天模式透明*/
+  .obj-box.hope-stack.hope-c-dhzjXW.hope-c-PJLV.hope-c-PJLV-igScBhH-css {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+  }
+  /*主列表夜间模式透明*/
+  .obj-box.hope-stack.hope-c-dhzjXW.hope-c-PJLV.hope-c-PJLV-iigjoxS-css {
+    background-color: rgb(0 0 0 / 50%) !important;
+  }
+  /*readme白天模式透明*/
+  .hope-c-PJLV.hope-c-PJLV-ikSuVsl-css {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+  }
+  /*readme夜间模式透明*/
+  .hope-c-PJLV.hope-c-PJLV-iiuDLME-css {
+    background-color: rgb(0 0 0 / 50%) !important;
+  }
+
+
+  /*顶部右上角切换按钮透明*/
+  .hope-ui-light .hope-c-ivMHWx-hZistB-cv.hope-icon-button {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+  }
+  .hope-ui-dark .hope-c-ivMHWx-hZistB-cv.hope-icon-button {
+    background-color: rgb(0 0 0 / 50%) !important;
+  }
+
+
+  /*右下角侧边栏按钮透明 第一个是白天 第二个是夜间*/
+  .hope-ui-light .hope-c-PJLV-ijgzmFG-css {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+  }
+  .hope-ui-dark .hope-c-PJLV-ijgzmFG-css {
+    background-color: rgb(0 0 0 / 50%) !important;
+  }
+  /*白天模式代码块透明*/
+  .hope-ui-light pre {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+  }
+  /*夜间模式代码块透明*/
+  .hope-ui-dark pre {
+    background-color: rgba(255, 255, 255, 0) !important;
+  }
+
+
+  /*左侧侧边栏目录*/
+  /*白天模式*/
+  .hope-ui-light .hope-c-PJLV-ieGWMbI-css {
+    background: rgba(255, 255, 255, 0.5) !important;
+  }
+  /*夜间模式*/
+  .hope-ui-dark .hope-c-PJLV-ieGWMbI-css {
+    background-color: rgb(0 0 0 / 50%) !important;
+  }
+  /* 返回顶部 */
+  .hope-c-PJLV-ihVEsOa-css {
+    background: rgba(255, 255, 255, 0.5) !important;
+  }
+  .hope-ui-dark .hope-c-PJLV-ihVEsOa-css {
+    background-color: rgb(0 0 0 / 50%) !important;
+  }
+
+
+  /*顶部*/
+  #root > .header {
+    background: rgba(255, 255, 255, 0);
+  }
+  /*导航条*/
+  /*白天模式*/
+  .hope-ui-light .body > .nav {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: var(--hope-radii-xl);
+  }
+  /*夜间模式*/
+  .hope-ui-dark .body > .nav {
+    background-color: rgb(0 0 0 / 50%);
+    border-radius: var(--hope-radii-xl);
+  }
+  /*隐藏导航条遮罩*/
+  .body > .nav::after {
+    display: none;
+  }
+
+
+  /*底部CSS，.App .table这三个一起的*/
+  .dibu {
+    border-top: 0px;
+    position: absolute;
+    bottom: 0;
+    margin: 0px;
+    padding: 0px;
+    padding: 0% 1%;
+    width: 100%;
+  }
+  .App {
+    min-height: 85vh;
+  }
+  .table {
+    margin: auto;
+  }
+  .obj-box{
+    resize: none;
+    max-height: calc(100vh - 180px);
+    box-sizing: border-box; 
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .obj-box::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+  }
+  .obj-box::-webkit-scrollbar-thumb {
+     background-color: #ff80809e;
+  }
+  .obj-box::-webkit-scrollbar-track {
+     background-color: transparent;
+    
+  }
+  .title{
+    z-index:999;
+  }
+
+  /*渐变背景CSS*/
+  #canvas-basic {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -999;
+  }
+  html{color:#ac3139;}
+  body{color:#ac3139;}
+  div{color:#ac3139;}
+  span{color:#ac3139;}
+</style>
