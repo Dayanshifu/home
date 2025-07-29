@@ -292,11 +292,23 @@
         <div class="foot1" id="foot1">
           <span style="color:#f9e1c7;background-color: #572e2e65;padding: 0px 2px 0px 2px;font-size: 14px;">
             <a style="text-decoration:none;color:#f9e1c7" href="https://lolicon.xin/">
-              ©2021-<span id="2year">114514</span> 颜</a> | 
+              ©<span id="2year">114514</span> 颜</a> | 
             <a style="text-decoration:none;color:#f9e1c7" 
               href="https://github.com/Dayanshifu/home">Github</a>
-            <script type="text/javascript">var nowyear = new Date().getFullYear();
-              document.getElementById("2year").innerHTML = nowyear;</script>
+            <script type="text/javascript">
+              function toChineseYear(year) {
+                var chineseNumbers = ['〇', '一', '二', '三', '四', '五', '六', '七', '八', '九'];
+                var yearStr = year.toString();
+                var result = '';
+                for (var i = 0; i < yearStr.length; i++) {
+                  result += chineseNumbers[parseInt(yearStr.charAt(i))];
+                }
+                return result;
+              }
+              
+              var nowyear = new Date().getFullYear();
+              var a1 = toChineseYear(nowyear);
+              document.getElementById("2year").innerHTML = a1;</script>
             <script src="js/settings.js"></script>
           </span>
         </div>
