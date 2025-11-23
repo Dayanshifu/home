@@ -1,4 +1,4 @@
-var school =    new Date("2025-07-05T08:30:00");
+var school =    new Date("2025-11-29T09:00:00");
                         //2025-11-30T09:00:00
 // 更新倒计时函数
 function updateCountdown() {
@@ -10,7 +10,7 @@ function updateCountdown() {
 
   // 如果时间差小于等于59,400,000，说明中考已经开始或结束
               //113400000
-  if (diff1 <= -32400000) {
+  if (diff1 <= -64800000) {
       // 显示中考已经开结束的信息
       document.getElementById("started1").innerHTML = "学考已经结束";
       document.getElementById("countdown1").style.display="none";
