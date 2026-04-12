@@ -1,13 +1,13 @@
 <div align="center"> 
 
 ![fystart](favicon.ico)
-# [hao-littleyan](https://home.lolicon.xin/ )
+# [hao-littleyan](https://dayanshifu.github.io/home/ )
 #### 👏一个简洁方便的浏览器首页
 
-[![GitHub stars](https://img.shields.io/github/stars/Dayanshifu/home?style=flat-square)](https://home.lolicon.xin/ )
-[![GitHub forks](https://img.shields.io/github/forks/Dayanshifu/home?style=flat-square)](https://home.lolicon.xin/ )
-[![GitHub issues](https://img.shields.io/github/issues/Dayanshifu/home?style=flat-square)](https://home.lolicon.xin/ )
-[![GitHub license](https://img.shields.io/github/license/Dayanshifu/home?style=flat-square)](https://home.lolicon.xin/ )
+[![GitHub stars](https://img.shields.io/github/stars/Dayanshifu/home?style=flat-square)](https://dayanshifu.github.io/home/ )
+[![GitHub forks](https://img.shields.io/github/forks/Dayanshifu/home?style=flat-square)](https://dayanshifu.github.io/home/ )
+[![GitHub issues](https://img.shields.io/github/issues/Dayanshifu/home?style=flat-square)](https://dayanshifu.github.io/home/ )
+[![GitHub license](https://img.shields.io/github/license/Dayanshifu/home?style=flat-square)](https://dayanshifu.github.io/home/ )
 
 </div>
 
